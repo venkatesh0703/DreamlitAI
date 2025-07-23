@@ -1,0 +1,290 @@
+[
+  {
+    "category": "Classical & Traditional Art Styles",
+    "styles": [
+      {"name": "Oil Painting - Realism (16K HDR Ready)", "prompt": "oil painting, hyperrealistic, 16K resolution, HDR quality, masterful technique, visible brush strokes, impasto texture, canvas weave detail, professional studio lighting, Rembrandt chiaroscuro, dramatic shadows, rich color depth, museum quality, golden ratio composition, atmospheric perspective, subtle color transitions, lifelike skin textures, reflective surfaces, gallery presentation"},
+      {"name": "Oil Painting - Old Masters", "prompt": "oil painting, old masters style, Baroque period, Renaissance technique, classical composition, dramatic chiaroscuro lighting, sfumato shading, aged canvas texture, cracked paint patina, ornate gilded frame, museum spotlight, rich earth tones, ultramarine blues, vermillion reds, religious iconography, mythological themes, aristocratic portraits, detailed fabric textures"},
+      {"name": "Oil Painting - 70s Pulp", "prompt": "oil painting, 1970s pulp art style, vintage paperback cover aesthetic, dramatic pin-up lighting, bold saturated colors, retro illustration technique, textured canvas background, expressive visible brushwork, noir atmosphere, action adventure themes, seductive poses, vintage typography integration, airbrushed effects, commercial art appeal"},
+      {"name": "Watercolor (Soft & Textured)", "prompt": "watercolor painting, soft wet-on-wet technique, natural paper grain texture, flowing transparent pigments, organic color bleeding, delicate gradient washes, spontaneous drip effects, natural daylight illumination, botanical subjects, translucent layering, gentle color harmony, artistic spontaneity, organic edge quality, ethereal atmosphere"},
+      {"name": "Pencil Drawing (Graphite, Charcoal)", "prompt": "pencil drawing, graphite rendering, charcoal shading, detailed cross-hatching technique, tonal value study, textured drawing paper, realistic proportions, subtle gradations, smudged highlights, sharp detail work, hand-drawn authenticity, sketch-like spontaneity, monochromatic palette, classical drawing principles"},
+      {"name": "Crayon & Pastel Drawing", "prompt": "crayon drawing, oil pastel technique, vibrant saturated colors, waxy texture blend, soft edge transitions, layered color application, textured paper surface, childlike wonder, playful composition, bold color contrasts, finger-blended effects, artistic immediacy, expressive mark-making"},
+      {"name": "Traditional Japanese (Nihonga Painting)", "prompt": "nihonga painting, traditional Japanese technique, mineral pigment colors, gold leaf accents, washi paper surface, delicate brushwork, naturalistic subjects, seasonal motifs, subtle color gradations, zen-like composition, cultural symbolism, serene atmosphere, flowing water elements, cherry blossom themes"},
+      {"name": "Medieval & Renaissance Maps", "prompt": "medieval cartography, renaissance map style, hand-illuminated manuscript, ornate compass rose design, decorative sea monsters, mythical creatures, parchment aged texture, calligraphic lettering, gold leaf borders, heraldic shields, wind direction indicators, terra incognita regions, artistic geographical interpretation"},
+      {"name": "Fresco & Mural Styles", "prompt": "fresco painting, mural art, lime plaster surface, architectural integration, large-scale composition, vibrant mineral pigments, classical narrative themes, trompe-l'oeil effects, Renaissance chapel style, religious iconography, community storytelling, weathered texture, monumental scale"},
+      {"name": "Ink Wash Painting (Sumi-e)", "prompt": "sumi-e ink wash, traditional Japanese painting, black ink gradations, rice paper texture, minimalist composition, expressive brushstrokes, negative space utilization, bamboo and crane motifs, zen philosophy, poetic simplicity, fluid water effects, mountain landscapes, misty atmosphere"},
+      {"name": "Acrylic Painting (Modern Technique)", "prompt": "acrylic painting, modern technique, fast-drying medium, vibrant color saturation, smooth brush application, contemporary subjects, pop art influence, bold color blocking, textural paste application, mixed media integration, urban themes, experimental layering"},
+      {"name": "Tempera Painting (Renaissance Revival)", "prompt": "tempera painting, egg yolk binder, Renaissance revival, precise detail work, luminous color quality, wooden panel surface, religious iconography, golden halos, intricate pattern work, medieval manuscript style, spiritual symbolism"}
+    ]
+  },
+  {
+    "category": "Digital & Painterly Styles",
+    "styles": [
+      {"name": "Digital Painting (Highly Detailed, HDR)", "prompt": "digital painting, ultra high detail, HDR rendering, 8K resolution, photorealistic quality, advanced digital brushwork, dynamic lighting effects, volumetric atmosphere, particle effects, professional digital art, cinematic composition, color grading, sharp focus, intricate textures, seamless blending"},
+      {"name": "Concept Art (Game & Film Ready)", "prompt": "concept art, AAA game quality, film production ready, matte painting technique, environment design, character concept, epic scale composition, atmospheric perspective, dramatic mood lighting, production pipeline ready, keyframe illustration, visual development art, storyboard quality"},
+      {"name": "Painterly (Thick Brush, Expressive)", "prompt": "painterly digital art, thick impasto brushstrokes, expressive texture work, visible paint application, artistic energy, bold color contrasts, emotional expression, gestural mark-making, traditional painting simulation, artistic interpretation, spontaneous creativity"},
+      {"name": "Illustration (Editorial & Book Art)", "prompt": "editorial illustration, book cover art, narrative composition, clean vector lines, storytelling visual, magazine quality, commercial illustration, character-driven design, engaging visual narrative, professional typography integration, market-ready artwork"},
+      {"name": "Cute/Kawaii Illustration", "prompt": "kawaii illustration, adorable character design, pastel color palette, soft rounded shapes, sparkly magical effects, chibi proportions, playful expressions, heart motifs, rainbow gradients, bubble effects, innocent charm, Japanese cute culture"},
+      {"name": "Tattoo Design (Vector & Hand-drawn)", "prompt": "tattoo design, vector illustration, bold black outlines, high contrast shading, skin-ready artwork, traditional tattoo motifs, modern tattoo styling, clean line work, solid color fills, tribal patterns, realistic portrait work, custom tattoo art"},
+      {"name": "Concept Sketch & Storyboard", "prompt": "concept sketch, storyboard panel, rough developmental art, dynamic gesture drawing, loose construction lines, creative exploration, visual brainstorming, quick thumbnail sketches, sequential narrative, production development, artistic process documentation"},
+      {"name": "Soft Anime Style", "prompt": "soft anime illustration, gentle pastel colors, dreamy atmosphere, ethereal lighting, delicate character features, flowing hair dynamics, romantic mood, shoujo manga influence, watercolor-like softness, emotional storytelling, beautiful background art"},
+      {"name": "Matte Painting (Environment Art)", "prompt": "matte painting, cinematic environment, epic landscape art, atmospheric depth, film backdrop quality, photorealistic terrain, dramatic sky composition, environmental storytelling, vista panorama, movie production art, seamless photo integration"},
+      {"name": "Vector Art (Geometric & Clean)", "prompt": "vector illustration, geometric precision, clean minimalist design, scalable artwork, corporate branding style, flat design elements, bold color blocking, mathematical precision, logo-ready quality, print-ready resolution"},
+      {"name": "Photo Manipulation Art", "prompt": "photo manipulation, digital composite, surreal photo editing, creative retouching, fantasy photo art, impossible imagery, seamless blending, professional editing, artistic photo enhancement, conceptual photography"}
+    ]
+  },
+  {
+    "category": "Anime / Manga / Japanese Styles",
+    "styles": [
+      {"name": "Anime (High Detail & Cel Shading)", "prompt": "anime art, high detail rendering, cel shading technique, vibrant color palette, expressive large eyes, dynamic action pose, studio background, professional anime production, sharp clean outlines, gradient hair coloring, dramatic lighting effects, Japanese animation style, otaku culture appeal"},
+      {"name": "Drawn Anime (Hand-drawn Aesthetic)", "prompt": "hand-drawn anime, traditional animation feel, pencil sketch lines, authentic cel animation, rough animation frames, storyboard aesthetic, animator's sketch, production art style, character expression sheets, keyframe animation, studio hand-drawn quality"},
+      {"name": "Anime Screencap Style", "prompt": "anime screencap, cinematic anime frame, widescreen format, film grain texture, dramatic scene lighting, authentic anime production, action scene capture, character close-up, vibrant background art, episode screenshot quality, broadcast television look"},
+      {"name": "Cute Anime / Chibi", "prompt": "chibi anime, super deformed characters, oversized heads, tiny proportions, kawaii expression, big sparkling eyes, adorable poses, pastel color scheme, heart and star decorations, playful atmosphere, merchandise character design, cute mascot style"},
+      {"name": "YuGiOh Card Art Style", "prompt": "YuGiOh trading card, fantasy monster design, dramatic action pose, magical energy effects, detailed creature anatomy, trading card layout, holographic foil effects, Egyptian mythology influence, battle scene composition, collectible card game art"},
+      {"name": "Vintage Anime (80s/90s Aesthetic)", "prompt": "vintage anime, 1980s animation style, retro character design, nostalgic color palette, VHS tape quality, classic anime aesthetic, old school animation, grainy film texture, limited animation technique, retro futuristic themes, mecha anime influence"},
+      {"name": "Neon Vintage Anime (Synthwave Colors)", "prompt": "neon anime, synthwave color palette, retrowave aesthetic, glowing neon outlines, cyberpunk cityscape, purple and pink gradients, grid horizon backgrounds, 1980s nostalgia, futuristic anime style, electric color scheme, night city atmosphere"},
+      {"name": "Manga (Line Art & Tonal Shading)", "prompt": "manga illustration, black and white artwork, screentone shading, dynamic panel composition, expressive character faces, speed lines, action effects, Japanese comic style, ink pen artwork, dramatic close-ups, emotional storytelling"},
+      {"name": "Studio Ghibli Inspired (Whimsical & Naturalistic)", "prompt": "Studio Ghibli style, whimsical fantasy art, naturalistic backgrounds, magical realism, soft watercolor textures, lush green landscapes, flying sequences, heartwarming characters, detailed environmental art, Miyazaki inspiration, family-friendly themes"},
+      {"name": "Seinen Manga (Mature & Realistic)", "prompt": "seinen manga, mature themes, realistic character proportions, detailed backgrounds, psychological storytelling, adult-oriented content, sophisticated artwork, complex narrative, realistic shading, urban environments"},
+      {"name": "Shounen Battle Anime", "prompt": "shounen anime, battle action scenes, power-up transformations, energy blast effects, muscular character design, determined expressions, friendship themes, tournament arcs, special attack moves, heroic poses"},
+      {"name": "Magical Girl Anime", "prompt": "magical girl anime, transformation sequences, frilly costume design, magical wand accessories, pastel color schemes, heart and star motifs, friendship power, sparkle effects, romantic elements, shoujo influence"}
+    ]
+  },
+  {
+    "category": "Fantasy & Fictional Styles",
+    "styles": [
+      {"name": "Fantasy Painting (Realistic & Epic)", "prompt": "epic fantasy painting, photorealistic rendering, grand scale composition, mythical creatures, dragons and wizards, magical atmosphere, glowing enchantments, heroic characters, medieval weaponry, castle landscapes, mystical lighting, detailed armor, fantasy races"},
+      {"name": "Fantasy Portrait (Character Focus)", "prompt": "fantasy character portrait, detailed facial features, mystical aura effects, ornate costume design, magical jewelry, glowing eyes, fantasy race characteristics, dramatic lighting, character backstory, RPG character art, detailed texture work"},
+      {"name": "Fantasy Landscape (Vivid & Detailed)", "prompt": "fantasy landscape, magical scenery, floating islands, enchanted forests, glowing mushrooms, crystal formations, magical waterfalls, surreal color palette, epic vista, otherworldly atmosphere, mystical fog, ancient ruins"},
+      {"name": "Fantasy World Map (Cartographic & Artistic)", "prompt": "fantasy world map, detailed cartography, hand-drawn style, ancient parchment texture, mythical landmarks, kingdom boundaries, sea monsters, compass rose, decorative borders, geographical features, adventure locations"},
+      {"name": "Fantasy City Map (Medieval & Futuristic)", "prompt": "fantasy city map, aerial view layout, medieval architecture, futuristic elements, magical districts, towering spires, glowing magical lights, intricate street networks, fantasy urban planning, mixed architectural styles"},
+      {"name": "Magic: The Gathering (MTG) Card Art Style", "prompt": "Magic The Gathering, MTG card art, fantasy trading card, dramatic action scene, magical creatures, spell effects, artifact designs, planeswalker characters, mana symbols, card frame ready, collectible quality"},
+      {"name": "Mythological Illustration", "prompt": "mythological illustration, ancient legends, Greek Roman mythology, Norse gods, legendary heroes, symbolic elements, classical art influence, epic storytelling, divine characters, mythical beasts, ornate decorative borders"},
+      {"name": "Dark Fantasy & Gothic Art", "prompt": "dark fantasy, gothic atmosphere, moody shadows, supernatural horror, vampires and demons, gothic architecture, eerie moonlight, haunting figures, medieval darkness, occult symbols, macabre beauty, atmospheric dread"},
+      {"name": "Steampunk Fantasy", "prompt": "steampunk fantasy, mechanical magic, brass gears, Victorian gothic, steam-powered devices, clockwork creatures, industrial fantasy, copper and bronze metals, mechanical wings, retro-futuristic magic"},
+      {"name": "High Fantasy Epic", "prompt": "high fantasy, epic adventure, heroic quest, magical kingdoms, ancient prophecies, legendary weapons, divine intervention, world-saving heroes, ultimate good vs evil, classic fantasy tropes"},
+      {"name": "Urban Fantasy Modern", "prompt": "urban fantasy, modern city setting, hidden magical world, contemporary magic users, city supernatural, magic in modern life, fantasy noir, urban witches, modern mythology"}
+    ]
+  },
+  {
+    "category": "Furry & Anthropomorphic Styles",
+    "styles": [
+      {"name": "Furry - Oil Painting (Realistic Fur Texture)", "prompt": "furry art, oil painting technique, realistic fur texture, detailed animal features, anthropomorphic characters, expressive animal eyes, natural fur patterns, soft lighting, canvas texture, lifelike rendering, professional artistic quality"},
+      {"name": "Furry - Cinematic (Dynamic Lighting)", "prompt": "furry art, cinematic quality, dramatic lighting, movie poster style, anthropomorphic characters, dynamic poses, atmospheric effects, high contrast lighting, film-quality rendering, action scenes, emotional expressions"},
+      {"name": "Furry - Painted (Stylized & Expressive)", "prompt": "furry art, stylized painting, expressive brushwork, vibrant color palette, anthropomorphic design, exaggerated features, playful compositions, artistic interpretation, colorful fur patterns, whimsical characters"},
+      {"name": "Furry - Drawn (Cartoon/Comic Style)", "prompt": "furry art, cartoon style, comic book influence, bold outlines, expressive faces, dynamic poses, bright colors, hand-drawn aesthetic, character sheets, animation-ready, family-friendly appeal"},
+      {"name": "Anthropomorphic Fantasy Art", "prompt": "anthropomorphic fantasy, animal-human hybrids, magical creatures, fantasy settings, detailed character design, mystical abilities, enchanted environments, RPG character art, fantasy races, magical transformations"},
+      {"name": "Kemonomimi (Animal Ears/Tail)", "prompt": "kemonomimi art, anime-style animal features, cat ears and tail, fox characteristics, wolf traits, cute animal accessories, anime character design, kawaii elements, hybrid human-animal"},
+      {"name": "Realistic Animal Portraits", "prompt": "realistic animal portrait, photorealistic rendering, natural animal behavior, wildlife photography style, detailed fur texture, natural habitat, professional animal art, nature documentary quality"},
+      {"name": "Cartoon Animal Characters", "prompt": "cartoon animals, animated character design, Disney-style animals, talking creatures, personality-driven design, family entertainment, colorful and appealing, merchandise-ready characters"}
+    ]
+  },
+  {
+    "category": "Photographic & Cinematic Styles",
+    "styles": [
+      {"name": "Professional Studio Photo (Ultra HD)", "prompt": "professional studio photography, ultra HD 8K resolution, perfect lighting setup, softbox illumination, seamless background, 85mm portrait lens, high dynamic range, editorial quality, flawless skin texture, commercial photography, fashion shoot quality, magazine cover ready"},
+      {"name": "Casual / Lifestyle Photo (Natural Lighting)", "prompt": "lifestyle photography, casual candid moments, natural window lighting, relaxed authentic poses, real-world environments, soft focus background, warm color temperature, everyday life documentation, photojournalistic style, genuine emotions"},
+      {"name": "Cinematic (Film Grain, Color Grading)", "prompt": "cinematic photography, film grain texture, professional color grading, dramatic lighting setup, shallow depth of field, anamorphic lens flares, teal and orange color scheme, movie still quality, widescreen composition, atmospheric mood"},
+      {"name": "Cursed Photo / Glitch Art", "prompt": "cursed photography, glitch art effects, digital corruption, surreal distortions, broken pixels, color channel shifts, unsettling atmosphere, experimental photography, digital artifacts, databending techniques, eerie uncanny valley"},
+      {"name": "Hyperrealism (Ultra-Detailed Close-ups)", "prompt": "hyperrealistic photography, ultra-detailed macro, sharp focus, skin pore visibility, fine texture detail, professional macro lens, perfect exposure, clinical precision, scientific accuracy, museum quality documentation"},
+      {"name": "Macro Photography Style", "prompt": "macro photography, extreme close-up, shallow depth of field, bokeh background, fine detail capture, natural subjects, dewdrops and textures, high magnification, scientific photography, nature's hidden world"},
+      {"name": "Tilt-Shift Photography", "prompt": "tilt-shift photography, miniature effect, selective focus plane, toy-like appearance, aerial cityscape view, vibrant saturated colors, architectural subjects, creative depth of field, whimsical perspective"},
+      {"name": "Bokeh & Lens Flare Effects", "prompt": "bokeh photography, artistic blur, lens flare effects, dreamy atmosphere, glowing light orbs, shallow depth of field, romantic lighting, golden hour photography, artistic light play, professional lens quality"},
+      {"name": "HDR Imaging & Tone Mapping", "prompt": "HDR photography, high dynamic range, tone mapping, balanced exposure, rich detail, vivid colors, realistic shadows and highlights, landscape photography, architectural detail, professional processing"},
+      {"name": "Street Photography", "prompt": "street photography, urban documentary, candid moments, city life, photojournalistic style, natural lighting, authentic human behavior, cultural documentation, decisive moment capture"},
+      {"name": "Portrait Photography (Professional)", "prompt": "portrait photography, professional headshots, studio lighting, personality capture, engaging eye contact, flattering angles, commercial quality, business portraits, artistic expression"},
+      {"name": "Landscape Photography", "prompt": "landscape photography, natural scenery, golden hour lighting, panoramic views, nature documentation, environmental beauty, outdoor adventure, scenic vistas, travel photography"}
+    ]
+  },
+  {
+    "category": "Vintage & Historical Photo Styles",
+    "styles": [
+      {"name": "1920s Art Deco Photography", "prompt": "1920s photography, Art Deco influence, vintage fashion, jazz age aesthetic, black and white, geometric patterns, flapper style, prohibition era, classic Hollywood glamour, vintage camera techniques"},
+      {"name": "1950s Americana Photography", "prompt": "1950s photography, Americana style, suburban lifestyle, vintage cars, diner culture, nuclear family, post-war optimism, Kodachrome colors, mid-century modern, nostalgic mood"},
+      {"name": "1960s-70s Counterculture", "prompt": "1960s photography, counterculture movement, hippie aesthetic, psychedelic colors, protest documentation, woodstock era, social revolution, documentary style, vintage film grain"},
+      {"name": "1980s-90s Retro Photography", "prompt": "1980s photography, neon colors, synthesizer culture, mall aesthetics, big hair fashion, VHS quality, nostalgic film grain, retro technology, vintage family photos"},
+      {"name": "Sepia & Monochrome Aesthetic", "prompt": "sepia photography, monochrome tones, vintage processing, aged photo texture, antique family portraits, historical documentation, classic photo album, timeless aesthetic, nostalgic warmth"},
+      {"name": "Retro Film Photography (Grain & Noise)", "prompt": "retro film photography, analog grain texture, vintage color shifts, light leaks, imperfect charm, film camera aesthetic, nostalgic processing, authentic film look, artistic accidents"},
+      {"name": "Polaroid & Instant Film Style", "prompt": "Polaroid photography, instant film aesthetic, white border frame, faded vintage colors, immediate capture, candid moments, retro instant camera, nostalgic family photos, authentic imperfections"},
+      {"name": "Vintage Documentary Style", "prompt": "vintage documentary, historical photojournalism, black and white reportage, social documentation, authentic moments, natural lighting, human interest stories, cultural history, archival quality"},
+      {"name": "Victorian Era Photography", "prompt": "Victorian photography, 19th century aesthetic, formal poses, sepia tones, ornate settings, period costumes, historical accuracy, daguerreotype style, antique photo techniques"},
+      {"name": "Film Noir Photography", "prompt": "film noir style, dramatic shadows, high contrast black and white, venetian blind lighting, urban nighttime, mysterious atmosphere, crime drama aesthetic, classic Hollywood"}
+    ]
+  },
+  {
+    "category": "Cartoon & Comics Styles",
+    "styles": [
+      {"name": "Cartoon (Classic & Modern)", "prompt": "cartoon illustration, classic animation style, bold character outlines, exaggerated expressions, vibrant color palette, playful design, family-friendly appeal, hand-drawn animation, timeless cartoon charm"},
+      {"name": "Disney Sketch & Line Art", "prompt": "Disney animation, character sketch, clean line art, expressive character design, animation principles, personality-driven poses, classic Disney magic, storybook illustration, whimsical details"},
+      {"name": "2D Disney Character Design", "prompt": "Disney 2D animation, character design sheets, colorful animated style, iconic character shapes, emotional expressions, storybook fairy tale, family entertainment, magical storytelling"},
+      {"name": "3D Disney Character Rendering", "prompt": "Disney 3D animation, Pixar-quality rendering, soft character lighting, realistic textures, cinematic composition, computer animation, modern Disney style, emotional storytelling"},
+      {"name": "Tintin Comic Style", "prompt": "Tintin comic art, clear line technique, European comic style, adventure storytelling, vintage comic aesthetic, detailed backgrounds, classic comic book, travel adventure themes"},
+      {"name": "Franco-Belgian Comic (Clear Line)", "prompt": "Franco-Belgian comic, clear line art style, European comics, detailed storytelling, clean outlines, flat color areas, adventure comics, graphic novel quality, sophisticated narrative"},
+      {"name": "Vintage Comic Book Style", "prompt": "vintage comic book, 1940s-60s aesthetic, halftone printing, bold primary colors, action sequences, speech bubbles, dramatic poses, golden age comics, superhero adventures"},
+      {"name": "Superhero Comic (Bold & Dynamic)", "prompt": "superhero comic art, dynamic action poses, muscular character design, dramatic lighting, explosive backgrounds, comic book panels, heroic adventures, cape and costume design, power effects"},
+      {"name": "Webcomic Style", "prompt": "webcomic art, digital comic style, online publishing, character-driven humor, episodic storytelling, contemporary themes, social media friendly, indie comic aesthetic"},
+      {"name": "Underground Comics", "prompt": "underground comics, alternative comic art, countercultural themes, experimental storytelling, adult content, artistic freedom, independent publishing, avant-garde illustration"},
+      {"name": "Newspaper Comic Strip", "prompt": "newspaper comic strip, daily comic format, simple line art, family-friendly humor, sequential panels, syndicated comic style, accessible storytelling, classic newspaper format"}
+    ]
+  },
+  {
+    "category": "Vintage & Retro Styles",
+    "styles": [
+      {"name": "50s Enamel Sign & Advertising", "prompt": "1950s enamel signage, vintage advertising art, bold typography, primary color schemes, retro product promotion, roadside Americana, nostalgic commercial art, diner aesthetics, mid-century advertising"},
+      {"name": "Vintage Pulp Art & Posters", "prompt": "vintage pulp art, 1940s-50s illustration, dramatic action scenes, sensational storytelling, paperback cover art, film noir influence, detective stories, science fiction themes, commercial illustration"},
+      {"name": "Vaporwave / Synthwave (Neon & Glitch)", "prompt": "vaporwave aesthetic, synthwave style, neon color palette, 1980s nostalgia, digital glitch effects, grid landscapes, palm trees, sunset gradients, retro computer graphics, cyberpunk influence"},
+      {"name": "Cyberpunk (Neon-Drenched Futurism)", "prompt": "cyberpunk art, neon-drenched cityscape, futuristic technology, rain-soaked streets, high-tech low-life, dystopian atmosphere, holographic displays, urban sprawl, technological augmentation"},
+      {"name": "Retrowave & Outrun Art", "prompt": "retrowave art, outrun aesthetic, 1980s synthwave, neon grid horizon, sports car silhouettes, sunset gradient skies, synthesizer culture, nostalgic futurism, Miami Vice influence"},
+      {"name": "Art Deco Poster Style", "prompt": "Art Deco poster, 1920s design aesthetic, geometric patterns, luxury travel posters, elegant typography, streamlined forms, golden age glamour, sophisticated design"},
+      {"name": "Soviet Propaganda Art", "prompt": "Soviet propaganda poster, constructivist design, bold revolutionary imagery, red color dominance, heroic worker themes, political messaging, industrial aesthetics, communist symbolism"},
+      {"name": "Pin-up Art (1940s-50s)", "prompt": "pin-up art, 1940s-50s illustration, glamorous women, patriotic themes, wartime morale, commercial illustration, idealized beauty, vintage fashion, nostalgic appeal"}
+    ]
+  },
+  {
+    "category": "Modern & Minimalist Styles",
+    "styles": [
+      {"name": "Low Poly Art (Geometric Simplification)", "prompt": "low poly art, geometric simplification, faceted 3D surfaces, angular shapes, minimal polygons, modern digital art, clean geometric forms, stylized abstraction, contemporary design"},
+      {"name": "Minimalist Line Art & Silhouettes", "prompt": "minimalist line art, simple silhouettes, clean geometric lines, negative space utilization, elegant simplicity, modern design principles, sophisticated restraint, artistic economy"},
+      {"name": "Flat Design & Vector Graphics", "prompt": "flat design, vector graphics, modern web aesthetics, bold color blocks, minimal shadows, clean typography, digital interface design, scalable artwork, contemporary branding"},
+      {"name": "Abstract Geometric Composition", "prompt": "abstract geometric art, mathematical precision, color theory application, dynamic composition, modern art movement, non-representational design, artistic experimentation"},
+      {"name": "Monochrome Illustration", "prompt": "monochrome illustration, single color palette, high contrast design, graphic simplicity, modern aesthetic, minimalist approach, sophisticated color restriction"},
+      {"name": "Collage & Mixed Media", "prompt": "collage art, mixed media composition, layered textures, paper cut-outs, artistic assemblage, creative juxtaposition, experimental techniques, contemporary art practice"},
+      {"name": "Bauhaus Design Style", "prompt": "Bauhaus design, functional aesthetics, geometric forms, primary colors, modernist principles, industrial design, architectural influence, German design school"},
+      {"name": "Swiss Design (International Style)", "prompt": "Swiss design, international typographic style, grid-based layout, clean sans-serif typography, objective photography, minimal decoration, functional communication"},
+      {"name": "Scandinavian Minimalism", "prompt": "Scandinavian design, Nordic minimalism, natural materials, muted color palette, functional beauty, hygge lifestyle, sustainable design, clean living aesthetics"}
+    ]
+  },
+  {
+    "category": "AI-Enhanced & Surreal Styles",
+    "styles": [
+      {"name": "AI-Generated Surrealism (Dreamlike)", "prompt": "AI-generated surrealism, dreamlike imagery, impossible architectures, floating objects, morphing landscapes, subconscious visualization, algorithmic creativity, digital hallucinations, neural network art"},
+      {"name": "AI Glitch & Datamoshing Art", "prompt": "AI glitch art, datamoshing effects, digital corruption, pixel sorting algorithms, color channel manipulation, computational errors, experimental digital art, technological aesthetics"},
+      {"name": "Neural Style Transfer (Painterly Effects)", "prompt": "neural style transfer, AI painting simulation, algorithmic brushstrokes, artistic style fusion, machine learning art, computational creativity, digital art generation"},
+      {"name": "Deep Dream / Psychedelic Dreamscape", "prompt": "deep dream art, psychedelic patterns, fractal imagery, neural network hallucinations, trippy visuals, pattern recognition gone wild, AI-induced visions, computational psychedelia"},
+      {"name": "Generative Abstracts", "prompt": "generative abstract art, algorithmic creation, procedural generation, mathematical beauty, computer-generated patterns, digital organic forms, emergent complexity"},
+      {"name": "Diffusion Model Art", "prompt": "diffusion model art, AI image synthesis, text-to-image generation, machine learning creativity, prompt-based art, artificial intelligence aesthetics, computational artistry"},
+      {"name": "GAN-Generated Portraits", "prompt": "GAN portraits, generative adversarial networks, AI-created faces, synthetic humans, machine learning portraiture, artificial identity, computational photography"}
+    ]
+  },
+  {
+    "category": "3D & Game Art Styles",
+    "styles": [
+      {"name": "Cel-Shading (Cartoonish 3D)", "prompt": "cel-shaded 3D, toon shader, cartoon 3D rendering, anime-style lighting, stylized 3D graphics, non-photorealistic rendering, animated film quality, colorful 3D art"},
+      {"name": "Photorealistic 3D Rendering (16K HDR)", "prompt": "photorealistic 3D, 16K resolution, HDR rendering, ray tracing, physically based rendering, ultra-high detail, perfect reflections, studio lighting, architectural visualization quality"},
+      {"name": "Pixel Art (8-bit, 16-bit Classic)", "prompt": "pixel art, 8-bit graphics, retro gaming aesthetic, limited color palette, pixel-perfect precision, nostalgic video game style, sprite animation, digital craftsmanship"},
+      {"name": "Isometric Art & Environments", "prompt": "isometric art, 3D projection, game environment design, architectural illustration, technical drawing style, detailed miniature worlds, strategic game aesthetics"},
+      {"name": "Low Poly Game Art", "prompt": "low poly 3D, stylized game art, minimal polygons, flat shaded surfaces, indie game aesthetic, geometric simplification, performance-optimized graphics"},
+      {"name": "Virtual Reality Environment Art", "prompt": "VR environment art, 360-degree immersion, interactive 3D spaces, virtual world design, immersive experience, spatial design, VR-optimized graphics"},
+      {"name": "Voxel Art (Minecraft Style)", "prompt": "voxel art, block-based 3D, Minecraft-inspired, cubic pixel art, procedural generation, sandbox game aesthetics, constructible worlds"},
+      {"name": "AAA Game Art Quality", "prompt": "AAA game art, high-budget production, cinematic quality, detailed textures, advanced lighting, next-gen graphics, console game quality, professional development"},
+      {"name": "Mobile Game Art Style", "prompt": "mobile game art, casual gaming graphics, bright colorful design, simplified UI elements, touch-friendly interface, broad audience appeal, optimized performance"}
+    ]
+  },
+  {
+    "category": "Cultural & Ethnic Art Styles",
+    "styles": [
+      {"name": "Afro-futurism (Sci-fi & Tradition Fusion)", "prompt": "Afrofuturism art, African cultural fusion, futuristic technology, traditional patterns, sci-fi aesthetics, cultural identity, diaspora themes, speculative fiction, vibrant colors, ancestral wisdom"},
+      {"name": "Indigenous & Tribal Art Styles", "prompt": "indigenous art, tribal patterns, traditional symbolism, ancestral knowledge, natural pigments, cultural storytelling, sacred geometry, shamanic themes, earth connection"},
+      {"name": "Middle Eastern & Islamic Patterns", "prompt": "Islamic art patterns, geometric tessellations, arabesque designs, calligraphy integration, mosque architecture, mathematical precision, spiritual symbolism, cultural heritage"},
+      {"name": "Tribal Tattoo & Body Art", "prompt": "tribal tattoo design, traditional body art, cultural significance, bold black ink, geometric patterns, ancestral symbols, spiritual protection, ritualistic meaning, cultural identity"},
+      {"name": "Native American & Aboriginal Art", "prompt": "Native American art, Aboriginal dreamtime, traditional storytelling, animal spirit guides, earth tone colors, natural materials, sacred symbols, ancestral wisdom, spiritual connection, nature harmony"},
+      {"name": "South Asian Miniature Painting", "prompt": "South Asian miniature, Mughal painting style, intricate detail work, gold leaf accents, vibrant jewel tones, courtly scenes, religious narratives, Persian influence, fine brushwork, manuscript illumination"},
+      {"name": "Chinese Brush Painting", "prompt": "Chinese brush painting, traditional ink work, bamboo and chrysanthemum, mountain landscapes, calligraphy integration, Taoist philosophy, minimalist expression, flowing brushstrokes, rice paper texture"},
+      {"name": "African Textile Patterns", "prompt": "African textile art, kente cloth patterns, batik techniques, tribal motifs, ceremonial designs, geometric abstractions, cultural storytelling, vibrant earth tones, traditional weaving"},
+      {"name": "Polynesian & Pacific Island Art", "prompt": "Polynesian art, tiki culture, ocean themes, wave patterns, tribal masks, volcanic landscapes, island paradise, traditional navigation, cultural ceremonies, natural elements"},
+      {"name": "Celtic & Nordic Art", "prompt": "Celtic art, Nordic mythology, interlaced patterns, runic symbols, mythological creatures, medieval manuscripts, illuminated letters, Viking culture, ancient traditions, mystical themes"}
+    ]
+  },
+  {
+    "category": "Architectural & Environmental Styles",
+    "styles": [
+      {"name": "Architectural Visualization", "prompt": "architectural visualization, photorealistic rendering, building design, interior spaces, exterior facades, lighting design, material textures, professional presentation, client-ready imagery"},
+      {"name": "Urban Cityscape Art", "prompt": "urban cityscape, metropolitan skyline, street level view, architectural diversity, city life energy, traffic dynamics, neon signage, modern infrastructure, urban planning"},
+      {"name": "Industrial & Mechanical Art", "prompt": "industrial art, mechanical design, factory environments, steampunk machinery, clockwork mechanisms, metal textures, rust and patina, mechanical precision, industrial revolution"},
+      {"name": "Nature & Botanical Illustration", "prompt": "botanical illustration, scientific accuracy, detailed plant anatomy, nature documentation, field guide quality, natural history, educational illustration, botanical garden, flora studies"},
+      {"name": "Underwater & Marine Art", "prompt": "underwater scene, marine life, coral reef ecosystems, ocean depths, aquatic creatures, submarine environments, water effects, marine biology, ocean conservation"},
+      {"name": "Space & Cosmic Art", "prompt": "space art, cosmic landscapes, alien worlds, nebula formations, space exploration, futuristic spacecraft, planetary surfaces, astronomical accuracy, science fiction"},
+      {"name": "Post-Apocalyptic Environments", "prompt": "post-apocalyptic landscape, dystopian future, abandoned cities, overgrown ruins, survival themes, desolate atmosphere, environmental destruction, hope amid despair"},
+      {"name": "Tropical Paradise Scenes", "prompt": "tropical paradise, beach landscapes, palm trees, crystal clear water, exotic wildlife, vacation destinations, natural beauty, relaxation themes, island life"}
+    ]
+  },
+  {
+    "category": "Horror & Dark Art Styles",
+    "styles": [
+      {"name": "Horror & Gothic Illustration", "prompt": "horror art, gothic atmosphere, supernatural terror, haunted imagery, psychological horror, dark shadows, eerie lighting, macabre beauty, spine-chilling scenes, occult symbolism"},
+      {"name": "Lovecraftian Cosmic Horror", "prompt": "Lovecraftian horror, cosmic dread, eldritch abominations, tentacled monsters, ancient evil, psychological terror, otherworldly dimensions, sanity-breaking visions, cosmic insignificance"},
+      {"name": "Zombie & Undead Art", "prompt": "zombie art, undead creatures, post-apocalyptic survival, horror movie aesthetic, decay and rot, survival horror, graphic violence, monster design, fear and terror"},
+      {"name": "Vampire & Gothic Romance", "prompt": "vampire art, gothic romance, Victorian darkness, supernatural seduction, blood and fangs, nocturnal creatures, gothic architecture, romantic horror, eternal damnation"},
+      {"name": "Dark Surrealism", "prompt": "dark surrealism, nightmarish imagery, psychological horror, twisted reality, disturbing concepts, subconscious fears, abstract terror, mind-bending visuals, uncomfortable truths"},
+      {"name": "Death Metal Album Art", "prompt": "death metal artwork, extreme metal aesthetics, skull imagery, violence themes, dark symbolism, aggressive typography, underground music, rebellious spirit, shocking visuals"}
+    ]
+  },
+  {
+    "category": "Fashion & Beauty Styles",
+    "styles": [
+      {"name": "High Fashion Photography", "prompt": "high fashion photography, runway model, designer clothing, professional makeup, dramatic poses, fashion magazine quality, luxury brands, editorial styling, glamorous lighting"},
+      {"name": "Beauty & Cosmetics Art", "prompt": "beauty photography, cosmetics advertising, perfect skin, glamorous makeup, luxury beauty products, professional retouching, commercial appeal, aspirational imagery"},
+      {"name": "Street Fashion & Style", "prompt": "street fashion, urban style, casual wear, authentic personal style, cultural fashion, youth culture, contemporary trends, accessible fashion, everyday elegance"},
+      {"name": "Vintage Fashion Illustration", "prompt": "vintage fashion illustration, historical clothing, period costumes, fashion history, elegant sketches, couture design, fashion archives, timeless style, haute couture"},
+      {"name": "Avant-Garde Fashion Art", "prompt": "avant-garde fashion, experimental design, unconventional materials, artistic expression, runway innovation, conceptual clothing, fashion as art, boundary-pushing creativity"}
+    ]
+  },
+  {
+    "category": "Sports & Action Styles",
+    "styles": [
+      {"name": "Sports Action Photography", "prompt": "sports photography, action shots, athletic performance, dynamic movement, competitive spirit, stadium atmosphere, professional sports, peak action moments, athletic excellence"},
+      {"name": "Extreme Sports Art", "prompt": "extreme sports, adrenaline rush, dangerous stunts, outdoor adventure, risk-taking, mountain climbing, skateboarding, surfing, adventure lifestyle, thrill-seeking"},
+      {"name": "Olympic & Competition Art", "prompt": "Olympic sports, international competition, athletic achievement, medal ceremonies, national pride, world-class performance, sporting excellence, unity through sport"},
+      {"name": "Motor Racing & Automotive", "prompt": "motor racing, automotive art, speed and power, racing cars, motorsport excitement, mechanical precision, automotive design, racing culture, high-performance vehicles"}
+    ]
+  },
+  {
+    "category": "Food & Culinary Art Styles",
+    "styles": [
+      {"name": "Food Photography (Professional)", "prompt": "food photography, culinary art, professional food styling, restaurant quality, appetizing presentation, gourmet cuisine, commercial food imagery, cookbook photography"},
+      {"name": "Food Illustration & Art", "prompt": "food illustration, culinary artwork, recipe visualization, cooking instruction, food culture, artistic interpretation, menu design, gastronomic creativity"},
+      {"name": "Restaurant & Kitchen Art", "prompt": "restaurant atmosphere, kitchen scenes, chef culture, culinary profession, food service industry, cooking process, professional kitchens, hospitality industry"},
+      {"name": "Vintage Food Advertising", "prompt": "vintage food advertising, retro product promotion, nostalgic food brands, mid-century marketing, classic packaging design, Americana food culture, advertising history"}
+    ]
+  },
+  {
+    "category": "Abstract & Experimental Styles",
+    "styles": [
+      {"name": "Abstract Expressionism", "prompt": "abstract expressionism, emotional expression, non-representational art, gestural brushwork, color field painting, artistic freedom, spontaneous creativity, modern art movement"},
+      {"name": "Cubism & Geometric Abstraction", "prompt": "cubism, geometric abstraction, multiple perspectives, fragmented reality, analytical approach, Pablo Picasso influence, modern art revolution, intellectual art"},
+      {"name": "Surrealism & Dream Art", "prompt": "surrealism, dream imagery, subconscious mind, impossible scenarios, Salvador Dalí influence, psychological exploration, artistic rebellion, unconscious creativity"},
+      {"name": "Pop Art & Commercial Aesthetics", "prompt": "pop art, commercial aesthetics, consumer culture, mass media influence, Andy Warhol style, bright colors, popular culture, artistic commentary"},
+      {"name": "Psychedelic & Trippy Art", "prompt": "psychedelic art, trippy visuals, kaleidoscope patterns, consciousness expansion, 1960s counterculture, mind-altering imagery, spiritual exploration, hallucinogenic inspiration"},
+      {"name": "Optical Illusions & Op Art", "prompt": "optical illusions, op art, visual perception, geometric patterns, eye-tricking effects, mathematical precision, visual psychology, perceptual art"},
+      {"name": "Dadaism & Anti-Art", "prompt": "dadaism, anti-art movement, artistic rebellion, nonsensical imagery, social criticism, avant-garde experimentation, conceptual art, cultural disruption"}
+    ]
+  },
+  {
+    "category": "Scientific & Educational Styles",
+    "styles": [
+      {"name": "Scientific & Medical Illustration", "prompt": "scientific illustration, medical accuracy, educational diagrams, anatomical precision, technical drawing, research visualization, academic publication, scientific communication"},
+      {"name": "Technical Drawing & Blueprints", "prompt": "technical drawing, engineering blueprints, precise measurements, mechanical drafting, architectural plans, industrial design, technical specifications, professional documentation"},
+      {"name": "Infographic & Data Visualization", "prompt": "infographic design, data visualization, statistical representation, information design, educational graphics, clear communication, professional presentation, analytical insights"},
+      {"name": "Educational Textbook Art", "prompt": "educational illustration, textbook graphics, learning materials, academic publishing, student-friendly design, instructional imagery, knowledge transfer, pedagogical tools"},
+      {"name": "Museum & Exhibition Design", "prompt": "museum display, exhibition design, cultural education, interpretive graphics, visitor engagement, historical presentation, cultural preservation, public education"}
+    ]
+  },
+  {
+    "category": "Miscellaneous & Special Styles",
+    "styles": [
+      {"name": "Claymation & Stop-Motion Style", "prompt": "claymation, stop-motion animation, tactile textures, handcrafted characters, physical animation, playful creativity, miniature sets, artisanal quality, whimsical charm"},
+      {"name": "Painted Pokemon (Fan Art & Stylized)", "prompt": "Pokemon fan art, stylized creatures, artistic reinterpretation, fantasy reimagining, creative character design, vibrant colors, dynamic poses, imaginative backgrounds, fan community art"},
+      {"name": "2D Pokemon Style (Anime & Cartoony)", "prompt": "Pokemon official style, anime aesthetic, colorful creatures, playful design, family-friendly appeal, Japanese animation, character merchandising, nostalgic charm, adventure themes"},
+      {"name": "Street Art & Graffiti", "prompt": "street art, graffiti culture, urban expression, spray paint techniques, public art, rebellious creativity, city walls, artistic vandalism, underground culture"},
+      {"name": "Steampunk Illustration", "prompt": "steampunk art, Victorian sci-fi, brass machinery, clockwork devices, retro-futuristic technology, industrial aesthetics, alternative history, mechanical innovation"},
+      {"name": "Tattoo Flash Art", "prompt": "tattoo flash, traditional tattoo designs, sailor jerry style, classic motifs, bold outlines, limited color palette, tattoo parlor art, rockabilly culture"},
+      {"name": "Concert Poster Art", "prompt": "concert poster, music promotion, band artwork, event advertising, rock poster art, psychedelic typography, music culture, artistic promotion"},
+      {"name": "Zine & DIY Art", "prompt": "zine artwork, DIY aesthetics, punk culture, independent publishing, handmade graphics, underground art, alternative media, grassroots creativity"},
+      {"name": "Meme & Internet Art", "prompt": "meme art, internet culture, viral imagery, digital humor, social media art, contemporary communication, online community, digital folklore"},
+      {"name": "Emoji & Icon Design", "prompt": "emoji design, icon graphics, digital communication, symbol design, user interface elements, modern pictographs, universal symbols, digital expression"},
+      {"name": "Packaging & Product Design", "prompt": "packaging design, product graphics, commercial branding, shelf appeal, consumer marketing, retail presentation, brand identity, purchase decision influence"},
+      {"name": "Wedding & Event Photography", "prompt": "wedding photography, event documentation, celebration moments, professional portraiture, romantic imagery, family gatherings, special occasions, memory preservation"},
+      {"name": "Real Estate Photography", "prompt": "real estate photography, property marketing, architectural photography, interior staging, commercial real estate, property showcase, professional presentation, sales support"},
+      {"name": "Stock Photography Style", "prompt": "stock photography, commercial imagery, business themes, lifestyle concepts, professional quality, broad appeal, licensing ready, marketing applications"}
+    ]
+  }
+]
