@@ -29,7 +29,7 @@ MODELS = {
     'dreamshaper': 'DreamShaper (dreamy, semi-anime artistic style, painterly effects)',
     'openjourney': 'OpenJourney (Midjourney-inspired open-source art, cinematic quality)',
     'epi-noir': 'Epi-noir (noir anime and manga style, dramatic shadows, high contrast)',
-    'romantic-anime-v1': 'Romantic Anime V1 (soft lighting, delicate features, emotional expressions)',
+    # 'romantic-anime-v1': 'Romantic Anime V1 (soft lighting, delicate features, emotional expressions)',
 
     # 🧙‍♂️ Fantasy / Niche / Dark Styles
     'fantasy-art-v1': 'Fantasy Art V1 (high-detail fantasy scenes, epic scale, magical lighting)',
@@ -39,8 +39,8 @@ MODELS = {
     'kontext': 'Kontext (semantic generation, theme-aware compositions, narrative focus)',
 
     # 💘 Romance & Soft Styles
-    'love-diffusion': 'Love Diffusion (romantic atmosphere, emotional expressions, soft focus)',
-    'romantic-realistic-v1': 'Romantic Realistic V1 (cinematic lighting, intimate moments, film grain)',
+    # 'love-diffusion': 'Love Diffusion (romantic atmosphere, emotional expressions, soft focus)',
+    # 'romantic-realistic-v1': 'Romantic Realistic V1 (cinematic lighting, intimate moments, film grain)',
 
     # 🧳 Vintage / Retro / 3D & Stylized
     'vintage-style': 'Vintage Style (authentic retro aesthetic, film grain, analog imperfections)',
