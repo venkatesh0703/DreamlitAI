@@ -1,0 +1,282 @@
+[
+    {
+        "category": "🏆 Top Photorealistic",
+        "styles": [
+            {
+                "name": "Hyperrealistic",
+                "prompt": "hyperrealistic, photorealistic, ultra detailed, 8K resolution, sharp focus, intricate details",
+                "color": "from-blue-500 to-indigo-600",
+                "image": "/static/style_images/hyperrealistic.jpg"
+            },
+            {
+                "name": "Cinematic",
+                "prompt": "cinematic, movie still, dramatic lighting, film grain, widescreen aspect ratio, cinematic composition",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/cinematic.jpg"
+            },
+            {
+                "name": "Studio Photography",
+                "prompt": "studio photography, professional lighting, sharp focus, bokeh, perfect composition, professional photo",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/studio_photography.jpg"
+            },
+            {
+                "name": "HDR Photography",
+                "prompt": "HDR, high dynamic range, vibrant colors, rich contrast, ultra detailed, professional photography",
+                "color": "from-orange-500 to-red-600",
+                "image": "/static/style_images/hdr_photography.jpg"
+            },
+            {
+                "name": "Macro Photography",
+                "prompt": "macro photography, extreme close-up, detailed textures, shallow depth of field, professional lighting",
+                "color": "from-green-500 to-teal-600",
+                "image": "/static/style_images/macro_photography.jpg"
+            }
+        ]
+    },
+    {
+        "category": "🎨 Anime & Artistic",
+        "styles": [
+            {
+                "name": "Anime Style",
+                "prompt": "anime style, vibrant colors, expressive characters, detailed background, crisp line art, Japanese animation",
+                "color": "from-pink-500 to-red-600",
+                "image": "/static/style_images/anime_style.jpg"
+            },
+            {
+                "name": "Ghibli Inspired",
+                "prompt": "studio ghibli style, whimsical, magical, soft colors, hand-drawn aesthetic, Miyazaki inspiration",
+                "color": "from-green-400 to-blue-500",
+                "image": "/static/style_images/ghibli_inspired.jpg"
+            },
+            {
+                "name": "Cyberpunk Anime",
+                "prompt": "cyberpunk anime, neon lights, futuristic city, rain effects, dystopian future, Blade Runner inspired",
+                "color": "from-purple-600 to-blue-700",
+                "image": "/static/style_images/cyberpunk_anime.jpg"
+            },
+            {
+                "name": "Vintage Anime",
+                "prompt": "vintage anime, 90s style, cel shading, retro colors, classic Japanese animation, nostalgic",
+                "color": "from-amber-500 to-orange-600",
+                "image": "/static/style_images/vintage_anime.jpg"
+            },
+            {
+                "name": "Anime Portrait",
+                "prompt": "anime portrait, expressive eyes, detailed face, soft lighting, character design, emotional",
+                "color": "from-pink-400 to-rose-500",
+                "image": "/static/style_images/anime_portrait.jpg"
+            }
+        ]
+    },
+    {
+        "category": "🧙 Fantasy & Dark",
+        "styles": [
+            {
+                "name": "Dark Fantasy",
+                "prompt": "dark fantasy, gothic, mysterious, dramatic lighting, eerie atmosphere, haunting beauty",
+                "color": "from-gray-700 to-purple-900",
+                "image": "/static/style_images/dark_fantasy.jpg"
+            },
+            {
+                "name": "Epic Fantasy",
+                "prompt": "epic fantasy, grand scale, magical, detailed environment, majestic, lord of the rings style",
+                "color": "from-yellow-600 to-red-700",
+                "image": "/static/style_images/epic_fantasy.jpg"
+            },
+            {
+                "name": "Mythological",
+                "prompt": "mythological, ancient gods, temple ruins, divine lighting, classical antiquity, historical",
+                "color": "from-amber-500 to-orange-600",
+                "image": "/static/style_images/mythological.jpg"
+            },
+            {
+                "name": "Dark Gothic",
+                "prompt": "dark gothic, Victorian era, horror elements, dramatic shadows, macabre, Tim Burton style",
+                "color": "from-purple-800 to-gray-900",
+                "image": "/static/style_images/dark_gothic.jpg"
+            },
+            {
+                "name": "Fantasy Creature",
+                "prompt": "fantasy creature, mythical beast, dragon, unicorn, detailed scales, magical, epic",
+                "color": "from-red-600 to-purple-700",
+                "image": "/static/style_images/fantasy_creature.jpg"
+            }
+        ]
+    },
+    {
+        "category": "💘 Romance & Soft",
+        "styles": [
+            {
+                "name": "Romantic",
+                "prompt": "romantic, soft lighting, dreamy, emotional, intimate, loving, heartfelt connection",
+                "color": "from-pink-300 to-rose-400",
+                "image": "/static/style_images/romantic.jpg"
+            },
+            {
+                "name": "Soft Pastel",
+                "prompt": "soft pastel colors, gentle lighting, delicate, ethereal, dreamlike, soothing atmosphere",
+                "color": "from-blue-200 to-purple-200",
+                "image": "/static/style_images/soft_pastel.jpg"
+            },
+            {
+                "name": "Dreamy",
+                "prompt": "dreamy, surreal, soft focus, glowing, magical, otherworldly, imaginative",
+                "color": "from-indigo-200 to-purple-300",
+                "image": "/static/style_images/dreamy.jpg"
+            },
+            {
+                "name": "Ethereal",
+                "prompt": "ethereal, heavenly, divine light, angelic, soft glow, spiritual, transcendent",
+                "color": "from-cyan-300 to-blue-400",
+                "image": "/static/style_images/ethereal.jpg"
+            },
+            {
+                "name": "Soft Portrait",
+                "prompt": "soft portrait, gentle lighting, smooth skin, delicate features, emotional expression, intimate",
+                "color": "from-pink-200 to-rose-300",
+                "image": "/static/style_images/soft_portrait.jpg"
+            }
+        ]
+    },
+    {
+        "category": "🧳 Vintage & Retro",
+        "styles": [
+            {
+                "name": "Vintage Photo",
+                "prompt": "vintage photograph, film grain, faded colors, 35mm, nostalgic, retro, timeless",
+                "color": "from-amber-600 to-yellow-700",
+                "image": "/static/style_images/vintage_photo.jpg"
+            },
+            {
+                "name": "Retro Futurism",
+                "prompt": "retro futurism, 80s style, synthwave, vibrant neon, cyberpunk aesthetics, nostalgic future",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/retro_futurism.jpg"
+            },
+            {
+                "name": "Steampunk",
+                "prompt": "steampunk, brass gears, mechanical, Victorian era, clockwork, industrial revolution inspired",
+                "color": "from-yellow-600 to-brown-700",
+                "image": "/static/style_images/steampunk.jpg"
+            },
+            {
+                "name": "Vintage Poster",
+                "prompt": "vintage poster, retro design, bold typography, limited color palette, nostalgic advertising",
+                "color": "from-red-500 to-orange-600",
+                "image": "/static/style_images/vintage_poster.jpg"
+            },
+            {
+                "name": "Film Noir",
+                "prompt": "film noir, black and white, high contrast, dramatic shadows, detective story, mysterious",
+                "color": "from-gray-600 to-gray-800",
+                "image": "/static/style_images/film_noir.jpg"
+            }
+        ]
+    },
+    {
+        "category": "⚡ Performance Optimized",
+        "styles": [
+            {
+                "name": "Fast Render",
+                "prompt": "optimized for fast rendering, balanced detail, efficient composition, quick generation",
+                "color": "from-green-500 to-teal-600",
+                "image": "/static/style_images/fast_render.jpg"
+            },
+            {
+                "name": "High Quality",
+                "prompt": "high quality, detailed, sharp focus, enhanced, premium rendering, excellent composition",
+                "color": "from-blue-500 to-indigo-600",
+                "image": "/static/style_images/high_quality.jpg"
+            },
+            {
+                "name": "HDR Enhanced",
+                "prompt": "HDR, high dynamic range, vibrant colors, rich contrast, detailed shadows and highlights",
+                "color": "from-orange-500 to-red-600",
+                "image": "/static/style_images/hdr_enhanced.jpg"
+            },
+            {
+                "name": "Balanced",
+                "prompt": "balanced composition, good details, efficient rendering, optimal quality/speed ratio",
+                "color": "from-green-400 to-blue-500",
+                "image": "/static/style_images/balanced.jpg"
+            },
+            {
+                "name": "Optimized Portrait",
+                "prompt": "optimized portrait, efficient rendering, good facial details, balanced lighting, fast generation",
+                "color": "from-pink-400 to-purple-500",
+                "image": "/static/style_images/optimized_portrait.jpg"
+            }
+        ]
+    },
+    {
+        "category": "🛠️ Utility & Editing",
+        "styles": [
+            {
+                "name": "Inpainting Ready",
+                "prompt": "clean composition, easy to edit, clear elements, simple background, editing friendly",
+                "color": "from-gray-400 to-blue-500",
+                "image": "/static/style_images/inpainting_ready.jpg"
+            },
+            {
+                "name": "Variation Friendly",
+                "prompt": "consistent style, clear elements, good for variations, stable composition, predictable results",
+                "color": "from-teal-400 to-green-500",
+                "image": "/static/style_images/variation_friendly.jpg"
+            },
+            {
+                "name": "Upscale Ready",
+                "prompt": "high detail, clean lines, good for upscaling, sharp elements, resolution friendly",
+                "color": "from-purple-400 to-pink-500",
+                "image": "/static/style_images/upscale_ready.jpg"
+            },
+            {
+                "name": "Transparent Background",
+                "prompt": "clear subject, isolated elements, transparent background friendly, easy extraction",
+                "color": "from-blue-300 to-cyan-400",
+                "image": "/static/style_images/transparent_background.jpg"
+            },
+            {
+                "name": "Editing Template",
+                "prompt": "neutral composition, editable elements, flexible design, template friendly, customizable",
+                "color": "from-gray-300 to-blue-400",
+                "image": "/static/style_images/editing_template.jpg"
+            }
+        ]
+    },
+    {
+        "category": "🧪 Experimental",
+        "styles": [
+            {
+                "name": "Abstract Art",
+                "prompt": "abstract art, geometric shapes, colorful, experimental, non-representational, creative",
+                "color": "from-red-500 to-orange-600",
+                "image": "/static/style_images/abstract_art.jpg"
+            },
+            {
+                "name": "Surrealism",
+                "prompt": "surrealism, dreamlike, bizarre, imaginative, unexpected combinations, Dali inspired",
+                "color": "from-indigo-500 to-purple-600",
+                "image": "/static/style_images/surrealism.jpg"
+            },
+            {
+                "name": "Concept Art",
+                "prompt": "concept art, design, creative, innovative, visionary, pre-production, development art",
+                "color": "from-blue-400 to-cyan-500",
+                "image": "/static/style_images/concept_art.jpg"
+            },
+            {
+                "name": "Psychedelic",
+                "prompt": "psychedelic, vibrant colors, swirling patterns, mind-bending, trippy, 60s inspired",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/psychedelic.jpg"
+            },
+            {
+                "name": "Glitch Art",
+                "prompt": "glitch art, digital corruption, data moshing, error aesthetics, digital distortion, cyberpunk",
+                "color": "from-blue-600 to-purple-700",
+                "image": "/static/style_images/glitch_art.jpg"
+            }
+        ]
+    }
+]

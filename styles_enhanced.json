@@ -1,0 +1,367 @@
+[
+    {
+        "category": "Core Styles",
+        "description": "Essential foundational styles for all types of image generation",
+        "styles": [
+            {
+                "name": "Photorealistic",
+                "prompt": "photorealistic, ultra detailed, 8K resolution, sharp focus, intricate details, realistic textures, accurate proportions, natural lighting, professional photography",
+                "color": "from-blue-500 to-indigo-600",
+                "image": "/static/style_images/photorealistic.jfif",
+                "complexity": {
+                    "level": "Medium",
+                    "score": 7,
+                    "description": "Requires good prompt structure and model compatibility"
+                },
+                "technical_details": {
+                    "rendering_time": "Medium (15-30s)",
+                    "memory_usage": "High",
+                    "recommended_resolution": "1024x1024+",
+                    "optimal_steps": "30-50"
+                },
+                "compatibility": {
+                    "best_models": ["dalle3", "imagen", "stable-diffusion-xl", "realistic-vision-v3"],
+                    "avoid_models": ["anime-art", "anything-v5"],
+                    "works_with_subjects": ["People", "Products", "Architecture", "Nature", "Vehicles"]
+                },
+                "use_cases": ["Product photography", "Portrait photography", "Stock images", "Marketing materials"],
+                "example_prompts": [
+                    "A professional headshot of a businesswoman in a modern office",
+                    "Product shot of a luxury watch on marble surface",
+                    "Architectural photography of a modern glass building"
+                ],
+                "tags": ["realistic", "photography", "professional", "detailed"],
+                "difficulty": "Beginner",
+                "popularity": 9.2
+            },
+            {
+                "name": "Artistic Illustration",
+                "prompt": "artistic illustration, creative interpretation, stylized elements, expressive brushwork, imaginative composition, unique perspective, hand-drawn quality",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/artistic_illustration.jfif",
+                "complexity": {
+                    "level": "Medium-High",
+                    "score": 8,
+                    "description": "Requires artistic vision and style understanding"
+                },
+                "technical_details": {
+                    "rendering_time": "Medium (10-25s)",
+                    "memory_usage": "Medium",
+                    "recommended_resolution": "1024x1024",
+                    "optimal_steps": "25-40"
+                },
+                "compatibility": {
+                    "best_models": ["midjourney-v5", "dreamshaper", "openjourney", "anything-v5"],
+                    "avoid_models": ["realistic-vision-v3"],
+                    "works_with_subjects": ["Characters", "Concepts", "Fantasy", "Abstract ideas"]
+                },
+                "use_cases": ["Book illustrations", "Concept art", "Creative projects", "Artistic expression"],
+                "example_prompts": [
+                    "Whimsical illustration of a fairy tale forest with magical creatures",
+                    "Stylized portrait of a musician with flowing hair and musical notes",
+                    "Creative interpretation of a cityscape with artistic flair"
+                ],
+                "tags": ["artistic", "creative", "stylized", "expressive"],
+                "difficulty": "Intermediate",
+                "popularity": 8.5
+            },
+            {
+                "name": "Digital Art",
+                "prompt": "digital art, crisp lines, vibrant colors, smooth shading, digital painting techniques, contemporary style, modern aesthetic, clean composition",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/digital_art.jfif",
+                "complexity": {
+                    "level": "Medium",
+                    "score": 6,
+                    "description": "Versatile style suitable for most subjects"
+                },
+                "technical_details": {
+                    "rendering_time": "Fast (8-20s)",
+                    "memory_usage": "Medium",
+                    "recommended_resolution": "1024x1024",
+                    "optimal_steps": "20-35"
+                },
+                "compatibility": {
+                    "best_models": ["stable-diffusion-xl", "flux", "dreamshaper", "anything-v5"],
+                    "avoid_models": [],
+                    "works_with_subjects": ["Universal - works with all subjects"]
+                },
+                "use_cases": ["Digital artwork", "Game assets", "UI design", "Modern illustrations"],
+                "example_prompts": [
+                    "Digital art of a cyberpunk character with neon lighting",
+                    "Clean digital illustration of a modern smartphone interface",
+                    "Contemporary digital painting of an urban landscape"
+                ],
+                "tags": ["digital", "modern", "clean", "versatile"],
+                "difficulty": "Beginner",
+                "popularity": 9.0
+            },
+            {
+                "name": "3D Rendering",
+                "prompt": "3D rendering, computer generated, polygonal modeling, realistic materials, proper lighting, shadow accuracy, three-dimensional depth, CGI quality",
+                "color": "from-orange-500 to-red-600",
+                "image": "/static/style_images/3d_rendering.jfif",
+                "complexity": {
+                    "level": "High",
+                    "score": 9,
+                    "description": "Requires understanding of 3D principles and lighting"
+                },
+                "technical_details": {
+                    "rendering_time": "Slow (20-45s)",
+                    "memory_usage": "High",
+                    "recommended_resolution": "1536x1536+",
+                    "optimal_steps": "40-60"
+                },
+                "compatibility": {
+                    "best_models": ["stable-diffusion-xl", "depth2img", "meinamix", "revAnimated"],
+                    "avoid_models": ["sketched", "line-art"],
+                    "works_with_subjects": ["Objects", "Architecture", "Vehicles", "Characters"]
+                },
+                "use_cases": ["Product visualization", "Architectural renders", "Game assets", "Technical illustrations"],
+                "example_prompts": [
+                    "3D rendered luxury car in a studio environment with perfect lighting",
+                    "Photorealistic 3D render of a modern kitchen interior",
+                    "CGI quality render of a futuristic robot character"
+                ],
+                "tags": ["3d", "cgi", "technical", "realistic"],
+                "difficulty": "Advanced",
+                "popularity": 7.8
+            },
+            {
+                "name": "Hyperrealism",
+                "prompt": "hyperrealism, beyond reality, extremely detailed, texture emphasis, high resolution, almost photographic but enhanced",
+                "color": "from-blue-600 to-purple-700",
+                "image": "/static/style_images/hyperrealism.jfif",
+                "complexity": {
+                    "level": "Very High",
+                    "score": 10,
+                    "description": "Demands exceptional detail and technical precision"
+                },
+                "technical_details": {
+                    "rendering_time": "Very Slow (30-60s)",
+                    "memory_usage": "Very High",
+                    "recommended_resolution": "2048x2048+",
+                    "optimal_steps": "50-80"
+                },
+                "compatibility": {
+                    "best_models": ["cd-pt", "imagen", "dalle3", "realistic-vision-v3"],
+                    "avoid_models": ["anime-art", "toonyou", "pixart"],
+                    "works_with_subjects": ["Portraits", "Still life", "Detailed objects", "Textures"]
+                },
+                "use_cases": ["Fine art", "Museum quality prints", "High-end photography", "Detailed studies"],
+                "example_prompts": [
+                    "Hyperrealistic portrait showing every skin pore and hair strand",
+                    "Ultra-detailed close-up of water droplets on a leaf surface",
+                    "Hyperrealistic still life of vintage objects with perfect lighting"
+                ],
+                "tags": ["hyperrealistic", "detailed", "premium", "artistic"],
+                "difficulty": "Expert",
+                "popularity": 6.5
+            }
+        ]
+    },
+    {
+        "category": "Cinematic & Atmosphere",
+        "description": "Styles focused on creating dramatic, movie-like visuals with strong atmospheric elements",
+        "styles": [
+            {
+                "name": "Epic Cinematic",
+                "prompt": "epic cinematic, wide angle, dramatic lighting, vast scale, movie poster, concept art, grand atmosphere, professional color grading, lens flare",
+                "color": "from-purple-700 to-blue-800",
+                "image": "/static/style_images/epic_cinematic.jfif",
+                "complexity": {
+                    "level": "High",
+                    "score": 8,
+                    "description": "Requires understanding of cinematic composition and lighting"
+                },
+                "technical_details": {
+                    "rendering_time": "Medium-Slow (20-35s)",
+                    "memory_usage": "High",
+                    "recommended_resolution": "1536x1536+",
+                    "optimal_steps": "35-50"
+                },
+                "compatibility": {
+                    "best_models": ["midjourney-v5", "dalle3", "stable-diffusion-xl"],
+                    "avoid_models": ["sketched", "line-art", "pixel-art"],
+                    "works_with_subjects": ["Landscapes", "Action scenes", "Fantasy", "Sci-fi"]
+                },
+                "use_cases": ["Movie posters", "Game concept art", "Epic wallpapers", "Dramatic scenes"],
+                "example_prompts": [
+                    "Epic cinematic shot of a lone warrior on a mountain peak at sunset",
+                    "Dramatic wide-angle view of a futuristic city with lens flares",
+                    "Cinematic composition of a spaceship approaching an alien planet"
+                ],
+                "tags": ["cinematic", "epic", "dramatic", "wide-angle"],
+                "difficulty": "Advanced",
+                "popularity": 8.7
+            },
+            {
+                "name": "Noir",
+                "prompt": "film noir, black and white, high contrast, dramatic shadows, chiaroscuro lighting, smoky atmosphere, cynical mood, 1940s detective style",
+                "color": "from-gray-600 to-gray-800",
+                "image": "/static/style_images/noir.jfif",
+                "complexity": {
+                    "level": "Medium-High",
+                    "score": 7,
+                    "description": "Requires understanding of contrast and shadow work"
+                },
+                "technical_details": {
+                    "rendering_time": "Medium (15-25s)",
+                    "memory_usage": "Medium",
+                    "recommended_resolution": "1024x1024",
+                    "optimal_steps": "25-40"
+                },
+                "compatibility": {
+                    "best_models": ["stable-diffusion-xl", "dreamshaper", "realistic-vision-v3"],
+                    "avoid_models": ["anime-art", "toonyou"],
+                    "works_with_subjects": ["Portraits", "Urban scenes", "Detective themes", "Vintage subjects"]
+                },
+                "use_cases": ["Vintage photography", "Detective stories", "Artistic portraits", "Moody scenes"],
+                "example_prompts": [
+                    "Film noir portrait of a detective in a dimly lit office",
+                    "Black and white street scene with dramatic shadows and smoke",
+                    "Noir-style composition of a femme fatale in 1940s clothing"
+                ],
+                "tags": ["noir", "black-white", "dramatic", "vintage"],
+                "difficulty": "Intermediate",
+                "popularity": 7.1
+            }
+        ]
+    },
+    {
+        "category": "Fantasy & Sci-Fi Genres",
+        "description": "Specialized styles for creating fantastical and futuristic imagery",
+        "styles": [
+            {
+                "name": "Cyberpunk",
+                "prompt": "cyberpunk, high tech low life, neon-noir, futuristic city, rain-slicked streets, cybernetic enhancements, dystopian atmosphere, Blade Runner style",
+                "color": "from-blue-600 to-purple-700",
+                "image": "/static/style_images/cyberpunk.jfif",
+                "complexity": {
+                    "level": "High",
+                    "score": 8,
+                    "description": "Complex aesthetic requiring neon lighting and futuristic elements"
+                },
+                "technical_details": {
+                    "rendering_time": "Medium-Slow (20-35s)",
+                    "memory_usage": "High",
+                    "recommended_resolution": "1536x1536",
+                    "optimal_steps": "35-50"
+                },
+                "compatibility": {
+                    "best_models": ["midjourney-v5", "stable-diffusion-xl", "dreamshaper"],
+                    "avoid_models": ["realistic-vision-v3", "vintage-style"],
+                    "works_with_subjects": ["Futuristic cities", "Cybernetic characters", "Neon scenes", "Tech noir"]
+                },
+                "use_cases": ["Game concept art", "Sci-fi illustrations", "Futuristic designs", "Tech aesthetics"],
+                "example_prompts": [
+                    "Cyberpunk street scene with neon signs reflecting on wet pavement",
+                    "Futuristic hacker in a dark room illuminated by multiple screens",
+                    "Dystopian cityscape with flying cars and holographic advertisements"
+                ],
+                "tags": ["cyberpunk", "futuristic", "neon", "dystopian"],
+                "difficulty": "Advanced",
+                "popularity": 8.9
+            },
+            {
+                "name": "High Fantasy",
+                "prompt": "high fantasy, epic scale, mythical creatures, medieval-inspired setting, heroic themes, majestic landscapes, magical elements, Lord of the Rings style",
+                "color": "from-green-500 to-emerald-600",
+                "image": "/static/style_images/high_fantasy.jfif",
+                "complexity": {
+                    "level": "High",
+                    "score": 9,
+                    "description": "Requires knowledge of fantasy tropes and mythological elements"
+                },
+                "technical_details": {
+                    "rendering_time": "Slow (25-40s)",
+                    "memory_usage": "High",
+                    "recommended_resolution": "1536x1536+",
+                    "optimal_steps": "40-60"
+                },
+                "compatibility": {
+                    "best_models": ["midjourney-v5", "fantasy-art-v1", "stable-diffusion-xl"],
+                    "avoid_models": ["realistic-vision-v3", "turbo"],
+                    "works_with_subjects": ["Dragons", "Castles", "Warriors", "Magical landscapes"]
+                },
+                "use_cases": ["Book covers", "Game art", "Fantasy illustrations", "Epic scenes"],
+                "example_prompts": [
+                    "Majestic dragon soaring over a medieval castle at sunset",
+                    "Epic fantasy battle scene with knights and magical creatures",
+                    "Mystical forest with ancient trees and glowing magical elements"
+                ],
+                "tags": ["fantasy", "epic", "magical", "medieval"],
+                "difficulty": "Advanced",
+                "popularity": 8.3
+            }
+        ]
+    },
+    {
+        "category": "Digital & Graphic Styles",
+        "description": "Modern digital art styles for contemporary and technical applications",
+        "styles": [
+            {
+                "name": "Vector Illustration",
+                "prompt": "vector illustration, clean lines, flat colors, sharp edges, scalable graphics, digital precision, geometric shapes, modern graphic design",
+                "color": "from-green-400 to-blue-500",
+                "image": "/static/style_images/vector_illustration.jfif",
+                "complexity": {
+                    "level": "Medium",
+                    "score": 6,
+                    "description": "Clean, geometric style with precise execution"
+                },
+                "technical_details": {
+                    "rendering_time": "Fast (8-20s)",
+                    "memory_usage": "Low-Medium",
+                    "recommended_resolution": "1024x1024",
+                    "optimal_steps": "20-30"
+                },
+                "compatibility": {
+                    "best_models": ["stable-diffusion-xl", "flux", "dreamshaper"],
+                    "avoid_models": ["realistic-vision-v3", "cd-pt"],
+                    "works_with_subjects": ["Icons", "Logos", "Infographics", "Simple illustrations"]
+                },
+                "use_cases": ["Logo design", "Web graphics", "App icons", "Infographics"],
+                "example_prompts": [
+                    "Vector illustration of a mountain landscape with geometric shapes",
+                    "Clean vector design of a smartphone with flat colors",
+                    "Modern vector illustration of a business team in meeting"
+                ],
+                "tags": ["vector", "clean", "geometric", "modern"],
+                "difficulty": "Beginner",
+                "popularity": 7.6
+            },
+            {
+                "name": "Pixel Art",
+                "prompt": "pixel art, low resolution, deliberate placement, retro digital aesthetic, limited color palette, blocky composition, nostalgic computing",
+                "color": "from-pink-500 to-red-600",
+                "image": "/static/style_images/pixel_art.jfif",
+                "complexity": {
+                    "level": "Medium",
+                    "score": 7,
+                    "description": "Requires understanding of pixel-level detail and retro aesthetics"
+                },
+                "technical_details": {
+                    "rendering_time": "Fast (5-15s)",
+                    "memory_usage": "Low",
+                    "recommended_resolution": "512x512",
+                    "optimal_steps": "15-25"
+                },
+                "compatibility": {
+                    "best_models": ["pixart", "stable-diffusion-xl", "flux"],
+                    "avoid_models": ["realistic-vision-v3", "imagen", "cd-pt"],
+                    "works_with_subjects": ["Game sprites", "Retro characters", "Simple objects", "8-bit scenes"]
+                },
+                "use_cases": ["Game development", "Retro art", "NFT projects", "Nostalgic designs"],
+                "example_prompts": [
+                    "Pixel art character sprite of a medieval knight",
+                    "8-bit style landscape with mountains and trees",
+                    "Retro pixel art of a spaceship in a starfield"
+                ],
+                "tags": ["pixel", "retro", "8-bit", "gaming"],
+                "difficulty": "Intermediate",
+                "popularity": 6.8
+            }
+        ]
+    }
+]

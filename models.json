@@ -1,0 +1,453 @@
+[
+  {
+    "category": "Photorealistic Models",
+    "description": "State-of-the-art models specialized in creating lifelike, photographic-quality images",
+    "models": [
+      {
+        "name": "dalle3",
+        "display_name": "DALL·E 3 Ultra",
+        "description": "OpenAI's flagship model with exceptional text understanding and ultra-photorealistic output",
+        "image": "/static/models/dalle3.jpg",
+        "technical_specs": {
+          "resolution": "1024x1024 to 8192x8192",
+          "architecture": "Advanced Transformer-based diffusion with attention mechanisms",
+          "training_data": "Curated ultra-high-quality dataset (2B+ images)",
+          "inference_time": "15-45 seconds (quality-dependent)",
+          "memory_usage": "Ultra High (12GB+ VRAM for optimal performance)",
+          "bit_depth": "16-bit color depth support",
+          "sampling_method": "Advanced DDIM with CFG guidance",
+          "model_size": "6.8B parameters"
+        },
+        "ultra_quality_features": {
+          "hdr_support": "Native HDR10+ with 10-bit color space",
+          "detail_enhancement": "AI-powered super-resolution up to 16K",
+          "noise_reduction": "Advanced denoising algorithms",
+          "color_accuracy": "Professional sRGB/Adobe RGB color matching",
+          "texture_fidelity": "Sub-pixel texture rendering",
+          "lighting_engine": "Physically-based rendering (PBR) lighting"
+        },
+        "strengths": ["Ultra-complex scene understanding", "Perfect text rendering with typography", "Anatomical precision", "Studio-quality lighting realism", "Material physics accuracy", "Micro-detail preservation"],
+        "best_for": ["Professional product photography", "Ultra-realistic portraits", "Architectural visualization", "High-end marketing materials", "Scientific visualization", "Medical imaging"],
+        "limitations": ["Slower generation for ultra-quality", "High computational requirements", "Limited abstract artistic styles"],
+        "recommended_settings": {
+          "resolution": "2048x2048 (standard), 4096x4096 (ultra)",
+          "quality": true,
+          "hdr": true,
+          "steps": "50-80 (quality-dependent)",
+          "cfg_scale": "7-12",
+          "sampler": "DPM++ 2M Karras"
+        },
+        "optimization_prompts": {
+          "quality_enhancers": "ultra detailed, 8K HDR, professional photography, studio lighting, sharp focus, physically based rendering",
+          "realism_boosters": "photorealistic, hyperrealistic, award-winning photography, commercial quality, perfect exposure",
+          "technical_specs": "shot with Canon EOS R5, 85mm lens, f/1.4, ISO 100, perfect lighting setup"
+        },
+        "compatibility": {
+          "styles": ["Photorealistic", "HDR", "Macro Photography", "Cinematic", "Hyperrealism", "8K Ultra"],
+          "subjects": ["People", "Products", "Architecture", "Nature", "Vehicles", "Scientific subjects"]
+        },
+        "rating": {
+          "quality": 9.8,
+          "speed": 7.2,
+          "versatility": 9.5,
+          "ease_of_use": 9.7,
+          "detail_accuracy": 9.9,
+          "color_fidelity": 9.8
+        },
+        "performance_metrics": {
+          "detail_score": 98,
+          "realism_index": 96,
+          "efficiency_rating": 85,
+          "consistency_score": 94
+        }
+      },
+      {
+        "name": "imagen",
+        "display_name": "Google Imagen",
+        "description": "Google's advanced text-to-image model with superior photorealism and detail",
+        "image": "/static/models/imagen.jpg",
+        "technical_specs": {
+          "resolution": "512x512 to 2048x2048",
+          "architecture": "Cascaded diffusion",
+          "training_data": "Large-scale web dataset",
+          "inference_time": "20-40 seconds",
+          "memory_usage": "Very High (12GB+ VRAM)"
+        },
+        "strengths": ["Studio-quality lighting", "Material realism", "Color accuracy", "Fine detail preservation"],
+        "best_for": ["Professional photography", "Scientific visualization", "Medical imaging", "Technical documentation"],
+        "limitations": ["Restricted access", "Very high resource requirements", "Limited customization"],
+        "recommended_settings": {
+          "resolution": "1536x1536",
+          "quality": true,
+          "hdr": false,
+          "steps": 40
+        },
+        "compatibility": {
+          "styles": ["Photorealistic", "Hyperrealism", "Scientific", "Technical"],
+          "subjects": ["Scientific subjects", "Medical imagery", "Technical objects", "Detailed textures"]
+        },
+        "rating": {
+          "quality": 9.8,
+          "speed": 6.5,
+          "versatility": 8.5,
+          "ease_of_use": 7.0
+        }
+      },
+      {
+        "name": "midjourney-v5",
+        "display_name": "Midjourney V5",
+        "description": "Highly artistic photorealistic model with exceptional cinematic composition",
+        "image": "/static/models/midjourney-v5.jpg",
+        "technical_specs": {
+          "resolution": "1024x1024 to 2048x2048",
+          "architecture": "Proprietary diffusion",
+          "training_data": "Curated artistic dataset",
+          "inference_time": "10-25 seconds",
+          "memory_usage": "Medium (6GB VRAM)"
+        },
+        "strengths": ["Cinematic composition", "Artistic interpretation", "Color grading", "Atmospheric effects"],
+        "best_for": ["Concept art", "Movie posters", "Artistic photography", "Creative projects"],
+        "limitations": ["Less precise control", "Artistic bias", "Subscription required"],
+        "recommended_settings": {
+          "resolution": "1536x1536",
+          "quality": true,
+          "hdr": true,
+          "steps": 35
+        },
+        "compatibility": {
+          "styles": ["Cinematic", "Epic Cinematic", "Dramatic Lighting", "Golden Hour"],
+          "subjects": ["Landscapes", "Characters", "Fantasy scenes", "Atmospheric shots"]
+        },
+        "rating": {
+          "quality": 9.2,
+          "speed": 8.0,
+          "versatility": 9.5,
+          "ease_of_use": 8.5
+        }
+      },
+      {
+        "name": "stable-diffusion-xl",
+        "display_name": "Stable Diffusion XL",
+        "description": "Open-source flagship model with exceptional detail and 8K capability",
+        "image": "/static/models/stable-diffusion-xl.jpg",
+        "technical_specs": {
+          "resolution": "1024x1024 to 8192x8192",
+          "architecture": "UNet diffusion",
+          "training_data": "LAION-5B filtered",
+          "inference_time": "8-20 seconds",
+          "memory_usage": "Medium (4GB+ VRAM)"
+        },
+        "strengths": ["High resolution support", "Open source flexibility", "Fast generation", "Extensive customization"],
+        "best_for": ["High-res wallpapers", "Print materials", "Custom training", "Batch generation"],
+        "limitations": ["Requires technical knowledge", "Inconsistent quality", "Setup complexity"],
+        "recommended_settings": {
+          "resolution": "2048x2048",
+          "quality": false,
+          "hdr": false,
+          "steps": 30
+        },
+        "compatibility": {
+          "styles": ["All styles supported", "Highly customizable", "LoRA compatible"],
+          "subjects": ["Universal compatibility", "Extensible via training"]
+        },
+        "rating": {
+          "quality": 8.5,
+          "speed": 9.0,
+          "versatility": 9.8,
+          "ease_of_use": 6.5
+        }
+      },
+      {
+        "name": "realistic-vision-v3",
+        "display_name": "Realistic Vision V3",
+        "description": "Specialized in hyperrealistic human portraits with perfect skin textures",
+        "image": "/static/models/realistic-vision-v3.jpg",
+        "technical_specs": {
+          "resolution": "512x512 to 2048x2048",
+          "architecture": "Fine-tuned SD 1.5",
+          "training_data": "Portrait-focused dataset",
+          "inference_time": "5-15 seconds",
+          "memory_usage": "Low (3GB VRAM)"
+        },
+        "strengths": ["Skin texture realism", "Facial anatomy", "Portrait lighting", "Eye detail"],
+        "best_for": ["Portrait photography", "Character design", "Fashion photography", "Beauty shots"],
+        "limitations": ["Limited to portraits", "Struggles with full body", "Narrow style range"],
+        "recommended_settings": {
+          "resolution": "1024x1024",
+          "quality": true,
+          "hdr": false,
+          "steps": 25
+        },
+        "compatibility": {
+          "styles": ["Photorealistic", "Portrait", "Beauty", "Fashion"],
+          "subjects": ["Human faces", "Portrait photography", "Beauty shots"]
+        },
+        "rating": {
+          "quality": 9.0,
+          "speed": 8.5,
+          "versatility": 6.0,
+          "ease_of_use": 8.0
+        }
+      },
+      {
+        "name": "cd-pt",
+        "display_name": "CD-PT (Consistency Decoder)",
+        "description": "Research-grade model with ultra-fine detail preservation and consistency",
+        "image": "/static/models/cd-pt.jpg",
+        "technical_specs": {
+          "resolution": "1024x1024 to 4096x4096",
+          "architecture": "Consistency model",
+          "training_data": "High-quality curated set",
+          "inference_time": "25-45 seconds",
+          "memory_usage": "Very High (10GB+ VRAM)"
+        },
+        "strengths": ["Ultra-fine details", "Consistency across generations", "Research-grade quality", "Minimal artifacts"],
+        "best_for": ["Research applications", "Scientific visualization", "High-end art", "Technical documentation"],
+        "limitations": ["Experimental status", "Very slow generation", "High resource requirements"],
+        "recommended_settings": {
+          "resolution": "2048x2048",
+          "quality": true,
+          "hdr": true,
+          "steps": 60
+        },
+        "compatibility": {
+          "styles": ["Photorealistic", "Hyperrealism", "Technical", "Scientific"],
+          "subjects": ["Complex scenes", "Technical subjects", "Research imagery"]
+        },
+        "rating": {
+          "quality": 9.7,
+          "speed": 5.0,
+          "versatility": 7.5,
+          "ease_of_use": 6.0
+        }
+      }
+    ]
+  },
+  {
+    "category": "Anime & Artistic",
+    "models": [
+      {
+        "name": "anything-v5",
+        "display_name": "Anything V5",
+        "description": "crisp lines, vibrant colors, expressive character design",
+        "image": "/static/models/anything-v5.jpg"
+      },
+      {
+        "name": "anything-v3",
+        "display_name": "Anything V3",
+        "description": "classic anime-style, smooth shading, wide compatibility",
+        "image": "/static/models/anything-v3.jpg"
+      },
+      {
+        "name": "anime-art",
+        "display_name": "Anime Art",
+        "description": "vibrant, detailed, studio-quality animation style",
+        "image": "/static/models/anime-art.jpg"
+      },
+      {
+        "name": "dreamshaper",
+        "display_name": "DreamShaper",
+        "description": "dreamy, semi-anime artistic style, painterly effects",
+        "image": "/static/models/dreamshaper.jpg"
+      },
+      {
+        "name": "openjourney",
+        "display_name": "OpenJourney",
+        "description": "Midjourney-inspired open-source art, cinematic quality",
+        "image": "/static/models/openjourney.jpg"
+      },
+      {
+        "name": "epi-noir",
+        "display_name": "Epi-noir",
+        "description": "noir anime and manga style, dramatic shadows, high contrast",
+        "image": "/static/models/epi-noir.jpg"
+      },
+      {
+        "name": "romantic-anime-v1",
+        "display_name": "Romantic Anime V1",
+        "description": "soft lighting, delicate features, emotional expressions",
+        "image": "/static/models/romantic-anime-v1.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Fantasy & Dark",
+    "models": [
+      {
+        "name": "fantasy-art-v1",
+        "display_name": "Fantasy Art V1",
+        "description": "high-detail fantasy scenes, epic scale, magical lighting",
+        "image": "/static/models/fantasy-art-v1.jpg"
+      },
+      {
+        "name": "dark-diffusion",
+        "display_name": "Dark Diffusion",
+        "description": "gothic atmosphere, horror elements, intense shadows",
+        "image": "/static/models/dark-diffusion.jpg"
+      },
+      {
+        "name": "evil",
+        "display_name": "Evil",
+        "description": "macabre themes, unsettling details, psychological horror",
+        "image": "/static/models/evil.jpg"
+      },
+      {
+        "name": "goblin-slayer",
+        "display_name": "Goblin Slayer",
+        "description": "dark fantasy anime style, gritty textures, dramatic action",
+        "image": "/static/models/goblin-slayer.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Romance & Soft",
+    "models": [
+      {
+        "name": "love-diffusion",
+        "display_name": "Love Diffusion",
+        "description": "romantic atmosphere, emotional expressions, soft focus",
+        "image": "/static/models/love-diffusion.jpg"
+      },
+      {
+        "name": "romantic-realistic-v1",
+        "display_name": "Romantic Realistic V1",
+        "description": "cinematic lighting, intimate moments, film grain",
+        "image": "/static/models/romantic-realistic-v1.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Stylized & 3D",
+    "models": [
+      {
+        "name": "vintage-style",
+        "display_name": "Vintage Style",
+        "description": "authentic retro aesthetic, film grain, analog imperfections",
+        "image": "/static/models/vintage-style.jpg"
+      },
+      {
+        "name": "meinamix",
+        "display_name": "MeinaMix",
+        "description": "3D anime, semi-real textures, Pixar-like rendering",
+        "image": "/static/models/meinamix.jpg"
+      },
+      {
+        "name": "revAnimated",
+        "display_name": "RevAnimated",
+        "description": "hybrid anime-3D look, vibrant colors, dynamic poses",
+        "image": "/static/models/revAnimated.jpg"
+      },
+      {
+        "name": "toonyou",
+        "display_name": "ToonYou",
+        "description": "crisp cartoon styling, expressive characters, graphic novel quality",
+        "image": "/static/models/toonyou.jpg"
+      },
+      {
+        "name": "arcane-diffusion",
+        "display_name": "Arcane Diffusion",
+        "description": "Arcane/League of Legends style, painterly textures",
+        "image": "/static/models/arcane-diffusion.jpg"
+      },
+      {
+        "name": "pastel-mix",
+        "display_name": "Pastel Mix",
+        "description": "soft 2.5D pastel anime aesthetic, dreamy atmosphere",
+        "image": "/static/models/pastel-mix.jpg"
+      },
+      {
+        "name": "cetus-mix",
+        "display_name": "Cetus Mix",
+        "description": "anime + 3D + fantasy hybrid, detailed magical effects",
+        "image": "/static/models/cetus-mix.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Performance Optimized",
+    "models": [
+      {
+        "name": "flux",
+        "display_name": "Flux",
+        "description": "balanced quality/speed, sharp details, optimized rendering",
+        "image": "/static/models/flux.jpg"
+      },
+      {
+        "name": "flux-ultra",
+        "display_name": "Flux Ultra",
+        "description": "premium quality, enhanced sharpness, fine details",
+        "image": "/static/models/flux-ultra.jpg"
+      },
+      {
+        "name": "flux-schnell",
+        "display_name": "Flux Schnell",
+        "description": "rapid generation, maintains good detail quality",
+        "image": "/static/models/flux-schnell.jpg"
+      },
+      {
+        "name": "turbo",
+        "display_name": "Turbo",
+        "description": "ultra-fast generation, optimized for quick iterations",
+        "image": "/static/models/turbo.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Utility & Editing",
+    "models": [
+      {
+        "name": "variation",
+        "display_name": "Variation",
+        "description": "high-fidelity image variations, consistent style",
+        "image": "/static/models/variation.jpg"
+      },
+      {
+        "name": "inpainting",
+        "display_name": "Inpainting",
+        "description": "seamless edits, context-aware filling, natural results",
+        "image": "/static/models/inpainting.jpg"
+      },
+      {
+        "name": "depth2img",
+        "display_name": "Depth2Img",
+        "description": "3D spatial awareness, dimensional lighting, parallax effects",
+        "image": "/static/models/depth2img.jpg"
+      },
+      {
+        "name": "latent-couple",
+        "display_name": "Latent Couple",
+        "description": "natural interactions, relationship dynamics, dual focus",
+        "image": "/static/models/latent-couple.jpg"
+      },
+      {
+        "name": "real-esrgan",
+        "display_name": "Real-ESRGAN",
+        "description": "4x upscaling, detail enhancement, noise reduction",
+        "image": "/static/models/real-esrgan.jpg"
+      }
+    ]
+  },
+  {
+    "category": "Experimental",
+    "models": [
+      {
+        "name": "gptimage",
+        "display_name": "GPTImage",
+        "description": "context-aware generation, semantic understanding",
+        "image": "/static/models/gptimage.jpg"
+      },
+      {
+        "name": "pixart",
+        "display_name": "Pixart",
+        "description": "crisp pixel art, authentic retro game style",
+        "image": "/static/models/pixart.jpg"
+      },
+      {
+        "name": "stylegan3",
+        "display_name": "StyleGAN3",
+        "description": "photorealistic portraits, flawless skin details",
+        "image": "/static/models/stylegan3.jpg"
+      }
+    ]
+  }
+]
