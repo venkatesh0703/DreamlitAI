@@ -1073,7 +1073,7 @@ input:focus-visible {
 
 .btn-primary:hover:not(:disabled) {
     background: linear-gradient(135deg, #5b21b6, #7c3aed);
-    transform: translateY(-2px) scale(1.05);
+    
     box-shadow: 
         0 8px 25px rgba(99, 102, 241, 0.4),
         0 4px 10px rgba(139, 92, 246, 0.3);

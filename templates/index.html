@@ -268,9 +268,9 @@
     
     <!-- Main Chat Container (Scrollable) -->
     <main class="flex-1 pt-20 pb-24 overflow-hidden" :class="{'pt-44': showSettings, 'lg:pt-52': showSettings}">
-        <div class="h-full w-full px-2 sm:px-4 lg:px-6">
-            <div class="h-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl rounded-t-3xl shadow-2xl border-2 border-gray-200/60 dark:border-gray-700/60 overflow-hidden">
-                <div class="h-full overflow-y-auto p-6 space-y-6 chat-container" x-ref="chatContainer">
+        <div class="w-full h-[97%] px-2 sm:px-4 lg:px-6">
+            <div class="h-[97%] bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl rounded-t-3xl shadow-2xl border-2 border-gray-200/60 dark:border-gray-700/60 overflow-hidden">
+                <div class="h-[97%] overflow-y-auto p-6 space-y-6 chat-container" x-ref="chatContainer">
                     <template x-for="(msg, idx) in chatMessages" :key="idx">
                         <div class="animate__animated" 
                              :class="{
