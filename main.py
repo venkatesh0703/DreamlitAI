@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify, send_from_directory
 from flask_cors import CORS
+from werkzeug.utils import secure_filename
 import requests
 import json
 import re
@@ -9,6 +10,16 @@ import uuid
 import random
 from urllib.parse import quote
 from typing import Dict, List, Any, Optional
+import asyncio
+import asyncio
+import edge_tts
+import platform
+import subprocess
+import shutil
+import sys
+
+if platform.system() == "Windows":
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 app = Flask(__name__)
 CORS(app)
@@ -441,6 +452,10 @@ def generate_image():
         quality = data.get('quality', False)
         hdr = data.get('hdr', False)
         model = data.get('model', 'flux')
+        # Strength: 0.0 to 1.0. Lower = more like original image. Higher = more creative/random.
+        # Pollinations usually defaults to high/1.0 if not set.
+        # We'll set a default of 0.6 if image is present to preserve the original structure.
+        strength = data.get('strength', 0.6)
         
         if not prompt:
             return jsonify({'error': 'Prompt is required'}), 400
@@ -470,9 +485,24 @@ def generate_image():
         # Build API URL
         seed = random.randint(1, 1000000)
         prompt_encoded = quote(enhanced_prompt)
+        
+        # Robust Resolution Parsing
+        # Extract 1024x1024 or similar pattern from any string
+        match = re.search(r'(\d+)x(\d+)', resolution)
+        if match:
+            width = match.group(1)
+            height = match.group(2)
+        else:
+            # Fallback default
+            width = '1024'
+            height = '1024'
+            print(f"WARNING: Could not parse resolution '{resolution}'. Defaulting to 1024x1024.")
+        
+        print(f"DEBUG: Parsed Width: {width}, Height: {height}")
+
         api_url = (
             f"https://image.pollinations.ai/prompt/{prompt_encoded}"
-            f"?seed={seed}&nologo=true&width={resolution.split('x')[0]}&height={resolution.split('x')[1]}"
+            f"?seed={seed}&nologo=true&width={width}&height={height}"
         )
         if quality:
             api_url += "&enhance=true"
@@ -480,6 +510,8 @@ def generate_image():
             api_url += "&hdr=true"
         if model:
             api_url += f"&model={model}"
+            
+        print(f"DEBUG: Generated API URL: {api_url}")
         
         # Generate image with enhanced quality parameters
         response = requests.get(api_url, timeout=120)  # Increased timeout for high-res
@@ -510,6 +542,242 @@ def generate_image():
         
     except Exception as e:
         app.logger.error(f"Generation error: {str(e)}")
+        return jsonify({'error': str(e)}), 500
+
+def _build_system_prompt(data):
+    """Helper to build robust system prompt from settings"""
+    persona = data.get('persona', 'helpful')
+    length = data.get('length', 'medium')
+    fmt = data.get('format', 'paragraph')
+    
+    # base persona
+    persona_map = {
+        'helpful': "You are a helpful and polite AI assistant.",
+        'coder': "You are an expert software engineer. Provide concise, clean, and optimized code solutions.",
+        'creative': "You are a creative writer. Use vivid imagery and imaginative language.",
+        'sarcastic': "You are a sarcastic friend. specific give helpful answers but with a witty, snarky attitude.",
+        'teacher': "You are a patient teacher. Explain complex topics simply and step-by-step."
+    }
+    system_instruction = persona_map.get(persona, persona_map['helpful'])
+
+    # Add Length Instruction
+    if length == 'short':
+        system_instruction += " Keep your response concise, short, and to the point."
+    elif length == 'long':
+        system_instruction += " Provide a detailed, comprehensive, and in-depth response."
+
+    # Add Format Instruction
+    if fmt == 'bullets':
+        system_instruction += " Use bullet points for structural clarity."
+    elif fmt == 'code':
+        system_instruction += " Output the result primarily as a code block."
+    elif fmt == 'email':
+        system_instruction += " Format the response as a professional email."
+    elif fmt == 'markdown':
+        system_instruction += " Use Markdown formatting (headers, bold, italics) effectively."
+        
+    return system_instruction
+
+@app.route('/generate_text', methods=['POST'])
+def generate_text():
+    """Generate text endpoint"""
+    try:
+        data = request.get_json()
+        prompt = data.get('prompt', '').strip()
+        model = data.get('model', 'openai')
+        
+        if not prompt:
+            return jsonify({'error': 'Prompt is required'}), 400
+            
+        # Pollinations Text API (POST)
+        api_url = "https://text.pollinations.ai/"
+        payload = {
+            "messages": [
+                {"role": "system", "content": _build_system_prompt(data)},
+                {"role": "user", "content": prompt}
+            ],
+            "model": model,
+            "jsonMode": False
+        }
+        
+        response = requests.post(api_url, json=payload, timeout=60)
+        
+        if response.status_code == 200:
+            return jsonify({
+                'success': True,
+                'content': response.text,
+                'model': model
+            })
+        else:
+            return jsonify({'error': f'Failed to generate text. Status: {response.status_code}'}), 500
+            
+    except Exception as e:
+        app.logger.error(f"Text generation error: {str(e)}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/generate_audio', methods=['POST'])
+def generate_audio():
+    """Generate audio endpoint"""
+    try:
+        data = request.get_json()
+        prompt = data.get('prompt', '').strip()
+        voice = data.get('voice', 'alloy')
+        model = data.get('model', 'openai-audio')
+        
+        if not prompt:
+            return jsonify({'error': 'Prompt is required'}), 400
+        
+        # Validate minimum text length for edge-tts
+        if len(prompt) < 2:
+            return jsonify({'error': 'Text must be at least 2 characters long'}), 400
+            
+        print(f"DEBUG: Generating audio via edge-tts for: '{prompt}' with voice '{voice}'")
+        
+        # Extended Voice Map (Neural Voices)
+        # We can add more, but these are high quality defaults
+        voice_map = {
+            'alloy': 'en-US-AriaNeural',      # Default Female (Aria)
+            'echo': 'en-US-GuyNeural',        # Default Male (Guy)
+            'fable': 'en-GB-SoniaNeural',     # British Female
+            'onyx': 'en-US-ChristopherNeural', # US Male Deep
+            'nova': 'en-US-JennyNeural',      # US Female Soft
+            'shimmer': 'en-IN-NeerjaNeural'   # Indian Female
+        }
+        
+        # Get selected voice or default
+        selected_voice = voice_map.get(voice, 'en-US-AriaNeural')
+        
+        # Fallback voices to try if primary fails
+        fallback_voices = ['en-US-AriaNeural', 'en-US-GuyNeural', 'en-US-JennyNeural']
+        if selected_voice not in fallback_voices:
+            fallback_voices.insert(0, selected_voice)
+        
+        # Get Rate, Pitch, and Volume from request
+        rate = data.get('rate', '+0%')
+        pitch = data.get('pitch', '+0Hz')
+        volume = data.get('volume', '+0%')
+        style = data.get('style', 'general')
+
+        try:
+            # Dual TTS Strategy: Try edge-tts first, fallback to gTTS
+            # edge-tts provides better quality but can be unreliable
+            # gTTS is more reliable but simpler quality
+            
+            filename = f"audio_{uuid.uuid4().hex}.mp3"
+            filepath = os.path.join(GENERATED_IMAGES_FOLDER, filename)
+            
+            last_error = None
+            success = False
+            used_provider = None
+            
+            # STRATEGY 1: Try edge-tts with fallback voices
+            print(f"DEBUG: Attempting edge-tts audio generation...")
+            for attempt_voice in fallback_voices:
+                try:
+                    # Basic command without advanced parameters
+                    cmd_safe = [
+                        sys.executable, "-m", "edge_tts",
+                        "--voice", attempt_voice,
+                        "--text", prompt,
+                        "--write-media", filepath
+                    ]
+                    
+                    print(f"DEBUG: Trying edge-tts with voice: {attempt_voice}")
+                    
+                    # Run with timeout to prevent hanging
+                    result = subprocess.run(
+                        cmd_safe, 
+                        check=True, 
+                        capture_output=True, 
+                        text=True,
+                        timeout=15  # Reduced timeout for faster fallback
+                    )
+                    
+                    # Verify the file was created and has content
+                    if os.path.exists(filepath) and os.path.getsize(filepath) > 0:
+                        success = True
+                        used_provider = "edge-tts"
+                        print(f"DEBUG: edge-tts succeeded with voice {attempt_voice} ({os.path.getsize(filepath)} bytes)")
+                        break
+                    else:
+                        if os.path.exists(filepath):
+                            os.remove(filepath)
+                        continue
+                        
+                except subprocess.TimeoutExpired:
+                    last_error = f"edge-tts timeout with voice {attempt_voice}"
+                    print(f"WARNING: {last_error}")
+                    continue
+                    
+                except subprocess.CalledProcessError as e:
+                    error_msg = e.stderr if e.stderr else str(e)
+                    last_error = f"edge-tts failed with {attempt_voice}"
+                    print(f"WARNING: {last_error}")
+                    continue
+            
+            # STRATEGY 2: Fallback to gTTS if edge-tts failed
+            if not success:
+                print(f"DEBUG: edge-tts failed, falling back to gTTS...")
+                try:
+                    from gtts import gTTS
+                    
+                    # Map voice preferences to gTTS accents
+                    # gTTS doesn't have individual voices, but we can vary accent
+                    accent_map = {
+                        'alloy': 'com',      # US English
+                        'echo': 'com',       # US English
+                        'fable': 'co.uk',    # British English
+                        'onyx': 'com',       # US English
+                        'nova': 'com',       # US English
+                        'shimmer': 'co.in'   # Indian English
+                    }
+                    
+                    tld = accent_map.get(voice, 'com')
+                    
+                    # Generate audio with gTTS
+                    tts = gTTS(text=prompt, lang='en', tld=tld, slow=False)
+                    tts.save(filepath)
+                    
+                    # Verify the file
+                    if os.path.exists(filepath) and os.path.getsize(filepath) > 0:
+                        success = True
+                        used_provider = "gTTS"
+                        print(f"DEBUG: gTTS succeeded ({os.path.getsize(filepath)} bytes)")
+                    else:
+                        last_error = "gTTS failed to create valid audio file"
+                        
+                except Exception as e:
+                    last_error = f"gTTS error: {str(e)}"
+                    print(f"ERROR: {last_error}")
+                    import traceback
+                    traceback.print_exc()
+            
+            # Check if any provider succeeded
+            if not success:
+                app.logger.error(f"All TTS providers failed. Last error: {last_error}")
+                return jsonify({
+                    'error': 'Audio generation failed. Both Microsoft Edge TTS and Google TTS are currently unavailable. Please check your internet connection and try again.'
+                }), 503
+            
+            local_url = f"/generated_images/{filename}"
+            print(f"DEBUG: Audio generated successfully at {local_url} using {used_provider}")
+            
+            return jsonify({
+                'success': True,
+                'audio_url': local_url,
+                'prompt': prompt,
+                'voice': voice,
+                'provider': used_provider  # Include which TTS provider was used
+            })
+            
+        except Exception as e:
+            app.logger.error(f"Audio generation error: {str(e)}")
+            import traceback
+            traceback.print_exc()
+            return jsonify({'error': f'Unexpected error: {str(e)}'}), 500
+
+    except Exception as e:
+        app.logger.error(f"Audio generation error: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/suggest_prompt', methods=['POST'])
@@ -702,6 +970,7 @@ def suggest_prompt():
     except Exception as e:
         app.logger.error(f"Suggestion error: {str(e)}")
         return jsonify({'error': str(e)}), 500
+
 
 @app.route('/health')
 def health_check():
