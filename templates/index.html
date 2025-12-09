@@ -579,14 +579,12 @@
                                             </div>
 
                                             <!-- Image -->
-                                            <div class="relative group cursor-pointer bg-gray-100 dark:bg-black/20"
+                                            <div class="relative group cursor-pointer overflow-hidden rounded-lg bg-transparent"
                                                 @click="showModal = true; generatedImage = msg.content">
                                                 <img :src="msg.content"
-                                                    class="w-auto max-w-full h-auto object-contain mx-auto shadow-sm rounded-lg"
+                                                    class="w-full h-auto object-contain mx-auto transition-transform duration-300 group-hover:scale-[1.01] shadow-sm"
+                                                    style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
                                                     alt="Generated Image" loading="lazy">
-                                                <div
-                                                    class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300">
-                                                </div>
                                             </div>
 
                                             <!-- Prompt/Details -->
@@ -862,7 +860,9 @@
             class="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4"
             @click="showModal = false" x-cloak>
             <div class="relative max-w-7xl w-full max-h-full flex flex-col items-center justify-center" @click.stop>
-                <img :src="generatedImage" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl">
+                <img :src="generatedImage"
+                    class="max-w-full max-h-[90vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
+                    style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; image-rendering: high-quality;">
                 <div class="mt-6 flex gap-4">
                     <button @click="downloadImage(generatedImage, 'dreamlit-full-' + Date.now())"
                         class="px-6 py-2 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition-colors flex items-center gap-2">

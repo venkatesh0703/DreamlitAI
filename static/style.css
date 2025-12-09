@@ -2,10 +2,10 @@
 
 /* CSS Custom Properties for dynamic viewport handling */
 :root {
-  --vh: 1vh;
-  --header-height: 4rem;
-  --footer-height: 5rem;
-  --settings-height: 12rem;
+    --vh: 1vh;
+    --header-height: 4rem;
+    --footer-height: 5rem;
+    --settings-height: 12rem;
 }
 
 /* Reset and base styles */
@@ -14,7 +14,8 @@
     transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -23,8 +24,8 @@ html, body {
 }
 
 /* Hide elements with x-cloak */
-[x-cloak] { 
-    display: none !important; 
+[x-cloak] {
+    display: none !important;
 }
 
 /* Smooth scrolling for chat container */
@@ -105,11 +106,12 @@ html, body {
 
 /* Enhanced Animations */
 @keyframes fadeIn {
-    from { 
+    from {
         opacity: 0;
         transform: translateY(10px);
     }
-    to { 
+
+    to {
         opacity: 1;
         transform: translateY(0);
     }
@@ -120,6 +122,7 @@ html, body {
         opacity: 0;
         transform: translateY(30px) scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -127,20 +130,40 @@ html, body {
 }
 
 @keyframes pulse {
-    0%, 100% { 
+
+    0%,
+    100% {
         opacity: 1;
         transform: scale(1);
     }
-    50% { 
+
+    50% {
         opacity: 0.7;
         transform: scale(1.05);
     }
 }
 
 @keyframes shake {
-    0%, 100% { transform: translateX(0) rotate(0deg); }
-    10%, 30%, 50%, 70%, 90% { transform: translateX(-4px) rotate(-1deg); }
-    20%, 40%, 60%, 80% { transform: translateX(4px) rotate(1deg); }
+
+    0%,
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-4px) rotate(-1deg);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(4px) rotate(1deg);
+    }
 }
 
 @keyframes fadeInUp {
@@ -148,6 +171,7 @@ html, body {
         opacity: 0;
         transform: translateY(30px) scale(0.9);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -155,20 +179,29 @@ html, body {
 }
 
 @keyframes float {
-    0%, 100% { 
+
+    0%,
+    100% {
         transform: translateY(0) rotate(0deg);
     }
-    33% { 
+
+    33% {
         transform: translateY(-8px) rotate(1deg);
     }
-    66% { 
+
+    66% {
         transform: translateY(-4px) rotate(-1deg);
     }
 }
 
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes zoomIn {
@@ -176,6 +209,7 @@ html, body {
         opacity: 0;
         transform: scale(0.8) rotate(-10deg);
     }
+
     to {
         opacity: 1;
         transform: scale(1) rotate(0deg);
@@ -187,13 +221,16 @@ html, body {
         opacity: 0;
         transform: scale(0.3) rotate(180deg);
     }
+
     50% {
         opacity: 1;
         transform: scale(1.1) rotate(-10deg);
     }
+
     70% {
         transform: scale(0.9) rotate(5deg);
     }
+
     100% {
         opacity: 1;
         transform: scale(1) rotate(0deg);
@@ -205,6 +242,7 @@ html, body {
         opacity: 0;
         transform: translateX(100px) scale(0.8);
     }
+
     to {
         opacity: 1;
         transform: translateX(0) scale(1);
@@ -216,6 +254,7 @@ html, body {
         opacity: 0;
         transform: translateX(-100px) scale(0.8);
     }
+
     to {
         opacity: 1;
         transform: translateX(0) scale(1);
@@ -223,9 +262,12 @@ html, body {
 }
 
 @keyframes glow {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 0 5px rgba(99, 102, 241, 0.5);
     }
+
     50% {
         box-shadow: 0 0 20px rgba(99, 102, 241, 0.8), 0 0 30px rgba(139, 92, 246, 0.6);
     }
@@ -235,6 +277,7 @@ html, body {
     0% {
         background-position: -200% 0;
     }
+
     100% {
         background-position: 200% 0;
     }
@@ -244,6 +287,7 @@ html, body {
     0% {
         transform: translateY(0) scale(1) rotate(0deg);
     }
+
     100% {
         transform: translateY(-8px) scale(1.05) rotate(2deg);
     }
@@ -334,30 +378,14 @@ html, body {
 }
 
 .generated-image:hover {
-    
-    box-shadow: 
+    transform: scale(1.005);
+    box-shadow:
         0 25px 50px -10px rgba(0, 0, 0, 0.15),
         0 15px 25px -5px rgba(0, 0, 0, 0.1),
         0 0 0 1px rgba(255, 255, 255, 0.1);
-    filter: brightness(1.05) contrast(1.05);
 }
 
-.generated-image::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.generated-image:hover::after {
-    opacity: 1;
-}
+/* Removed overlay effect to prevent image quality degradation */
 
 /* Toggle switch styling */
 .dot {
@@ -366,12 +394,12 @@ html, body {
 
 /* Enhanced button hover effects */
 button:hover:not(:disabled) {
-    
+
     transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 button:active:not(:disabled) {
-   
+
     transition: all 0.1s ease;
 }
 
@@ -403,6 +431,10 @@ button:active:not(:disabled) {
 /* Image loading states */
 img {
     transition: opacity 0.3s ease;
+    /* Optimize image quality across browsers */
+    -ms-interpolation-mode: bicubic;
+    image-rendering: optimizeQuality;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 img:not(.loaded) {
@@ -411,6 +443,26 @@ img:not(.loaded) {
 
 img.loaded {
     opacity: 1;
+}
+
+/* Enhanced image quality for generated images */
+img[alt="Generated Image"],
+.generated-image,
+.image-container img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+    -ms-interpolation-mode: bicubic;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+/* Prevent image quality loss on transform */
+.group:hover img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
 
 /* Enhanced card styling with advanced effects */
@@ -443,7 +495,7 @@ img.loaded {
 .style-card:hover,
 .model-card:hover {
     transform: translateY(-8px) scale(1.05) rotate(2deg);
-    box-shadow: 
+    box-shadow:
         0 20px 40px -10px rgba(0, 0, 0, 0.15),
         0 10px 20px -5px rgba(0, 0, 0, 0.1),
         0 0 0 1px rgba(255, 255, 255, 0.1);
@@ -459,7 +511,7 @@ img.loaded {
 .style-card.selected,
 .model-card.selected {
     transform: translateY(-4px) scale(1.03);
-    box-shadow: 
+    box-shadow:
         0 0 0 3px rgba(99, 102, 241, 0.5),
         0 0 20px rgba(99, 102, 241, 0.3),
         0 20px 40px -10px rgba(99, 102, 241, 0.2);
@@ -519,8 +571,13 @@ input:focus {
 }
 
 @keyframes loading {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 .dark .loading-placeholder {
@@ -564,125 +621,125 @@ input:focus {
         --footer-height: 5rem;
         --settings-height: 20rem;
     }
-    
+
     /* Typography adjustments */
     .text-3xl {
         font-size: 1.5rem;
         line-height: 2rem;
     }
-    
+
     .text-2xl {
         font-size: 1.25rem;
         line-height: 1.75rem;
     }
-    
+
     .text-xl {
         font-size: 1.125rem;
         line-height: 1.5rem;
     }
-    
+
     /* Spacing adjustments */
     .p-6 {
         padding: 1rem;
     }
-    
+
     .p-5 {
         padding: 0.875rem;
     }
-    
+
     .p-4 {
         padding: 0.75rem;
     }
-    
+
     .px-4 {
         padding-left: 0.75rem;
         padding-right: 0.75rem;
     }
-    
+
     .py-6 {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    
+
     .py-8 {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
     }
-    
+
     .gap-6 {
         gap: 1rem;
     }
-    
+
     .gap-4 {
         gap: 0.75rem;
     }
-    
+
     .gap-3 {
         gap: 0.5rem;
     }
-    
+
     /* Container adjustments */
     .max-w-xs {
         max-width: calc(100vw - 2rem);
     }
-    
+
     .max-w-lg {
         max-width: calc(100vw - 1.5rem);
     }
-    
+
     .max-w-2xl {
         max-width: calc(100vw - 1rem);
     }
-    
+
     /* Settings panel mobile optimization */
     .settings-scroll {
         max-height: 15rem;
     }
-    
+
     /* Better spacing for mobile settings */
     .settings-scroll .grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
     }
-    
+
     /* Reduce card heights on mobile */
     .settings-scroll .h-40 {
         height: 8rem;
     }
-    
+
     /* Card grid mobile optimization */
     .grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
     }
-    
+
     /* Font size adjustments */
     .text-sm {
         font-size: 0.8rem;
     }
-    
+
     .text-xs {
         font-size: 0.7rem;
     }
-    
+
     /* Button adjustments */
     .rounded-3xl {
         border-radius: 1.25rem;
     }
-    
+
     .rounded-2xl {
         border-radius: 1rem;
     }
-    
+
     /* Input adjustments */
     .pl-16 {
         padding-left: 3rem;
     }
-    
+
     .pr-20 {
         padding-right: 4rem;
     }
-    
+
     .py-5 {
         padding-top: 0.875rem;
         padding-bottom: 0.875rem;
@@ -696,44 +753,44 @@ input:focus {
         --footer-height: 5.5rem;
         --settings-height: 16rem;
     }
-    
+
     /* Settings panel tablet optimization */
     .settings-scroll {
         max-height: 18rem;
     }
-    
+
     /* Better tablet grid layout */
     .settings-scroll .grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 0.75rem;
     }
-    
+
     /* Card grid tablet optimization */
     .grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
-    
+
     /* Typography for tablets */
     .text-xl {
         font-size: 1.25rem;
         line-height: 1.75rem;
     }
-    
+
     /* Spacing for tablets */
     .p-6 {
         padding: 1.25rem;
     }
-    
+
     .gap-6 {
         gap: 1.25rem;
     }
-    
+
     /* Container adjustments for tablets */
     .max-w-lg {
         max-width: calc(100vw - 3rem);
     }
-    
+
     .max-w-2xl {
         max-width: calc(100vw - 2rem);
     }
@@ -746,23 +803,23 @@ input:focus {
         --footer-height: 6rem;
         --settings-height: 24rem;
     }
-    
+
     /* Settings panel desktop optimization */
     .settings-scroll {
         max-height: 20rem;
     }
-    
+
     /* Enhanced hover effects for desktop */
     .style-card:hover,
     .model-card:hover {
         transform: translateY(-12px) scale(1.08) rotate(3deg);
     }
-    
+
     /* Better spacing for large screens */
     .gap-8 {
         gap: 2.5rem;
     }
-    
+
     /* Enhanced animations for desktop */
     .animate-float {
         animation: float 5s ease-in-out infinite;
@@ -774,11 +831,11 @@ input:focus {
     :root {
         --settings-height: 28rem;
     }
-    
+
     .settings-scroll {
         max-height: 24rem;
     }
-    
+
     /* More columns for ultra-wide screens */
     .grid {
         grid-template-columns: repeat(10, 1fr);
@@ -786,7 +843,8 @@ input:focus {
 }
 
 /* High DPI optimizations */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
     .generated-image {
         image-rendering: -webkit-optimize-contrast;
         image-rendering: crisp-edges;
@@ -800,7 +858,7 @@ input:focus {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
-    
+
     .animate-pulse,
     .animate-spin,
     .animate-bounce {
@@ -831,7 +889,8 @@ input:focus-visible {
 
 .touch-device input {
     min-height: 48px;
-    font-size: 16px; /* Prevents zoom on iOS */
+    font-size: 16px;
+    /* Prevents zoom on iOS */
 }
 
 .touch-device select {
@@ -841,15 +900,16 @@ input:focus-visible {
 
 /* Touch-friendly hover states */
 @media (hover: none) and (pointer: coarse) {
+
     .style-card:hover,
     .model-card:hover {
         transform: scale(1.02);
     }
-    
+
     button:hover {
         transform: scale(1.02);
     }
-    
+
     .generated-image:hover {
         transform: scale(1.01);
     }
@@ -857,18 +917,19 @@ input:focus-visible {
 
 /* Print styles */
 @media print {
+
     .fixed,
     header,
     footer,
     button {
         display: none !important;
     }
-    
+
     .chat-container {
         overflow: visible !important;
         height: auto !important;
     }
-    
+
     body {
         background: white !important;
         color: black !important;
@@ -905,6 +966,7 @@ input:focus-visible {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -916,6 +978,7 @@ input:focus-visible {
         transform: translateX(0);
         opacity: 1;
     }
+
     to {
         transform: translateX(100%);
         opacity: 0;
@@ -943,7 +1006,7 @@ input:focus-visible {
     .responsive-container {
         container-type: inline-size;
     }
-    
+
     @container (max-width: 400px) {
         .container-responsive {
             font-size: 0.875rem;
@@ -999,11 +1062,7 @@ input:focus-visible {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.image-container:hover img {
-    transform: scale(1.05);
+    /* Removed transition to prevent hover effects */
 }
 
 /* Enhanced chat bubble styling */
@@ -1073,8 +1132,8 @@ input:focus-visible {
 
 .btn-primary:hover:not(:disabled) {
     background: linear-gradient(135deg, #5b21b6, #7c3aed);
-    
-    box-shadow: 
+
+    box-shadow:
         0 8px 25px rgba(99, 102, 241, 0.4),
         0 4px 10px rgba(139, 92, 246, 0.3);
 }
@@ -1098,15 +1157,37 @@ input:focus-visible {
 }
 
 /* Utility classes for spacing */
-.space-y-1 > * + * { margin-top: 0.25rem; }
-.space-y-2 > * + * { margin-top: 0.5rem; }
-.space-y-3 > * + * { margin-top: 0.75rem; }
-.space-y-4 > * + * { margin-top: 1rem; }
+.space-y-1>*+* {
+    margin-top: 0.25rem;
+}
 
-.space-x-1 > * + * { margin-left: 0.25rem; }
-.space-x-2 > * + * { margin-left: 0.5rem; }
-.space-x-3 > * + * { margin-left: 0.75rem; }
-.space-x-4 > * + * { margin-left: 1rem; }
+.space-y-2>*+* {
+    margin-top: 0.5rem;
+}
+
+.space-y-3>*+* {
+    margin-top: 0.75rem;
+}
+
+.space-y-4>*+* {
+    margin-top: 1rem;
+}
+
+.space-x-1>*+* {
+    margin-left: 0.25rem;
+}
+
+.space-x-2>*+* {
+    margin-left: 0.5rem;
+}
+
+.space-x-3>*+* {
+    margin-left: 0.75rem;
+}
+
+.space-x-4>*+* {
+    margin-left: 1rem;
+}
 
 /* Custom dropdown styling */
 .dropdown {
@@ -1191,8 +1272,13 @@ input:focus-visible {
 }
 
 @keyframes skeleton-loading {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 /* Responsive grid utilities */
@@ -1336,7 +1422,7 @@ input:focus-visible {
         color: #ffffff;
         border: 2px solid #ffffff;
     }
-    
+
     .btn-primary:hover {
         background: #ffffff;
         color: #000000;
@@ -1345,16 +1431,17 @@ input:focus-visible {
 
 /* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
+
     .animate-spin,
     .animate-pulse,
     .animate-bounce {
         animation: none;
     }
-    
+
     .generated-image {
         transition: none;
     }
-    
+
     * {
         transition-duration: 0.01ms !important;
     }
@@ -1365,12 +1452,12 @@ input:focus-visible {
     .no-print {
         display: none !important;
     }
-    
+
     .chat-container {
         box-shadow: none;
         border: 1px solid #000;
     }
-    
+
     .generated-image {
         max-width: 100%;
         page-break-inside: avoid;
@@ -1382,12 +1469,12 @@ input:focus-visible {
     .card-container {
         container-type: inline-size;
     }
-    
+
     @container (max-width: 300px) {
         .card-responsive {
             padding: 0.5rem;
         }
-        
+
         .card-responsive .text-sm {
             font-size: 0.75rem;
         }

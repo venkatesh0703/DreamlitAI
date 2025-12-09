@@ -358,7 +358,9 @@ class UltraPromptBuilder:
             if self.quality and 'quality_enhancers' in opt_prompts:
                 optimizations.append(opt_prompts['quality_enhancers'])
             
-            if 'realism_boosters' in opt_prompts:
+            # Only add realism boosters when quality mode is enabled
+            # This prevents forcing photorealistic style on all images
+            if self.quality and 'realism_boosters' in opt_prompts:
                 optimizations.append(opt_prompts['realism_boosters'])
             
             if self._is_high_resolution() and 'technical_specs' in opt_prompts:
