@@ -336,15 +336,15 @@ class UltraPromptBuilder:
         if self.hdr:
             prompt_parts.append(self._get_advanced_hdr_keywords())
         
-        # Add resolution-based ultra enhancements
-        resolution_enhancement = self._get_ultra_resolution_enhancement()
-        if resolution_enhancement:
-            prompt_parts.append(resolution_enhancement)
+        # Add resolution-based ultra enhancements (DISABLED - only add when quality mode is enabled)
+        # resolution_enhancement = self._get_ultra_resolution_enhancement()
+        # if resolution_enhancement:
+        #     prompt_parts.append(resolution_enhancement)
         
-        # Add technical photography specifications
-        tech_specs = self._get_technical_specifications()
-        if tech_specs:
-            prompt_parts.append(tech_specs)
+        # Add technical photography specifications (DISABLED - only add when quality mode is enabled)
+        # tech_specs = self._get_technical_specifications()
+        # if tech_specs:
+        #     prompt_parts.append(tech_specs)
         
         return ", ".join(filter(None, prompt_parts))
     
