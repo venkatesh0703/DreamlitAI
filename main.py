@@ -328,7 +328,11 @@ class UltraPromptBuilder:
         if model_optimizations:
             prompt_parts.append(model_optimizations)
         
-        # Add ultra-quality enhancements
+        # Always add basic quality keywords to prevent poor quality
+        if not self.quality:
+            prompt_parts.append("high quality, detailed, sharp, clean, clear")
+        
+        # Add ultra-quality enhancements when quality mode is enabled
         if self.quality:
             prompt_parts.append(self._get_ultra_quality_keywords())
         
@@ -502,18 +506,24 @@ def generate_image():
         
         print(f"DEBUG: Parsed Width: {width}, Height: {height}")
 
+        # Build negative prompt to prevent quality issues
+        negative_prompt = "noisy, grainy, blurry, low quality, pixelated, artifacts, jpeg artifacts, compression artifacts, dark spots, poor quality, bad quality, distorted, deformed, ugly, disfigured"
+        negative_encoded = quote(negative_prompt)
+
         api_url = (
             f"https://image.pollinations.ai/prompt/{prompt_encoded}"
             f"?seed={seed}&nologo=true&width={width}&height={height}"
+            f"&enhance=true"  # Always enable quality enhancement
+            f"&negative={negative_encoded}"  # Add negative prompt to prevent artifacts
         )
-        if quality:
-            api_url += "&enhance=true"
         if hdr:
             api_url += "&hdr=true"
         if model:
             api_url += f"&model={model}"
             
         print(f"DEBUG: Generated API URL: {api_url}")
+        print(f"DEBUG: Enhanced Prompt: {enhanced_prompt}")
+        print(f"DEBUG: Negative Prompt: {negative_prompt}")
         
         # Generate image with enhanced quality parameters
         response = requests.get(api_url, timeout=120)  # Increased timeout for high-res
@@ -1133,4 +1143,4 @@ if __name__ == "__main__":
     print(f"Available model categories: {len(MODEL_CATEGORIES)}")
     print(f"Available styles: {sum(len(cat.get('styles', [])) for cat in STYLE_CATEGORIES)}")
     
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True)

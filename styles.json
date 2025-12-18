@@ -1,5 +1,4 @@
 [
-    
     {
         "category": "Classical Art Movements",
         "description": "Ultra-detailed classical art styles with museum-quality accuracy and historical authenticity",
@@ -66,8 +65,6 @@
             }
         ]
     },
-    
-   
     {
         "category": "Digital & Graphic Styles",
         "styles": [
@@ -328,8 +325,6 @@
             }
         ]
     },
-   
-   
     {
         "category": "Fantasy Creatures & Beasts",
         "styles": [
@@ -395,7 +390,6 @@
             }
         ]
     },
-   
     {
         "category": "Alien Species",
         "styles": [
@@ -461,9 +455,6 @@
             }
         ]
     },
-   
-    
-   
     {
         "category": "War & Military",
         "styles": [
@@ -656,71 +647,6 @@
                 "prompt": "futuristic beauty, advanced aesthetics, technological elegance, sleek design, innovative forms, forward-thinking style, modern marvel",
                 "color": "from-blue-500 to-cyan-600",
                 "image": "/static/style_images/futuristic_beauty.jfif"
-            }
-        ]
-    },
-    {
-        "category": "Romance & Love",
-        "styles": [
-            {
-                "name": "Romantic Encounter",
-                "prompt": "romantic encounter, emotional connection, intimate moment, loving gaze, heartwarming scene, relationship beginning, special connection",
-                "color": "from-pink-400 to-rose-500",
-                "image": "/static/style_images/romantic_encounter.jfif"
-            },
-            {
-                "name": "Passionate Embrace",
-                "prompt": "passionate embrace, intense emotions, physical connection, dramatic lighting, emotional intensity, loving relationship, deep affection",
-                "color": "from-red-500 to-purple-600",
-                "image": "/static/style_images/passionate_embrace.jfif"
-            },
-            {
-                "name": "Tender Moment",
-                "prompt": "tender moment, gentle affection, soft lighting, caring interaction, emotional warmth, loving touch, heartfelt connection",
-                "color": "from-pink-300 to-rose-400",
-                "image": "/static/style_images/tender_moment.jfif"
-            },
-            {
-                "name": "Historical Romance",
-                "prompt": "historical romance, period setting, traditional courtship, elegant attire, classical environment, timeless love, bygone era",
-                "color": "from-brown-500 to-amber-600",
-                "image": "/static/style_images/historical_romance.jfif"
-            },
-            {
-                "name": "Fantasy Romance",
-                "prompt": "fantasy romance, magical setting, mythical lovers, enchanted encounter, supernatural elements, epic love story, otherworldly passion",
-                "color": "from-purple-500 to-pink-600",
-                "image": "/static/style_images/fantasy_romance.jfif"
-            },
-            {
-                "name": "Starcrossed Lovers",
-                "prompt": "starcrossed lovers, doomed romance, dramatic conflict, emotional tragedy, forbidden love, opposing forces, heartbreaking connection",
-                "color": "from-blue-600 to-purple-700",
-                "image": "/static/style_images/starcrossed_lovers.jfif"
-            },
-            {
-                "name": "First Love",
-                "prompt": "first love, youthful romance, innocent affection, discovery of feelings, sweet connection, nostalgic memory, beginning of relationship",
-                "color": "from-pink-400 to-yellow-400",
-                "image": "/static/style_images/first_love.jfif"
-            },
-            {
-                "name": "Eternal Bond",
-                "prompt": "eternal bond, lifelong commitment, unbreakable connection, enduring love, timeless devotion, soulmate concept, forever relationship",
-                "color": "from-gold-500 to-silver-500",
-                "image": "/static/style_images/eternal_bond.jfif"
-            },
-            {
-                "name": "Romantic Sunset",
-                "prompt": "romantic sunset, golden hour, warm lighting, beautiful backdrop, intimate atmosphere, natural beauty, perfect moment",
-                "color": "from-orange-500 to-pink-600",
-                "image": "/static/style_images/romantic_sunset.jfif"
-            },
-            {
-                "name": "Love Letters",
-                "prompt": "love letters, written emotions, personal expression, romantic communication, heartfelt words, historical correspondence, emotional depth",
-                "color": "from-brown-400 to-pink-500",
-                "image": "/static/style_images/love_letters.jfif"
             }
         ]
     },
@@ -984,7 +910,7 @@
             }
         ]
     },
-     {
+    {
         "category": "Action & Combat",
         "styles": [
             {
@@ -1049,7 +975,7 @@
             }
         ]
     },
-     {
+    {
         "category": "Fantasy & Sci-Fi Genres",
         "description": "Ultra-detailed fantasy and sci-fi styles with cinematic quality and imaginative excellence",
         "styles": [
@@ -1180,7 +1106,7 @@
             }
         ]
     },
-     {
+    {
         "category": "Traditional World Fashion",
         "styles": [
             {
@@ -1245,8 +1171,7 @@
             }
         ]
     },
-    
-     {
+    {
         "category": "Anime & Manga Styles",
         "styles": [
             {
@@ -1311,7 +1236,7 @@
             }
         ]
     },
-     {
+    {
         "category": "Elven & Fantasy Races",
         "styles": [
             {
