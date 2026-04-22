@@ -1,0 +1,222 @@
+[
+  {
+    "category": "Text Models",
+    "description": "Free text generation models",
+    "type": "text",
+    "models": [
+      {
+        "name": "amazon-nova-micro",
+        "display_name": "Amazon Nova Micro",
+        "description": "Fast, efficient text model",
+        "image": "/static/models/cd-pt.jpg",
+        "rating": {"quality": 4, "speed": 5},
+        "difficulty": "easy"
+      },
+      {
+        "name": "qwen3guard-8b",
+        "display_name": "Qwen3Guard 8B",
+        "description": "Alibaba Qwen 8B guard model",
+        "image": "/static/models/gptimage.jpg",
+        "rating": {"quality": 4, "speed": 4},
+        "difficulty": "easy"
+      }
+    ]
+  },
+  {
+    "category": "Image Models",
+    "description": "Free image generation models",
+    "type": "image",
+    "models": [
+      {
+        "name": "flux",
+        "display_name": "Flux Schnell",
+        "description": "Fast, high-quality FLUX model - best for general purpose",
+        "image": "/static/models/flux.jpg",
+        "rating": {"quality": 5, "speed": 5},
+        "difficulty": "easy",
+        "optimization_prompts": {
+          "quality_enhancers": "high quality, detailed, professional",
+          "realism_boosters": "photorealistic, realistic lighting"
+        },
+        "compatibility": {
+          "styles": ["Quality Enhancement", "Epic Cinematic", "Golden Hour", "Digital & Graphic Styles", "Renaissance", "Impressionism"],
+          "recommended_for": ["general purpose", "fast generation", "high quality"]
+        }
+      },
+      {
+        "name": "kontext",
+        "display_name": "FLUX.1 Kontext",
+        "description": "Context-aware FLUX model for editing - great for character consistency",
+        "image": "/static/models/flux-ultra.jpg",
+        "rating": {"quality": 5, "speed": 4},
+        "difficulty": "medium",
+        "optimization_prompts": {
+          "quality_enhancers": "context-aware, detailed",
+          "realism_boosters": "scene consistent"
+        },
+        "compatibility": {
+          "styles": ["Anatomy Correction", "Detail Enhancement", "Lighting Optimization", "Noir", "Epic Cinematic"],
+          "recommended_for": ["character editing", "context-aware generation", "consistent scenes"]
+        }
+      },
+      {
+        "name": "klein",
+        "display_name": "FLUX.2 Klein 4B",
+        "description": "Compact 4B parameter FLUX model - fast and efficient",
+        "image": "/static/models/dreamshaper.jpg",
+        "rating": {"quality": 4, "speed": 5},
+        "difficulty": "easy",
+        "optimization_prompts": {
+          "quality_enhancers": "efficient, detailed",
+          "realism_boosters": "fast generation"
+        },
+        "compatibility": {
+          "styles": ["Pixel Art", "Vector Illustration", "Flat Design", "Isometric", "Low Poly"],
+          "recommended_for": ["quick drafts", "iterations", "digital graphics"]
+        }
+      },
+      {
+        "name": "gptimage",
+        "display_name": "GPT Image 1 Mini",
+        "description": "Lightweight GPT image model - great for creative concepts",
+        "image": "/static/models/dalle3.jpg",
+        "rating": {"quality": 4, "speed": 4},
+        "difficulty": "easy",
+        "optimization_prompts": {
+          "quality_enhancers": "clean, optimized",
+          "realism_boosters": "balanced output"
+        },
+        "compatibility": {
+          "styles": ["Ethereal Beauty", "Elegant Simplicity", "Enchanted Forest", "Claymation", "Fantasy Creatures & Beasts"],
+          "recommended_for": ["creative concepts", "whimsical art", "illustrations"]
+        }
+      },
+      {
+        "name": "gptimage-large",
+        "display_name": "GPT Image 1.5",
+        "description": "Enhanced GPT image model - best for detailed artwork",
+        "image": "/static/models/imagen.jpg",
+        "rating": {"quality": 5, "speed": 3},
+        "difficulty": "medium",
+        "optimization_prompts": {
+          "quality_enhancers": "enhanced detail, crisp",
+          "realism_boosters": "improved textures"
+        },
+        "compatibility": {
+          "styles": ["Detail Enhancement", "Quality Enhancement", "Symmetrical Perfection", "Golden Ratio", "Sublime Nature"],
+          "recommended_for": ["fine art", "detailed artwork", "premium quality"]
+        }
+      },
+      {
+        "name": "qwen-image",
+        "display_name": "Qwen Image Plus",
+        "description": "Alibaba Qwen image model - versatile multi-style generation",
+        "image": "/static/models/pixart.jpg",
+        "rating": {"quality": 4, "speed": 4},
+        "difficulty": "easy",
+        "optimization_prompts": {
+          "quality_enhancers": "versatile, multi-style",
+          "realism_boosters": "adaptive rendering"
+        },
+        "compatibility": {
+          "styles": ["Ukiyo-e", "Baroque", "Realism", "Rococo", "Neoclassicism", "Material Design"],
+          "recommended_for": ["asian art styles", "classical art", "versatile generation"]
+        }
+      },
+      {
+        "name": "wan-image",
+        "display_name": "Wan 2.7 Image",
+        "description": "Alibaba Wan image model - cinematic and video-ready quality",
+        "image": "/static/models/stable-diffusion-xl.jpg",
+        "rating": {"quality": 5, "speed": 3},
+        "difficulty": "medium",
+        "optimization_prompts": {
+          "quality_enhancers": "high fidelity, cinematic",
+          "realism_boosters": "video-ready quality"
+        },
+        "compatibility": {
+          "styles": ["Epic Cinematic", "Dramatic Lighting", "Volumetric Lighting", "Underwater", "Cinematic Rain", "Blue Hour"],
+          "recommended_for": ["cinematic scenes", "film production", "atmospheric shots"]
+        }
+      },
+      {
+        "name": "zimage",
+        "display_name": "Z-Image Turbo",
+        "description": "Fast turbo image model - best for rapid prototyping",
+        "image": "/static/models/turbo.jpg",
+        "rating": {"quality": 4, "speed": 5},
+        "difficulty": "easy",
+        "optimization_prompts": {
+          "quality_enhancers": "turbo fast, sharp",
+          "realism_boosters": "quick high quality"
+        },
+        "compatibility": {
+          "styles": ["Glitch Art", "Data Moshing", "HUD Interface", "Metallic", "Crystalline", "Smoke"],
+          "recommended_for": ["rapid prototyping", "quick iterations", "experimental art"]
+        }
+      }
+    ]
+  },
+  {
+    "category": "Video Models",
+    "description": "Free video generation models",
+    "type": "video",
+    "models": [
+      {
+        "name": "amazon-nova-reel",
+        "display_name": "Amazon Nova Reel",
+        "description": "Amazon video generation model",
+        "image": "/static/models/dark-diffusion.jpg",
+        "rating": {"quality": 4, "speed": 3},
+        "difficulty": "medium"
+      },
+      {
+        "name": "ltx-2.3",
+        "display_name": "LTX-2.3",
+        "description": "LTX video generation model",
+        "image": "/static/models/epi-noir.jpg",
+        "rating": {"quality": 4, "speed": 4},
+        "difficulty": "medium"
+      }
+    ]
+  },
+  {
+    "category": "Audio Models",
+    "description": "Free audio generation models",
+    "type": "audio",
+    "models": [
+      {
+        "name": "ace-step-1.5-turbo",
+        "display_name": "ACE-Step 1.5 Turbo",
+        "description": "Music generation model",
+        "image": "/static/models/anything-v3.jpg",
+        "rating": {"quality": 4, "speed": 5},
+        "difficulty": "easy"
+      },
+      {
+        "name": "elevenlabs-scribe-v2",
+        "display_name": "ElevenLabs Scribe v2",
+        "description": "Transcription model",
+        "image": "/static/models/cetus-mix.jpg",
+        "rating": {"quality": 5, "speed": 4},
+        "difficulty": "easy"
+      },
+      {
+        "name": "elevenlabs-v3-tts",
+        "display_name": "ElevenLabs v3 TTS",
+        "description": "Text-to-speech model",
+        "image": "/static/models/arcane-diffusion.jpg",
+        "rating": {"quality": 5, "speed": 4},
+        "difficulty": "easy"
+      },
+      {
+        "name": "whisper-large-v3",
+        "display_name": "Whisper Large V3",
+        "description": "OpenAI Whisper transcription",
+        "image": "/static/models/openjourney.jpg",
+        "rating": {"quality": 5, "speed": 3},
+        "difficulty": "easy"
+      }
+    ]
+  }
+]

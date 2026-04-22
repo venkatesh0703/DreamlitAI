@@ -1,0 +1,1678 @@
+[
+    {
+        "category": "Classical Art Movements",
+        "description": "Ultra-detailed classical art styles with museum-quality accuracy and historical authenticity",
+        "styles": [
+            {
+                "name": "Renaissance",
+                "prompt": "renaissance art, classical balance, humanist themes, anatomical accuracy, linear perspective, chiaroscuro, harmonious composition, oil painting",
+                "color": "from-amber-600 to-yellow-700",
+                "image": "/static/style_images/renaissance.jfif",
+                "compatibility": {
+                    "best_models": ["flux", "gptimage-large", "qwen-image"],
+                    "recommended_for": ["portraits", "classical art", "historical scenes", "religious art"]
+                }
+            },
+            {
+                "name": "Baroque",
+                "prompt": "baroque style, dramatic movement, rich deep color, intense light and shadow (tenebrism), emotional exuberance, theatricality, grand scale",
+                "color": "from-purple-700 to-red-800",
+                "image": "/static/style_images/baroque.jfif"
+            },
+            {
+                "name": "Impressionism",
+                "prompt": "impressionism, visible brush strokes, open composition, emphasis on light, ordinary subject matter, movement perception, human visual experience",
+                "color": "from-blue-300 to-cyan-400",
+                "image": "/static/style_images/impressionism.jfif",
+                "compatibility": {
+                    "best_models": ["flux", "gptimage", "qwen-image"],
+                    "recommended_for": ["landscapes", "outdoor scenes", "light studies", "artistic impressions"]
+                }
+            },
+            {
+                "name": "Ukiyo-e",
+                "prompt": "ukiyo-e, Japanese woodblock print, flat areas of color, strong outlines, traditional Japanese aesthetics, everyday scenes, nature prints, historical art",
+                "color": "from-red-500 to-orange-600",
+                "image": "/static/style_images/ukiyo_e.jfif"
+            },
+            {
+                "name": "Romanticism",
+                "prompt": "romanticism, emotional emphasis, awe of nature, dramatic landscapes, sublime experience, individual imagination",
+                "color": "from-red-600 to-pink-700",
+                "image": "/static/style_images/romanticism.jfif"
+            },
+            {
+                "name": "Realism",
+                "prompt": "realism, truthful representation, everyday subjects, ordinary people, natural settings, unembellished details",
+                "color": "from-gray-600 to-brown-700",
+                "image": "/static/style_images/realism.jfif"
+            },
+            {
+                "name": "Rococo",
+                "prompt": "rococo style, ornate decoration, playful themes, pastel colors, curved forms, asymmetrical designs, aristocratic elegance",
+                "color": "from-pink-300 to-rose-400",
+                "image": "/static/style_images/rococo.jfif"
+            },
+            {
+                "name": "Neoclassicism",
+                "prompt": "neoclassicism, classical antiquity inspiration, simplicity, symmetry, heroic subjects, sober colors",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/neoclassicism.jfif"
+            },
+            {
+                "name": "Pre-Raphaelite",
+                "prompt": "pre-raphaelite, medieval inspiration, vibrant colors, detailed nature, romantic themes, literary subjects",
+                "color": "from-red-700 to-purple-800",
+                "image": "/static/style_images/pre_raphaelite.jfif"
+            },
+            {
+                "name": "Post-Impressionism",
+                "prompt": "post-impressionism, vivid colors, thick brushstrokes, emotional expression, symbolic content, subjective perspective",
+                "color": "from-yellow-500 to-orange-600",
+                "image": "/static/style_images/post_impressionism.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Digital & Graphic Styles",
+        "styles": [
+            {
+                "name": "Pixel Art",
+                "prompt": "pixel art, low resolution, deliberate placement, retro digital aesthetic, limited color palette, blocky composition, nostalgic computing",
+                "color": "from-pink-500 to-red-600",
+                "image": "/static/style_images/pixel_art.jfif",
+                "compatibility": {
+                    "best_models": ["klein", "zimage", "qwen-image"],
+                    "recommended_for": ["retro games", "icons", "nostalgic art", "simple graphics"]
+                }
+            },
+            {
+                "name": "Vector Illustration",
+                "prompt": "vector illustration, clean lines, flat colors, sharp edges, scalable graphics, digital precision, geometric shapes, modern graphic design",
+                "color": "from-green-400 to-blue-500",
+                "image": "/static/style_images/vector_illustration.jfif",
+                "compatibility": {
+                    "best_models": ["klein", "flux", "qwen-image"],
+                    "recommended_for": ["logos", "icons", "clean graphics", "print design"]
+                }
+            },
+            {
+                "name": "Low Poly",
+                "prompt": "low poly design, geometric polygons, faceted surfaces, minimalist 3D aesthetic, angular composition, digital art style, computational geometry",
+                "color": "from-amber-500 to-orange-600",
+                "image": "/static/style_images/low_poly.jfif",
+                "compatibility": {
+                    "best_models": ["klein", "zimage", "flux"],
+                    "recommended_for": ["game assets", "stylized art", "geometric designs", "3D art"]
+                }
+            },
+            {
+                "name": "Glitch Art",
+                "prompt": "glitch art, digital distortion, corrupted data, RGB shift, pixel sorting, noise artifacts, intentional error, digital malfunction aesthetic",
+                "color": "from-blue-500 to-purple-600",
+                "image": "/static/style_images/glitch_art.jfif",
+                "compatibility": {
+                    "best_models": ["zimage", "klein", "qwen-image"],
+                    "recommended_for": ["experimental art", "digital art", "cyberpunk", "tech themes"]
+                }
+            },
+            {
+                "name": "Isometric",
+                "prompt": "isometric projection, 2.5D perspective, equal measurements, technical drawing, video game aesthetic, dimensional representation",
+                "color": "from-teal-500 to-green-600",
+                "image": "/static/style_images/isometric.jfif",
+                "compatibility": {
+                    "best_models": ["klein", "flux", "zimage"],
+                    "recommended_for": ["game assets", "infographics", "technical diagrams", "3D-like art"]
+                }
+            },
+            {
+                "name": "Flat Design",
+                "prompt": "flat design, minimalistic, two-dimensional, bold colors, simple shapes, clean interfaces, modern UI aesthetic",
+                "color": "from-blue-400 to-cyan-500",
+                "image": "/static/style_images/flat_design.jfif",
+                "compatibility": {
+                    "best_models": ["klein", "qwen-image", "zimage"],
+                    "recommended_for": ["UI design", "icons", "web graphics", "minimal art"]
+                }
+            },
+            {
+                "name": "Material Design",
+                "prompt": "material design, paper-like layers, subtle shadows, vibrant colors, responsive animations, grid-based layout, digital tactility",
+                "color": "from-indigo-500 to-purple-600",
+                "image": "/static/style_images/material_design.jfif"
+            },
+            {
+                "name": "Neumorphism",
+                "prompt": "neumorphism, soft UI, minimal extruded shapes, subtle shadows, monochromatic scheme, embossed effect, modern interface trend",
+                "color": "from-gray-400 to-gray-600",
+                "image": "/static/style_images/neumorphism.jfif",
+                "compatibility": {
+                    "best_models": ["zimage", "klein", "flux"],
+                    "recommended_for": ["sci-fi", "gaming UI", "tech visualization", "futuristic"]
+                }
+            },
+            {
+                "name": "HUD Interface",
+                "prompt": "HUD interface, digital display, information overlay, futuristic graphics, data visualization, transparent elements, tech aesthetic",
+                "color": "from-green-500 to-cyan-600",
+                "image": "/static/style_images/hud_interface.jfif",
+                "compatibility": {
+                    "best_models": ["zimage", "klein", "flux"],
+                    "recommended_for": ["sci-fi", "gaming UI", "tech visualization", "futuristic"]
+                }
+            },
+            {
+                "name": "Data Moshing",
+                "prompt": "data moshing, digital compression artifacts, intentional glitches, corrupted video aesthetic, pixel displacement, digital degradation",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/data_moshing.jfif",
+                "compatibility": {
+                    "best_models": ["zimage", "klein", "flux"],
+                    "recommended_for": ["experimental art", "avant-garde", "video art", "abstract"]
+                }
+            }
+        ]
+    },
+    {
+        "category": "Material & Texture",
+        "styles": [
+            {
+                "name": "Claymation",
+                "prompt": "claymation, stop-motion animation, tactile clay material, soft textures, handcrafted feel, whimsical style, Aardman style, playful lighting",
+                "color": "from-orange-400 to-red-500",
+                "image": "/static/style_images/claymation.jfif",
+                "compatibility": {
+                    "best_models": ["gptimage", "flux", "klein"],
+                    "recommended_for": ["whimsical characters", "children's content", "nostalgic art", "fun animations"]
+                }
+            },
+            {
+                "name": "Crystalline",
+                "prompt": "crystalline structure, geometric patterns, faceted surfaces, refractive light, gemstone quality, mineral appearance, jewel-like aesthetics",
+                "color": "from-cyan-400 to-blue-500",
+                "image": "/static/style_images/crystalline.jfif",
+                "compatibility": {
+                    "best_models": ["zimage", "flux", "wan-image"],
+                    "recommended_for": ["jewelry", "abstract art", "mineral renders", "luxury items"]
+                }
+            },
+            {
+                "name": "Metallic",
+                "prompt": "metallic surface, reflective quality, polished metal, specular highlights, industrial materials, shiny appearance, chrome, steel, brass",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/metallic.jfif",
+                "compatibility": {
+                    "best_models": ["zimage", "flux", "gptimage-large"],
+                    "recommended_for": ["industrial design", "machinery", "jewelry", "futuristic objects"]
+                }
+            },
+            {
+                "name": "Organic",
+                "prompt": "organic texture, biological forms, fleshy surface, veins, membranes, wet look, grotesque beauty, natural imperfections, biopunk aesthetic",
+                "color": "from-red-500 to-pink-600",
+                "image": "/static/style_images/organic.jfif"
+            },
+            {
+                "name": "Glass",
+                "prompt": "glass material, transparent, refractive, reflective, fragile appearance, light transmission, smooth surface, crystalline structure",
+                "color": "from-cyan-300 to-blue-400",
+                "image": "/static/style_images/glass.jfif"
+            },
+            {
+                "name": "Wood",
+                "prompt": "wood texture, grain patterns, natural material, organic feel, carved appearance, wooden surface, rustic quality",
+                "color": "from-amber-600 to-brown-700",
+                "image": "/static/style_images/wood.jfif"
+            },
+            {
+                "name": "Fabric",
+                "prompt": "fabric texture, woven material, cloth surface, textile patterns, soft appearance, folds and wrinkles, tactile quality",
+                "color": "from-pink-400 to-rose-500",
+                "image": "/static/style_images/fabric.jfif"
+            },
+            {
+                "name": "Stone",
+                "prompt": "stone material, rocky texture, geological formations, rough surface, mineral patterns, natural erosion, solid appearance",
+                "color": "from-gray-600 to-gray-800",
+                "image": "/static/style_images/stone.jfif"
+            },
+            {
+                "name": "Liquid",
+                "prompt": "liquid appearance, fluid dynamics, flowing forms, transparent viscosity, droplets, splashes, watery surface",
+                "color": "from-blue-400 to-cyan-500",
+                "image": "/static/style_images/liquid.jfif"
+            },
+            {
+                "name": "Smoke",
+                "prompt": "smoke effects, wispy forms, translucent volume, ethereal appearance, gaseous movement, airy texture, dissipating clouds",
+                "color": "from-gray-300 to-gray-500",
+                "image": "/static/style_images/smoke.jfif",
+                "compatibility": {
+                    "best_models": ["zimage", "wan-image", "flux"],
+                    "recommended_for": ["atmospheric effects", "abstract art", "mystical scenes", "drama"]
+                }
+            }
+        ]
+    },
+    {
+        "category": "Cinematic & Atmosphere",
+        "styles": [
+            {
+                "name": "Noir",
+                "prompt": "film noir, black and white, high contrast, dramatic shadows, chiaroscuro lighting, smoky atmosphere, cynical mood, 1940s detective style",
+                "color": "from-gray-600 to-gray-800",
+                "image": "/static/style_images/noir.jfif",
+                "compatibility": {
+                    "best_models": ["kontext", "flux", "wan-image"],
+                    "recommended_for": ["mystery", "detective scenes", "dramatic portraits", "vintage"]
+                }
+            },
+            {
+                "name": "Epic Cinematic",
+                "prompt": "epic cinematic, wide angle, dramatic lighting, vast scale, movie poster, concept art, grand atmosphere, professional color grading, lens flare",
+                "color": "from-purple-700 to-blue-800",
+                "image": "/static/style_images/epic_cinematic.jfif",
+                "compatibility": {
+                    "best_models": ["flux", "wan-image", "kontext", "qwen-image"],
+                    "recommended_for": ["landscapes", "movie posters", "concept art", "wide scenes"]
+                }
+            },
+            {
+                "name": "Liminal Space",
+                "prompt": "liminal space, eerie transition area, empty hallways, nostalgia, dreamlike unease, familiar yet alien, quiet tension, backrooms aesthetic",
+                "color": "from-yellow-400 to-amber-500",
+                "image": "/static/style_images/liminal_space.jfif"
+            },
+            {
+                "name": "Dramatic Lighting",
+                "prompt": "dramatic lighting, volumetric light, god rays, strong contrast, spotlight, theater lighting, moody atmosphere, emphasizes subject",
+                "color": "from-orange-500 to-red-600",
+                "image": "/static/style_images/dramatic_lighting.jfif",
+                "compatibility": {
+                    "best_models": ["wan-image", "kontext", "flux"],
+                    "recommended_for": ["theater scenes", "portraits", "product shots", "fine art"]
+                }
+            },
+            {
+                "name": "Golden Hour",
+                "prompt": "golden hour photography, warm sunlight, long shadows, soft glow, sunset or sunrise, romantic atmosphere, natural beauty",
+                "color": "from-yellow-500 to-orange-600",
+                "image": "/static/style_images/golden_hour.jfif",
+                "compatibility": {
+                    "best_models": ["flux", "wan-image", "gptimage-large"],
+                    "recommended_for": ["landscapes", "portraits", "romantic scenes", "nature"]
+                }
+            },
+            {
+                "name": "Blue Hour",
+                "prompt": "blue hour photography, twilight atmosphere, cool blue tones, soft diffuse light, tranquil mood, dusk or dawn, serene ambiance",
+                "color": "from-blue-400 to-indigo-500",
+                "image": "/static/style_images/blue_hour.jfif",
+                "compatibility": {
+                    "best_models": ["wan-image", "flux", "gptimage-large"],
+                    "recommended_for": ["landscapes", "cityscapes", "twilight scenes", "tranquil moments"]
+                }
+            },
+            {
+                "name": "Cinematic Rain",
+                "prompt": "cinematic rain, wet surfaces, water droplets, reflections, moody atmosphere, dramatic weather, emotional scenes, film aesthetic",
+                "color": "from-blue-600 to-gray-700",
+                "image": "/static/style_images/cinematic_rain.jfif",
+                "compatibility": {
+                    "best_models": ["wan-image", "flux", "kontext"],
+                    "recommended_for": ["moody scenes", "urban photography", "film stills", "dramatic moments"]
+                }
+            },
+            {
+                "name": "Foggy Atmosphere",
+                "prompt": "foggy atmosphere, misty environment, reduced visibility, soft edges, mysterious mood, ethereal quality, dreamlike scenes",
+                "color": "from-gray-300 to-gray-500",
+                "image": "/static/style_images/foggy_atmosphere.jfif"
+            },
+            {
+                "name": "Underwater",
+                "prompt": "underwater scene, light refraction, caustics, floating particles, blue-green tones, aquatic environment, serene yet mysterious",
+                "color": "from-blue-300 to-teal-400",
+                "image": "/static/style_images/underwater.jfif",
+                "compatibility": {
+                    "best_models": ["wan-image", "flux", "gptimage"],
+                    "recommended_for": ["ocean scenes", "marine life", "mystical underwater", "aquatic portraits"]
+                }
+            },
+            {
+                "name": "Volumetric Lighting",
+                "prompt": "volumetric lighting, light beams, god rays, atmospheric perspective, visible light shafts, dramatic illumination, mystical atmosphere",
+                "color": "from-yellow-400 to-orange-500",
+                "image": "/static/style_images/volumetric_lighting.jfif",
+                "compatibility": {
+                    "best_models": ["wan-image", "flux", "gptimage-large"],
+                    "recommended_for": ["atmospheric scenes", "forest light", "sacred moments", "cinematic shots"]
+                }
+            }
+        ]
+    },
+    {
+        "category": "Technical Optimization",
+        "styles": [
+            {
+                "name": "Quality Enhancement",
+                "prompt": "masterpiece, best quality, ultra detailed, sharp focus, perfect composition, professional grade, high fidelity, excellent craftsmanship",
+                "color": "from-green-500 to-teal-600",
+                "image": "/static/style_images/quality_enhancement.jfif",
+                "compatibility": {
+                    "best_models": ["flux", "gptimage-large", "wan-image"],
+                    "recommended_for": ["all image types", "professional work", "high standards"]
+                }
+            },
+            {
+                "name": "Anatomy Correction",
+                "prompt": "perfect anatomy, correct proportions, accurate details, no deformities, realistic posture, natural appearance, technical accuracy",
+                "color": "from-pink-500 to-rose-600",
+                "image": "/static/style_images/anatomy_correction.jfif"
+            },
+            {
+                "name": "Perspective Accuracy",
+                "prompt": "accurate perspective, vanishing points, foreshortening, spatial depth, correct proportions, technical drawing, architectural precision",
+                "color": "from-blue-500 to-indigo-600",
+                "image": "/static/style_images/perspective_accuracy.jfif"
+            },
+            {
+                "name": "Lighting Optimization",
+                "prompt": "optimal lighting, balanced illumination, proper shadows, natural light falloff, realistic reflections, professional lighting setup",
+                "color": "from-yellow-400 to-amber-500",
+                "image": "/static/style_images/lighting_optimization.jfif",
+                "compatibility": {
+                    "best_models": ["kontext", "wan-image", "flux"],
+                    "recommended_for": ["dramatic scenes", "portraits", "atmospheric shots"]
+                }
+            },
+            {
+                "name": "Color Grading",
+                "prompt": "professional color grading, balanced palette, harmonious colors, mood enhancement, cinematic tones, visual coherence",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/color_grading.jfif"
+            },
+            {
+                "name": "Detail Enhancement",
+                "prompt": "enhanced details, intricate elements, fine textures, sharp focus, clarity emphasis, meticulous craftsmanship",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/detail_enhancement.jfif",
+                "compatibility": {
+                    "best_models": ["gptimage-large", "kontext", "flux"],
+                    "recommended_for": ["complex scenes", "fine art", "technical work"]
+                }
+            },
+            {
+                "name": "Resolution Boost",
+                "prompt": "high resolution, crisp details, no pixelation, sharp edges, clean lines, professional quality, print ready",
+                "color": "from-cyan-500 to-blue-600",
+                "image": "/static/style_images/resolution_boost.jfif"
+            },
+            {
+                "name": "Anti-Aliasing",
+                "prompt": "smooth edges, no jagged lines, clean curves, refined appearance, technical precision, polished finish",
+                "color": "from-green-400 to-teal-500",
+                "image": "/static/style_images/anti_aliasing.jfif"
+            },
+            {
+                "name": "Depth of Field",
+                "prompt": "cinematic depth of field, focal point emphasis, background blur, bokeh effects, professional photography, selective focus",
+                "color": "from-purple-400 to-pink-500",
+                "image": "/static/style_images/depth_of_field.jfif"
+            },
+            {
+                "name": "Dynamic Range",
+                "prompt": "high dynamic range, detailed shadows, preserved highlights, balanced exposure, professional photography, HDR effect",
+                "color": "from-orange-500 to-red-600",
+                "image": "/static/style_images/dynamic_range.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Fantasy Creatures & Beasts",
+        "styles": [
+            {
+                "name": "Dragons",
+                "prompt": "fantasy dragon, majestic scales, powerful wings, fiery breath, mythical beast, detailed anatomy, epic scale, legendary creature",
+                "color": "from-red-600 to-orange-700",
+                "image": "/static/style_images/dragons.jfif"
+            },
+            {
+                "name": "Phoenix",
+                "prompt": "mythical phoenix, fiery bird, radiant feathers, rebirth symbolism, glowing embers, majestic appearance, legendary creature",
+                "color": "from-red-500 to-yellow-600",
+                "image": "/static/style_images/phoenix.jfif"
+            },
+            {
+                "name": "Griffins",
+                "prompt": "griffin creature, eagle head, lion body, powerful wings, mythological hybrid, majestic appearance, detailed anatomy, legendary beast",
+                "color": "from-gold-500 to-brown-600",
+                "image": "/static/style_images/griffins.jfif"
+            },
+            {
+                "name": "Unicorns",
+                "prompt": "magical unicorn, spiraled horn, ethereal mane, mystical aura, pure white, enchanted forest, legendary creature, graceful appearance",
+                "color": "from-white to-silver-400",
+                "image": "/static/style_images/unicorns.jfif"
+            },
+            {
+                "name": "Centaurs",
+                "prompt": "mythological centaur, human torso, horse body, powerful build, forest dwelling, archer attributes, detailed anatomy, legendary creature",
+                "color": "from-brown-600 to-amber-700",
+                "image": "/static/style_images/centaurs.jfif"
+            },
+            {
+                "name": "Mermaids",
+                "prompt": "enchanting mermaid, fish tail, human torso, oceanic environment, flowing hair, underwater beauty, mythical creature, aquatic elegance",
+                "color": "from-blue-400 to-green-500",
+                "image": "/static/style_images/mermaids.jfif"
+            },
+            {
+                "name": "Werewolves",
+                "prompt": "ferocious werewolf, hybrid transformation, full moon, fur texture, sharp claws, terrifying appearance, mythological creature, night setting",
+                "color": "from-gray-600 to-amber-600",
+                "image": "/static/style_images/werewolves.jfif"
+            },
+            {
+                "name": "Sphinx",
+                "prompt": "mystical sphinx, human head, lion body, enigmatic expression, desert setting, ancient riddles, mythological creature, Egyptian influence",
+                "color": "from-amber-500 to-brown-600",
+                "image": "/static/style_images/sphinx.jfif"
+            },
+            {
+                "name": "Pegasus",
+                "prompt": "winged horse, majestic wings, heavenly ascent, cloud environment, divine creature, graceful flight, mythological beast, pure white",
+                "color": "from-white to-gray-300",
+                "image": "/static/style_images/pegasus.jfif"
+            },
+            {
+                "name": "Kraken",
+                "prompt": "gigantic kraken, tentacled monster, deep ocean, terrifying size, ship destruction, mythological sea creature, dark waters, monstrous appearance",
+                "color": "from-blue-800 to-purple-900",
+                "image": "/static/style_images/kraken.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Alien Species",
+        "styles": [
+            {
+                "name": "Grey Aliens",
+                "prompt": "grey aliens, large black eyes, slender bodies, pale skin, mysterious atmosphere, UFO setting, extraterrestrial encounter",
+                "color": "from-gray-400 to-gray-600",
+                "image": "/static/style_images/grey_aliens.jfif"
+            },
+            {
+                "name": "Reptilian Humanoids",
+                "prompt": "reptilian humanoids, scaled skin, slitted eyes, powerful build, ancient civilization, sophisticated yet primal, conspiracy theories",
+                "color": "from-green-600 to-teal-700",
+                "image": "/static/style_images/reptilian_humanoids.jfif"
+            },
+            {
+                "name": "Insectoid Aliens",
+                "prompt": "insectoid aliens, chitinous exoskeleton, multiple limbs, compound eyes, hive mentality, advanced technology, alien environment",
+                "color": "from-purple-600 to-indigo-700",
+                "image": "/static/style_images/insectoid_aliens.jfif"
+            },
+            {
+                "name": "Energy Beings",
+                "prompt": "energy beings, luminous forms, non-corporeal, plasma appearance, light emission, advanced consciousness, pure energy, ethereal presence",
+                "color": "from-blue-400 to-cyan-500",
+                "image": "/static/style_images/energy_beings.jfif"
+            },
+            {
+                "name": "Silicon-Based Life",
+                "prompt": "silicon-based life, crystalline structure, geometric forms, mineral appearance, desert planet, non-carbon biology, exotic lifeform",
+                "color": "from-cyan-500 to-purple-600",
+                "image": "/static/style_images/silicon_based_life.jfif"
+            },
+            {
+                "name": "Aquatic Aliens",
+                "prompt": "aquatic aliens, water adaptation, flowing forms, bioluminescence, ocean world, alien seas, underwater civilization, fluid movement",
+                "color": "from-blue-500 to-green-600",
+                "image": "/static/style_images/aquatic_aliens.jfif"
+            },
+            {
+                "name": "Gas Giant Dwellers",
+                "prompt": "gas giant dwellers, atmospheric beings, cloud-like forms, floating existence, hydrogen environment, light-based communication, exotic biology",
+                "color": "from-orange-400 to-red-500",
+                "image": "/static/style_images/gas_giant_dwellers.jfif"
+            },
+            {
+                "name": "Symbiotic Species",
+                "prompt": "symbiotic alien species, biological integration, combined forms, mutualistic relationship, exotic biology, interconnected beings",
+                "color": "from-pink-500 to-purple-600",
+                "image": "/static/style_images/symbiotic_species.jfif"
+            },
+            {
+                "name": "Telepathic Race",
+                "prompt": "telepathic aliens, enlarged craniums, minimal sensory organs, psychic energy, mind-based communication, advanced consciousness",
+                "color": "from-purple-500 to-blue-600",
+                "image": "/static/style_images/telepathic_race.jfif"
+            },
+            {
+                "name": "Shape-Shifting Aliens",
+                "prompt": "shape-shifting aliens, fluid forms, adaptive biology, mimicry ability, unpredictable appearance, protean nature, mysterious beings",
+                "color": "from-gray-500 to-silver-600",
+                "image": "/static/style_images/shape_shifting_aliens.jfif"
+            }
+        ]
+    },
+    {
+        "category": "War & Military",
+        "styles": [
+            {
+                "name": "Historical Battle",
+                "prompt": "historical battle scene, period accuracy, military uniforms, traditional warfare, battlefield chaos, strategic formations, historical reenactment",
+                "color": "from-brown-600 to-gray-700",
+                "image": "/static/style_images/historical_battle.jfif"
+            },
+            {
+                "name": "Modern Warfare",
+                "prompt": "modern warfare, contemporary military, advanced technology, tactical operations, urban combat, professional soldiers, realistic depiction",
+                "color": "from-gray-500 to-green-600",
+                "image": "/static/style_images/modern_warfare.jfif"
+            },
+            {
+                "name": "Futuristic Combat",
+                "prompt": "futuristic combat, advanced weapons, powered armor, high-tech warfare, sci-fi military, technological superiority, speculative conflict",
+                "color": "from-blue-600 to-purple-700",
+                "image": "/static/style_images/futuristic_combat.jfif"
+            },
+            {
+                "name": "Naval Battle",
+                "prompt": "naval battle, warships, ocean warfare, cannon fire, naval strategy, maritime conflict, historical or modern vessels",
+                "color": "from-blue-600 to-gray-700",
+                "image": "/static/style_images/naval_battle.jfif"
+            },
+            {
+                "name": "Aerial Dogfight",
+                "prompt": "aerial dogfight, aircraft combat, sky battle, pilot skills, maneuver warfare, cloud environment, aviation technology",
+                "color": "from-blue-400 to-gray-500",
+                "image": "/static/style_images/aerial_dogfight.jfif"
+            },
+            {
+                "name": "Siege Warfare",
+                "prompt": "siege warfare, fortress attack, defensive structures, medieval technology,攻城器械, strategic patience, historical conflict",
+                "color": "from-gray-600 to-brown-700",
+                "image": "/static/style_images/siege_warfare.jfif"
+            },
+            {
+                "name": "Guerilla Tactics",
+                "prompt": "guerilla tactics, irregular warfare, stealth approach, ambush strategies, unconventional combat, survival skills, asymmetric conflict",
+                "color": "from-green-600 to-brown-600",
+                "image": "/static/style_images/guerilla_tactics.jfif"
+            },
+            {
+                "name": "Military Parade",
+                "prompt": "military parade, organized display, uniform precision, ceremonial formation, national pride, historical tradition, disciplined presentation",
+                "color": "from-red-500 to-gold-600",
+                "image": "/static/style_images/military_parade.jfif"
+            },
+            {
+                "name": "War Aftermath",
+                "prompt": "war aftermath, battlefield destruction, emotional toll, ruined landscapes, post-conflict reflection, somber atmosphere, historical memory",
+                "color": "from-gray-500 to-brown-600",
+                "image": "/static/style_images/war_aftermath.jfif"
+            },
+            {
+                "name": "Tactical Strategy",
+                "prompt": "tactical strategy, command center, map planning, military intelligence, strategic discussion, officer corps, decision-making process",
+                "color": "from-blue-500 to-gray-600",
+                "image": "/static/style_images/tactical_strategy.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Fantasy Forests & Nature",
+        "styles": [
+            {
+                "name": "Enchanted Forest",
+                "prompt": "enchanted forest, magical atmosphere, glowing plants, mystical creatures, ancient trees, ethereal light, fantasy nature, fairy tale setting",
+                "color": "from-green-500 to-blue-600",
+                "image": "/static/style_images/enchanted_forest.jfif"
+            },
+            {
+                "name": "Dark Woods",
+                "prompt": "dark fantasy forest, ominous trees, misty atmosphere, gothic horror, eerie silence, mysterious creatures, foreboding environment",
+                "color": "from-gray-600 to-green-800",
+                "image": "/static/style_images/dark_woods.jfif"
+            },
+            {
+                "name": "Bioluminescent Jungle",
+                "prompt": "bioluminescent jungle, glowing flora, exotic plants, vibrant colors, alien ecosystem, nighttime beauty, natural light show",
+                "color": "from-blue-500 to-purple-600",
+                "image": "/static/style_images/bioluminescent_jungle.jfif"
+            },
+            {
+                "name": "Ancient Grove",
+                "prompt": "ancient grove, primordial forest, massive trees, timeless quality, druidic magic, natural sanctuary, old growth ecosystem",
+                "color": "from-green-600 to-brown-700",
+                "image": "/static/style_images/ancient_grove.jfif"
+            },
+            {
+                "name": "Floating Islands",
+                "prompt": "floating islands, aerial landscape, cloud environment, gravity-defying rocks, waterfall between islands, fantastic geography, sky world",
+                "color": "from-blue-400 to-cyan-500",
+                "image": "/static/style_images/floating_islands.jfif"
+            },
+            {
+                "name": "Crystal Caves",
+                "prompt": "crystal caves, geometric formations, refractive light, mineral beauty, underground wonder, sparkling surfaces, geological marvel",
+                "color": "from-cyan-500 to-purple-600",
+                "image": "/static/style_images/crystal_caves.jfif"
+            },
+            {
+                "name": "Fungal Forest",
+                "prompt": "fungal forest, mushroom trees, spore effects, alien flora, exotic ecosystem, bioluminescent fungi, strange biology",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/fungal_forest.jfif"
+            },
+            {
+                "name": "Seasons: Autumn",
+                "prompt": "autumn forest, fall colors, golden leaves, seasonal change, crisp atmosphere, harvesting time, nostalgic beauty",
+                "color": "from-orange-500 to-red-600",
+                "image": "/static/style_images/autumn_forest.jfif"
+            },
+            {
+                "name": "Seasons: Winter",
+                "prompt": "winter forest, snow coverage, frozen landscape, icy branches, cold atmosphere, serene beauty, quiet isolation",
+                "color": "from-blue-300 to-white",
+                "image": "/static/style_images/winter_forest.jfif"
+            },
+            {
+                "name": "Seasons: Spring",
+                "prompt": "spring forest, blooming flowers, new growth, vibrant green, renewal atmosphere, life returning, fresh beginnings",
+                "color": "from-green-400 to-yellow-500",
+                "image": "/static/style_images/spring_forest.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Beautiful & Aesthetic",
+        "styles": [
+            {
+                "name": "Ethereal Beauty",
+                "prompt": "ethereal beauty, otherworldly appearance, soft glow, delicate features, heavenly atmosphere, divine presence, perfect harmony",
+                "color": "from-blue-300 to-purple-400",
+                "image": "/static/style_images/ethereal_beauty.jfif",
+                "compatibility": {
+                    "best_models": ["gptimage", "gptimage-large", "flux"],
+                    "recommended_for": ["portraits", "fantasy art", "angelic themes", "dreamy scenes"]
+                }
+            },
+            {
+                "name": "Symmetrical Perfection",
+                "prompt": "symmetrical perfection, balanced composition, mirror images, precise alignment, harmonious design, mathematical beauty, flawless arrangement",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/symmetrical_perfection.jfif"
+            },
+            {
+                "name": "Golden Ratio",
+                "prompt": "golden ratio composition, mathematical beauty, perfect proportions, natural harmony, Fibonacci sequence, aesthetically pleasing arrangement",
+                "color": "from-gold-500 to-amber-600",
+                "image": "/static/style_images/golden_ratio.jfif",
+                "compatibility": {
+                    "best_models": ["gptimage-large", "flux", "qwen-image"],
+                    "recommended_for": ["compositions", "nature photography", "fine art", "design layouts"]
+                }
+            },
+            {
+                "name": "Sublime Nature",
+                "prompt": "sublime nature, awe-inspiring landscapes, majestic scale, natural wonder, breathtaking views, powerful environment, humbling beauty",
+                "color": "from-green-600 to-blue-700",
+                "image": "/static/style_images/sublime_nature.jfif"
+            },
+            {
+                "name": "Elegant Simplicity",
+                "prompt": "elegant simplicity, minimalistic beauty, essential elements, clean design, refined aesthetic, less is more, sophisticated restraint",
+                "color": "from-gray-400 to-gray-600",
+                "image": "/static/style_images/elegant_simplicity.jfif"
+            },
+            {
+                "name": "Ornate Detail",
+                "prompt": "ornate detail, intricate patterns, elaborate decoration, luxurious elements, complex designs, lavish appearance, meticulous craftsmanship",
+                "color": "from-gold-500 to-purple-600",
+                "image": "/static/style_images/ornate_detail.jfif"
+            },
+            {
+                "name": "Serene Calm",
+                "prompt": "serene calm, peaceful atmosphere, tranquil setting, gentle elements, soothing colors, meditative quality, quiet beauty",
+                "color": "from-blue-300 to-cyan-400",
+                "image": "/static/style_images/serene_calm.jfif"
+            },
+            {
+                "name": "Dramatic Beauty",
+                "prompt": "dramatic beauty, intense emotions, powerful presence, striking contrast, captivating subjects, unforgettable impact, magnificent appearance",
+                "color": "from-red-500 to-purple-600",
+                "image": "/static/style_images/dramatic_beauty.jfif"
+            },
+            {
+                "name": "Vintage Elegance",
+                "prompt": "vintage elegance, historical beauty, timeless quality, classical refinement, nostalgic charm, aged perfection, traditional aesthetics",
+                "color": "from-brown-500 to-amber-600",
+                "image": "/static/style_images/vintage_elegance.jfif"
+            },
+            {
+                "name": "Futuristic Beauty",
+                "prompt": "futuristic beauty, advanced aesthetics, technological elegance, sleek design, innovative forms, forward-thinking style, modern marvel",
+                "color": "from-blue-500 to-cyan-600",
+                "image": "/static/style_images/futuristic_beauty.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Horror & Terror",
+        "styles": [
+            {
+                "name": "Psychological Horror",
+                "prompt": "psychological horror, mental terror, unsettling atmosphere, distorted reality, fear from within, creeping dread, mind-based terror",
+                "color": "from-gray-600 to-purple-800",
+                "image": "/static/style_images/psychological_horror.jfif"
+            },
+            {
+                "name": "Body Horror",
+                "prompt": "body horror, physical transformation, grotesque changes, biological terror, unnatural anatomy, disturbing alterations, physical dread",
+                "color": "from-red-600 to-brown-700",
+                "image": "/static/style_images/body_horror.jfif"
+            },
+            {
+                "name": "Gothic Horror",
+                "prompt": "gothic horror, ancient castles, dark atmosphere, Victorian era, romanticized fear, classical terror, historical dread",
+                "color": "from-gray-700 to-red-800",
+                "image": "/static/style_images/gothic_horror.jfif"
+            },
+            {
+                "name": "Supernatural Horror",
+                "prompt": "supernatural horror, ghostly presence, occult forces, paranormal activity, unexplainable events, spiritual terror, otherworldly dread",
+                "color": "from-green-600 to-gray-800",
+                "image": "/static/style_images/supernatural_horror.jfif"
+            },
+            {
+                "name": "Slasher Horror",
+                "prompt": "slasher horror, masked killers, brutal violence, survival terror, chase sequences, bloody scenes, horror movie aesthetic",
+                "color": "from-red-700 to-black",
+                "image": "/static/style_images/slasher_horror.jfif"
+            },
+            {
+                "name": "Cosmic Horror",
+                "prompt": "cosmic horror, vast unknowable scale, existential dread, strange geometries, ancient beings, dark space, Lovecraftian, insignificance of humanity",
+                "color": "from-purple-800 to-gray-900",
+                "image": "/static/style_images/cosmic_horror.jfif"
+            },
+            {
+                "name": "Folk Horror",
+                "prompt": "folk horror, rural terror, pagan rituals, ancient traditions, countryside dread, natural horror, folk mythology",
+                "color": "from-brown-600 to-green-800",
+                "image": "/static/style_images/folk_horror.jfif"
+            },
+            {
+                "name": "Zombie Apocalypse",
+                "prompt": "zombie apocalypse, undead hordes, survival horror, post-apocalyptic setting, infection fear, desperate struggle, end of world",
+                "color": "from-green-600 to-brown-700",
+                "image": "/static/style_images/zombie_apocalypse.jfif"
+            },
+            {
+                "name": "Haunted House",
+                "prompt": "haunted house, ghostly presence, decaying architecture, eerie atmosphere, supernatural activity, abandoned building, spiritual remnant",
+                "color": "from-gray-600 to-blue-800",
+                "image": "/static/style_images/haunted_house.jfif"
+            },
+            {
+                "name": "Monster Terror",
+                "prompt": "monster terror, creature feature, unnatural beings, terrifying appearance, predatory behavior, unknown biology, fear of the other",
+                "color": "from-purple-700 to-red-800",
+                "image": "/static/style_images/monster_terror.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Space & Astronomy",
+        "styles": [
+            {
+                "name": "Nebulae",
+                "prompt": "cosmic nebulae, interstellar gas clouds, vibrant colors, star formation, astronomical beauty, space photography, Hubble telescope quality",
+                "color": "from-purple-600 to-pink-700",
+                "image": "/static/style_images/nebulae.jfif"
+            },
+            {
+                "name": "Galaxies",
+                "prompt": "spiral galaxies, star systems, cosmic scale, astronomical beauty, millions of stars, galactic center, space photography",
+                "color": "from-blue-600 to-purple-700",
+                "image": "/static/style_images/galaxies.jfif"
+            },
+            {
+                "name": "Planetary Landscapes",
+                "prompt": "planetary landscapes, alien worlds, extraterrestrial geology, unknown environments, space exploration, scientific accuracy, otherworldly beauty",
+                "color": "from-red-500 to-orange-600",
+                "image": "/static/style_images/planetary_landscapes.jfif"
+            },
+            {
+                "name": "Black Holes",
+                "prompt": "black holes, gravitational singularity, event horizon, light distortion, cosmic phenomenon, astronomical mystery, space-time curvature",
+                "color": "from-black to-purple-900",
+                "image": "/static/style_images/black_holes.jfif"
+            },
+            {
+                "name": "Space Stations",
+                "prompt": "space stations, orbital habitat, futuristic technology, zero gravity, scientific research, space exploration, human presence in orbit",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/space_stations.jfif"
+            },
+            {
+                "name": "Astronaut Exploration",
+                "prompt": "astronaut exploration, space suits, planetary surface, scientific discovery, human achievement, space mission, extravehicular activity",
+                "color": "from-white to-blue-500",
+                "image": "/static/style_images/astronaut_exploration.jfif"
+            },
+            {
+                "name": "Solar System",
+                "prompt": "solar system, planetary alignment, celestial mechanics, orbital paths, astronomical accuracy, space science, our cosmic neighborhood",
+                "color": "from-blue-600 to-yellow-600",
+                "image": "/static/style_images/solar_system.jfif"
+            },
+            {
+                "name": "Space Colonies",
+                "prompt": "space colonies, off-world settlement, futuristic habitat, self-sufficient environment, space architecture, human expansion to stars",
+                "color": "from-gray-600 to-cyan-600",
+                "image": "/static/style_images/space_colonies.jfif"
+            },
+            {
+                "name": "Cosmic Events",
+                "prompt": "cosmic events, supernova explosion, gamma ray burst, celestial collision, astronomical phenomena, universe-scale events, powerful energy release",
+                "color": "from-yellow-600 to-red-700",
+                "image": "/static/style_images/cosmic_events.jfif"
+            },
+            {
+                "name": "Spacecraft",
+                "prompt": "spacecraft design, rocket technology, orbital vehicles, futuristic engineering, space travel, aerodynamic forms, technological achievement",
+                "color": "from-gray-500 to-white",
+                "image": "/static/style_images/spacecraft.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Hyper-Realistic & HDR",
+        "styles": [
+            {
+                "name": "8K HDR",
+                "prompt": "8K HDR quality, extreme detail, wide dynamic range, perfect exposure, impeccable clarity, professional photography, ultra high resolution",
+                "color": "from-cyan-500 to-blue-600",
+                "image": "/static/style_images/8k_hdr.jfif"
+            },
+            {
+                "name": "Macro HDR",
+                "prompt": "macro HDR photography, extreme close-up, detailed textures, enhanced dynamic range, focused details, miniature world revelation, technical precision",
+                "color": "from-green-500 to-teal-600",
+                "image": "/static/style_images/macro_hdr.jfif"
+            },
+            {
+                "name": "Landscape HDR",
+                "prompt": "landscape HDR photography, natural beauty, enhanced colors, perfect exposure, detailed scenery, professional quality, breathtaking views",
+                "color": "from-blue-500 to-green-600",
+                "image": "/static/style_images/landscape_hdr.jfif"
+            },
+            {
+                "name": "Architectural HDR",
+                "prompt": "architectural HDR photography, building details, perfect exposure, structural beauty, enhanced textures, professional architecture photography",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/architectural_hdr.jfif"
+            },
+            {
+                "name": "Portrait HDR",
+                "prompt": "portrait HDR photography, facial details, perfect skin tones, enhanced features, professional lighting, emotional expression, technical excellence",
+                "color": "from-pink-500 to-rose-600",
+                "image": "/static/style_images/portrait_hdr.jfif"
+            },
+            {
+                "name": "Night Photography HDR",
+                "prompt": "night photography HDR, low light details, enhanced visibility, perfect exposure, city lights, astronomical photography, dark environment clarity",
+                "color": "from-blue-600 to-purple-700",
+                "image": "/static/style_images/night_photography_hdr.jfif"
+            },
+            {
+                "name": "HDR Time-Lapse",
+                "prompt": "HDR time-lapse photography, changing conditions, perfect exposure throughout, dynamic range preservation, moving elements, time compression",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/hdr_time_lapse.jfif"
+            },
+            {
+                "name": "HDR Panorama",
+                "prompt": "HDR panorama, wide view, seamless stitching, consistent exposure, expanded perspective, immersive scene, professional photography technique",
+                "color": "from-blue-400 to-cyan-500",
+                "image": "/static/style_images/hdr_panorama.jfif"
+            },
+            {
+                "name": "HDR Astrophotography",
+                "prompt": "HDR astrophotography, night sky details, star visibility, Milky Way clarity, astronomical features, enhanced celestial objects, professional space photography",
+                "color": "from-blue-800 to-purple-900",
+                "image": "/static/style_images/hdr_astrophotography.jfif"
+            },
+            {
+                "name": "HDR Interior",
+                "prompt": "HDR interior photography, room details, balanced lighting, enhanced textures, architectural interior, professional interior design photography",
+                "color": "from-amber-500 to-brown-600",
+                "image": "/static/style_images/hdr_interior.jfif"
+            }
+        ]
+    },
+    {
+        "category": "3D & Reality Enhancement",
+        "styles": [
+            {
+                "name": "Photorealistic 3D",
+                "prompt": "photorealistic 3D rendering, indistinguishable from reality, accurate materials, proper lighting, detailed textures, realistic proportions, CGI perfection",
+                "color": "from-blue-500 to-indigo-600",
+                "image": "/static/style_images/photorealistic_3d.jfif"
+            },
+            {
+                "name": "Virtual Reality",
+                "prompt": "virtual reality environment, immersive experience, digital world, interactive elements, headset perspective, simulated reality, technological immersion",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/virtual_reality.jfif"
+            },
+            {
+                "name": "Augmented Reality",
+                "prompt": "augmented reality, digital overlay on real world, interactive elements, mixed reality, technological enhancement, information display, future interface",
+                "color": "from-green-500 to-blue-600",
+                "image": "/static/style_images/augmented_reality.jfif"
+            },
+            {
+                "name": "Holographic Display",
+                "prompt": "holographic display, light projection, three-dimensional interface, futuristic technology, transparent elements, interactive graphics, sci-fi aesthetic",
+                "color": "from-cyan-500 to-blue-600",
+                "image": "/static/style_images/holographic_display.jfif"
+            },
+            {
+                "name": "3D Printing",
+                "prompt": "3D printing process, layered construction, additive manufacturing, plastic filament, technological creation, modern fabrication, printed object",
+                "color": "from-gray-500 to-orange-600",
+                "image": "/static/style_images/3d_printing.jfif"
+            },
+            {
+                "name": "Volumetric Capture",
+                "prompt": "volumetric capture, 3D scanning, point cloud data, photogrammetry, digital twin, accurate reproduction, reality digitization",
+                "color": "from-purple-400 to-pink-500",
+                "image": "/static/style_images/volumetric_capture.jfif"
+            },
+            {
+                "name": "3D Animation",
+                "prompt": "3D animation, character rigging, keyframe animation, motion capture, digital puppetry, animated performance, computer-generated movement",
+                "color": "from-blue-400 to-cyan-500",
+                "image": "/static/style_images/3d_animation.jfif"
+            },
+            {
+                "name": "Depth Mapping",
+                "prompt": "depth mapping, 3D perception, spatial awareness, distance visualization, topographic representation, dimensional data, depth-based rendering",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/depth_mapping.jfif"
+            },
+            {
+                "name": "3D Projection Mapping",
+                "prompt": "3D projection mapping, surface transformation, architectural projection, immersive light show, dynamic visuals, transformed spaces, projection art",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/3d_projection_mapping.jfif"
+            },
+            {
+                "name": "Real-Time Rendering",
+                "prompt": "real-time rendering, immediate visualization, interactive graphics, game engine quality, dynamic lighting, instant feedback, computational efficiency",
+                "color": "from-green-500 to-cyan-600",
+                "image": "/static/style_images/real_time_rendering.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Action & Combat",
+        "styles": [
+            {
+                "name": "Dynamic Fighting",
+                "prompt": "dynamic fighting pose, motion blur, energetic movement, impact effects, powerful strikes, combat intensity, action sequence",
+                "color": "from-red-600 to-orange-700",
+                "image": "/static/style_images/dynamic_fighting.jfif"
+            },
+            {
+                "name": "Martial Arts",
+                "prompt": "martial arts action, precise movements, traditional stances, focused energy, combat discipline, Eastern philosophy, powerful techniques",
+                "color": "from-amber-600 to-red-700",
+                "image": "/static/style_images/martial_arts.jfif"
+            },
+            {
+                "name": "Sword Combat",
+                "prompt": "sword combat, blade action, metallic reflections, skilled techniques, historical weapons, duel atmosphere, warrior culture",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/sword_combat.jfif"
+            },
+            {
+                "name": "Gunfight",
+                "prompt": "gunfight action, muzzle flashes, bullet trails, dramatic poses, modern warfare, tactical gear, intense combat",
+                "color": "from-gray-600 to-orange-600",
+                "image": "/static/style_images/gunfight.jfif"
+            },
+            {
+                "name": "Superhero Battle",
+                "prompt": "superhero battle, dramatic powers, costume details, city destruction, heroic poses, comic book action, dramatic conflict",
+                "color": "from-blue-600 to-red-600",
+                "image": "/static/style_images/superhero_battle.jfif"
+            },
+            {
+                "name": "Magic Duel",
+                "prompt": "magic duel, spell effects, energy projection, mystical combat, arcane symbols, powerful wizards, elemental forces",
+                "color": "from-purple-600 to-blue-700",
+                "image": "/static/style_images/magic_duel.jfif"
+            },
+            {
+                "name": "Mecha Combat",
+                "prompt": "mecha combat, giant robots, mechanical details, weapon systems, futuristic warfare, pilot coordination, technological battle",
+                "color": "from-gray-600 to-cyan-600",
+                "image": "/static/style_images/mecha_combat.jfif"
+            },
+            {
+                "name": "Acrobatic Movement",
+                "prompt": "acrobatic movement, flexible poses, graceful combat, parkour elements, urban environment, physical prowess, dynamic action",
+                "color": "from-blue-500 to-purple-600",
+                "image": "/static/style_images/acrobatic_movement.jfif"
+            },
+            {
+                "name": "Slow Motion",
+                "prompt": "slow motion action, frozen moment, detailed movement, time distortion, dramatic emphasis, cinematic effect, intense focus",
+                "color": "from-cyan-500 to-blue-600",
+                "image": "/static/style_images/slow_motion.jfif"
+            },
+            {
+                "name": "Final Impact",
+                "prompt": "final impact moment, climax of battle, powerful collision, energy release, dramatic conclusion, ultimate technique, decisive strike",
+                "color": "from-red-700 to-yellow-600",
+                "image": "/static/style_images/final_impact.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Fantasy & Sci-Fi Genres",
+        "description": "Ultra-detailed fantasy and sci-fi styles with cinematic quality and imaginative excellence",
+        "styles": [
+            {
+                "name": "Cyberpunk",
+                "prompt": "cyberpunk, high tech low life, neon-noir, futuristic city, rain-slicked streets, cybernetic enhancements, dystopian atmosphere, Blade Runner style",
+                "color": "from-blue-600 to-purple-700",
+                "image": "/static/style_images/cyberpunk.jfif"
+            },
+            {
+                "name": "Steampunk",
+                "prompt": "steampunk, Victorian era technology, brass and copper, gears and steam engines, clockwork mechanisms, retro-futurism, alternate history",
+                "color": "from-amber-600 to-yellow-700",
+                "image": "/static/style_images/steampunk.jfif"
+            },
+            {
+                "name": "High Fantasy",
+                "prompt": "high fantasy, epic scale, mythical creatures, medieval-inspired setting, heroic themes, majestic landscapes, magical elements, Lord of the Rings style",
+                "color": "from-green-500 to-emerald-600",
+                "image": "/static/style_images/high_fantasy.jfif"
+            },
+            {
+                "name": "Cosmic Horror",
+                "prompt": "cosmic horror, vast unknowable scale, existential dread, strange geometries, ancient beings, dark space, Lovecraftian, insignificance of humanity",
+                "color": "from-purple-800 to-gray-900",
+                "image": "/static/style_images/cosmic_horror.jfif"
+            },
+            {
+                "name": "Space Opera",
+                "prompt": "space opera, epic space adventure, interstellar travel, alien civilizations, dramatic conflicts, futuristic technology, grand scale",
+                "color": "from-blue-700 to-purple-800",
+                "image": "/static/style_images/space_opera.jfif"
+            },
+            {
+                "name": "Post-Apocalyptic",
+                "prompt": "post-apocalyptic, ruined world, desolate landscapes, abandoned structures, survival themes, dystopian future, decay",
+                "color": "from-gray-500 to-brown-600",
+                "image": "/static/style_images/post_apocalyptic.jfif"
+            },
+            {
+                "name": "Bio-Punk",
+                "prompt": "bio-punk, biological technology, genetic engineering, organic machinery, mutated forms, grotesque beauty, living technology",
+                "color": "from-green-600 to-teal-700",
+                "image": "/static/style_images/bio_punk.jfif"
+            },
+            {
+                "name": "Solarpunk",
+                "prompt": "solarpunk, optimistic futurism, renewable energy, sustainable technology, green cities, art nouveau influences, eco-utopia",
+                "color": "from-green-400 to-cyan-500",
+                "image": "/static/style_images/solarpunk.jfif"
+            },
+            {
+                "name": "Dieselpunk",
+                "prompt": "dieselpunk, 1920s-1940s technology, diesel engines, art deco design, wartime aesthetics, retro-futurism, industrial might",
+                "color": "from-gray-600 to-amber-700",
+                "image": "/static/style_images/dieselpunk.jfif"
+            },
+            {
+                "name": "Atompunk",
+                "prompt": "atompunk, 1950s retro-futurism, atomic age, googie architecture, space age design, optimistic technology, vintage futurism",
+                "color": "from-blue-400 to-cyan-500",
+                "image": "/static/style_images/atompunk.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Kawaii & Cute Aesthetics",
+        "styles": [
+            {
+                "name": "Kawaii Core",
+                "prompt": "kawaii aesthetic, Japanese cute culture, pastel colors, round shapes, smiling faces, adorable elements, playful atmosphere",
+                "color": "from-pink-400 to-rose-500",
+                "image": "/static/style_images/kawaii_core.jfif"
+            },
+            {
+                "name": "Pastel Goth",
+                "prompt": "pastel goth, cute dark aesthetic, pastel colors with gothic elements, playful morbidity, cute macabre, sweet yet spooky",
+                "color": "from-purple-400 to-pink-500",
+                "image": "/static/style_images/pastel_goth.jfif"
+            },
+            {
+                "name": "Cottagecore",
+                "prompt": "cottagecore aesthetic, rural nostalgia, natural materials, simple living, floral patterns, pastoral scenes, romanticized countryside",
+                "color": "from-green-400 to-brown-500",
+                "image": "/static/style_images/cottagecore.jfif"
+            },
+            {
+                "name": "Fairy Kei",
+                "prompt": "fairy kei style, 1980s inspired, pastel colors, childish motifs, cute accessories, nostalgic toys, dreamy aesthetic",
+                "color": "from-cyan-300 to-pink-400",
+                "image": "/static/style_images/fairy_kei.jfif"
+            },
+            {
+                "name": "Decora Kei",
+                "prompt": "decora kei style, excessive accessories, colorful layers, playful abundance, vibrant colors, childish enthusiasm, Japanese street fashion",
+                "color": "from-red-400 to-blue-500 via-yellow-400",
+                "image": "/static/style_images/decora_kei.jfif"
+            },
+            {
+                "name": "Animal Ears",
+                "prompt": "animal ears aesthetic, kemonomimi, human characters with animal features, cute accessories, playful appearance, anthropomorphic elements",
+                "color": "from-brown-400 to-pink-500",
+                "image": "/static/style_images/animal_ears.jfif"
+            },
+            {
+                "name": "Plush Toy",
+                "prompt": "plush toy style, soft fabric, stitch details, stuffed animal appearance, huggable quality, cute expressions, toy aesthetic",
+                "color": "from-blue-400 to-purple-500",
+                "image": "/static/style_images/plush_toy.jfif"
+            },
+            {
+                "name": "Candy Land",
+                "prompt": "candy land aesthetic, sweet treats, vibrant colors, sugary textures, playful designs, whimsical environment, edible appearance",
+                "color": "from-pink-400 to-yellow-400",
+                "image": "/static/style_images/candy_land.jfif"
+            },
+            {
+                "name": "Sparkle Magic",
+                "prompt": "sparkle magic aesthetic, glitter effects, shiny elements, magical glow, iridescent surfaces, enchanting atmosphere, fantasy cuteness",
+                "color": "from-cyan-400 to-purple-500",
+                "image": "/static/style_images/sparkle_magic.jfif"
+            },
+            {
+                "name": "Miniature World",
+                "prompt": "miniature world, tiny scale, small details, dollhouse aesthetic, macro photography, cute small objects, tiny lifestyle",
+                "color": "from-green-300 to-blue-400",
+                "image": "/static/style_images/miniature_world.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Traditional World Fashion",
+        "styles": [
+            {
+                "name": "Japanese Kimono",
+                "prompt": "traditional Japanese kimono, intricate patterns, silk fabric, obi belt, elegant drapery, cultural authenticity, historical accuracy",
+                "color": "from-red-500 to-pink-600",
+                "image": "/static/style_images/japanese_kimono.jfif"
+            },
+            {
+                "name": "Indian Sari",
+                "prompt": "traditional Indian sari, vibrant colors, intricate embroidery, flowing fabric, gold jewelry, cultural authenticity, elegant drape",
+                "color": "from-purple-600 to-pink-700",
+                "image": "/static/style_images/indian_sari.jfif"
+            },
+            {
+                "name": "Chinese Hanfu",
+                "prompt": "traditional Chinese hanfu, flowing robes, wide sleeves, intricate patterns, historical accuracy, elegant drapery, cultural authenticity",
+                "color": "from-red-600 to-gold-600",
+                "image": "/static/style_images/chinese_hanfu.jfif"
+            },
+            {
+                "name": "Scottish Tartan",
+                "prompt": "Scottish tartan kilt, patterned wool, pleated skirt, sporran accessory, traditional dress, cultural authenticity, Highland aesthetic",
+                "color": "from-green-600 to-blue-700",
+                "image": "/static/style_images/scottish_tartan.jfif"
+            },
+            {
+                "name": "African Prints",
+                "prompt": "African traditional prints, bold patterns, vibrant colors, cultural motifs, Ankara fabric, dashiki style, authentic representation",
+                "color": "from-yellow-500 to-orange-600",
+                "image": "/static/style_images/african_prints.jfif"
+            },
+            {
+                "name": "Middle Eastern Thobe",
+                "prompt": "Middle Eastern thobe, flowing garment, elegant embroidery, traditional design, cultural authenticity, modest fashion, intricate details",
+                "color": "from-white to-gold-500",
+                "image": "/static/style_images/middle_eastern_thobe.jfif"
+            },
+            {
+                "name": "Native American Regalia",
+                "prompt": "Native American traditional regalia, beadwork, feather accessories, cultural symbols, authentic representation, ceremonial dress",
+                "color": "from-brown-600 to-red-700",
+                "image": "/static/style_images/native_american_regalia.jfif"
+            },
+            {
+                "name": "Korean Hanbok",
+                "prompt": "traditional Korean hanbok, vibrant colors, flowing lines, jeogori jacket, chima skirt, cultural authenticity, historical accuracy",
+                "color": "from-pink-500 to-cyan-600",
+                "image": "/static/style_images/korean_hanbok.jfif"
+            },
+            {
+                "name": "Vietnamese Áo Dài",
+                "prompt": "Vietnamese áo dài, elegant tunic, flowing trousers, silk fabric, cultural authenticity, traditional pattern, graceful appearance",
+                "color": "from-white to-red-500",
+                "image": "/static/style_images/vietnamese_ao_dai.jfif"
+            },
+            {
+                "name": "European Renaissance Dress",
+                "prompt": "European Renaissance fashion, elaborate gowns, corsets, ruff collars, rich fabrics, historical accuracy, period costume",
+                "color": "from-purple-700 to-red-800",
+                "image": "/static/style_images/european_renaissance_dress.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Anime & Manga Styles",
+        "styles": [
+            {
+                "name": "Shonen Anime",
+                "prompt": "shonen anime style, dynamic action, exaggerated proportions, energetic lines, vibrant colors, dramatic expressions, popular Japanese animation",
+                "color": "from-red-500 to-orange-600",
+                "image": "/static/style_images/shonen_anime.jfif"
+            },
+            {
+                "name": "Shojo Anime",
+                "prompt": "shojo anime style, romantic themes, elegant characters, flowing hair, delicate features, emotional expressions, dreamy atmosphere",
+                "color": "from-pink-400 to-rose-500",
+                "image": "/static/style_images/shojo_anime.jfif"
+            },
+            {
+                "name": "Seinen Manga",
+                "prompt": "seinen manga style, mature themes, detailed artwork, realistic proportions, sophisticated storytelling, gritty atmosphere, adult-oriented",
+                "color": "from-gray-600 to-blue-700",
+                "image": "/static/style_images/seinen_manga.jfif"
+            },
+            {
+                "name": "Kodomo Anime",
+                "prompt": "kodomo anime style, child-friendly, cute characters, simple designs, bright colors, educational themes, playful atmosphere",
+                "color": "from-yellow-400 to-green-500",
+                "image": "/static/style_images/kodomo_anime.jfif"
+            },
+            {
+                "name": "Mecha Anime",
+                "prompt": "mecha anime style, giant robots, detailed mechanics, futuristic technology, pilot characters, dramatic battles, Japanese robot animation",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/mecha_anime.jfif"
+            },
+            {
+                "name": "Ghibli Style",
+                "prompt": "Studio Ghibli style, hand-drawn quality, detailed backgrounds, environmental themes, nostalgic atmosphere, whimsical characters, Miyazaki aesthetic",
+                "color": "from-blue-400 to-cyan-500",
+                "image": "/static/style_images/ghibli_style.jfif"
+            },
+            {
+                "name": "Cyberpunk Anime",
+                "prompt": "cyberpunk anime style, futuristic cities, neon lighting, technological themes, dystopian atmosphere, Japanese animation influence",
+                "color": "from-blue-600 to-purple-700",
+                "image": "/static/style_images/cyberpunk_anime.jfif"
+            },
+            {
+                "name": "Vintage Anime",
+                "prompt": "vintage anime style, 1980s-1990s aesthetic, cel animation, limited colors, retro futurism, nostalgic quality, classic Japanese animation",
+                "color": "from-pink-500 to-purple-600",
+                "image": "/static/style_images/vintage_anime.jfif"
+            },
+            {
+                "name": "Chibi Style",
+                "prompt": "chibi style, super-deformed characters, large heads, small bodies, exaggerated cuteness, simple details, humorous expressions",
+                "color": "from-pink-400 to-rose-500",
+                "image": "/static/style_images/chibi_style.jfif"
+            },
+            {
+                "name": "Anime Realism",
+                "prompt": "anime realism, detailed characters, realistic proportions, anime-inspired features, sophisticated rendering, bridge between anime and reality",
+                "color": "from-blue-500 to-indigo-600",
+                "image": "/static/style_images/anime_realism.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Elven & Fantasy Races",
+        "styles": [
+            {
+                "name": "High Elves",
+                "prompt": "high elves, elegant features, pointed ears, ethereal beauty, magical aura, sophisticated attire, forest or crystalline city setting",
+                "color": "from-blue-400 to-silver-500",
+                "image": "/static/style_images/high_elves.jfif"
+            },
+            {
+                "name": "Wood Elves",
+                "prompt": "wood elves, nature connection, forest camouflage, earthy tones, archer attributes, natural materials, mystical forest setting",
+                "color": "from-green-500 to-brown-600",
+                "image": "/static/style_images/wood_elves.jfif"
+            },
+            {
+                "name": "Dark Elves",
+                "prompt": "dark elves, pale skin, dark attire, underground cities, mystical magic, sophisticated yet dangerous, nocturnal aesthetic",
+                "color": "from-purple-600 to-black",
+                "image": "/static/style_images/dark_elves.jfif"
+            },
+            {
+                "name": "Dwarves",
+                "prompt": "dwarven race, sturdy build, bearded features, mountain dwellings, master craftsmen, underground halls, mining aesthetic, warrior culture",
+                "color": "from-brown-600 to-amber-700",
+                "image": "/static/style_images/dwarves.jfif"
+            },
+            {
+                "name": "Orcs",
+                "prompt": "orc race, muscular build, tribal culture, warrior society, green skin, tusked features, rugged appearance, battle-ready",
+                "color": "from-green-600 to-gray-700",
+                "image": "/static/style_images/orcs.jfif"
+            },
+            {
+                "name": "Gnomes",
+                "prompt": "gnome race, small stature, inventive minds, whimsical appearance, technological gadgets, curious nature, detailed workshop setting",
+                "color": "from-red-500 to-blue-600",
+                "image": "/static/style_images/gnomes.jfif"
+            },
+            {
+                "name": "Halflings",
+                "prompt": "halfling race, comfortable living, pastoral setting, peaceful nature, homey aesthetic, simple pleasures, rural community",
+                "color": "from-green-400 to-brown-500",
+                "image": "/static/style_images/halflings.jfif"
+            },
+            {
+                "name": "Fae Folk",
+                "prompt": "fae creatures, magical beings, ethereal appearance, wing variations, enchanting forest, mystical energy, whimsical yet dangerous",
+                "color": "from-pink-400 to-purple-500",
+                "image": "/static/style_images/fae_folk.jfif"
+            },
+            {
+                "name": "Dragonborn",
+                "prompt": "dragonborn race, draconic features, scaled skin, breath weapons, proud warriors, ancient culture, magical connection to dragons",
+                "color": "from-red-600 to-bronze-600",
+                "image": "/static/style_images/dragonborn.jfif"
+            },
+            {
+                "name": "Tieflings",
+                "prompt": "tiefling race, infernal heritage, horned heads, tailed beings, mystical powers, outsider status, dark elegance, magical aura",
+                "color": "from-purple-600 to-red-700",
+                "image": "/static/style_images/tieflings.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Modern Art Movements",
+        "description": "Advanced modern art interpretations with contemporary excellence and artistic innovation",
+        "styles": [
+            {
+                "name": "Art Nouveau",
+                "prompt": "art nouveau, organic lines, flowing curves, natural forms, elegant decoration, intricate patterns, stylized nature, harmonious design",
+                "color": "from-green-400 to-teal-500",
+                "image": "/static/style_images/art_nouveau.jfif"
+            },
+            {
+                "name": "Pop Art",
+                "prompt": "pop art, bold colors, popular culture themes, commercial art aesthetic, ironic treatment, mass media inspiration, celebrity culture",
+                "color": "from-pink-500 to-rose-600",
+                "image": "/static/style_images/pop_art.jfif"
+            },
+            {
+                "name": "Surrealism",
+                "prompt": "surrealism, dreamlike imagery, unexpected juxtapositions, illogical scenes, subconscious themes, fantastic elements, symbolic meaning, Salvador Dali style",
+                "color": "from-purple-500 to-indigo-600",
+                "image": "/static/style_images/surrealism.jfif"
+            },
+            {
+                "name": "Abstract",
+                "prompt": "abstract art, non-representational, geometric shapes, bold colors, expressive forms, conceptual composition, emotional interpretation, modern art",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/abstract.jfif"
+            },
+            {
+                "name": "Cubism",
+                "prompt": "cubism, geometric shapes, fragmented objects, multiple viewpoints, abstract forms, analytical reconstruction",
+                "color": "from-brown-500 to-amber-600",
+                "image": "/static/style_images/cubism.jfif"
+            },
+            {
+                "name": "Futurism",
+                "prompt": "futurism, dynamic movement, speed, technology, energy, mechanical elements, urban landscapes",
+                "color": "from-gray-600 to-blue-700",
+                "image": "/static/style_images/futurism.jfif"
+            },
+            {
+                "name": "Expressionism",
+                "prompt": "expressionism, emotional experience, distorted forms, vivid colors, subjective perspective, psychological intensity",
+                "color": "from-red-500 to-purple-600",
+                "image": "/static/style_images/expressionism.jfif"
+            },
+            {
+                "name": "Dada",
+                "prompt": "dada, avant-garde, nonsensical, anti-art, satirical, collage elements, photomontage, irrationality",
+                "color": "from-black to-gray-700",
+                "image": "/static/style_images/dada.jfif"
+            },
+            {
+                "name": "Constructivism",
+                "prompt": "constructivism, geometric abstraction, industrial materials, technical precision, spatial arrangements, revolutionary themes",
+                "color": "from-red-600 to-red-800",
+                "image": "/static/style_images/constructivism.jfif"
+            },
+            {
+                "name": "De Stijl",
+                "prompt": "de stijl, neo-plasticism, primary colors, horizontal and vertical lines, rectangular forms, abstraction to essentials",
+                "color": "from-red-500 to-blue-600 via-yellow-500",
+                "image": "/static/style_images/de_stijl.jfif"
+            }
+        ]
+    },
+    {
+        "category": "Core Styles",
+        "description": "Essential foundational styles for all types of image generation",
+        "styles": [
+            {
+                "name": "Photorealistic",
+                "prompt": "ultra photorealistic, 16K HDR masterpiece, award-winning professional photography, studio-quality lighting, razor-sharp focus, microscopic intricate details, physically accurate textures, perfect anatomical proportions, cinematic depth of field, color-graded perfection, shot with Phase One XF IQ4 150MP, Zeiss Otus 85mm f/1.4, professional lighting setup, flawless exposure, commercial photography quality",
+                "color": "from-blue-500 to-indigo-600",
+                "image": "/static/style_images/photorealistic.jfif",
+                "ultra_quality_specs": {
+                    "detail_level": "Microscopic (16K+ resolution)",
+                    "realism_factor": 98,
+                    "hdr_optimization": "Native HDR10+ with Dolby Vision",
+                    "color_depth": "16-bit per channel",
+                    "texture_fidelity": "Sub-pixel accuracy",
+                    "lighting_model": "Physically-based rendering (PBR)"
+                },
+                "advanced_prompts": {
+                    "portrait_mode": "ultra realistic portrait, skin pores visible, individual hair strands, catchlight in eyes, professional retouching, Phase One medium format quality",
+                    "product_mode": "commercial product photography, studio lighting, perfect reflections, material accuracy, advertising quality, shot on medium format camera",
+                    "landscape_mode": "landscape photography masterpiece, golden hour lighting, atmospheric perspective, ultra-sharp foreground to background, National Geographic quality"
+                }
+            },
+            {
+                "name": "Artistic Illustration",
+                "prompt": "masterpiece artistic illustration, creative interpretation excellence, stylized elements perfection, expressive brushwork mastery, imaginative composition brilliance, unique perspective innovation, hand-drawn quality authenticity, professional illustration standard, editorial quality artwork, commercial illustration excellence, perfect color harmony, artistic vision realization, museum-quality illustration, award-winning artistic style",
+                "color": "from-purple-500 to-pink-600",
+                "image": "/static/style_images/artistic_illustration.jfif",
+                "ultra_quality_specs": {
+                    "artistic_fidelity": "Professional illustrator level",
+                    "brushwork_quality": "Master artist technique",
+                    "composition_balance": "Golden ratio perfection",
+                    "color_harmony": "Professional color theory",
+                    "creative_interpretation": "Unique artistic vision",
+                    "technical_execution": "Commercial standard"
+                },
+                "advanced_prompts": {
+                    "editorial_illustration": "professional editorial illustration, magazine quality, perfect composition, commercial publishing standard",
+                    "book_illustration": "children's book illustration masterpiece, storytelling perfection, professional publishing quality",
+                    "concept_illustration": "concept art illustration, creative interpretation, film production quality, artistic vision excellence"
+                }
+            },
+            {
+                "name": "Digital Art",
+                "prompt": "ultra-high-quality digital art masterpiece, razor-sharp vector precision, vibrant HDR color palette, smooth gradient perfection, advanced digital painting techniques, contemporary artistic excellence, modern aesthetic sophistication, clean geometric composition, 16K resolution clarity, professional digital artwork, commercial illustration quality, perfect anti-aliasing, color-graded perfection, studio-quality rendering",
+                "color": "from-gray-500 to-blue-600",
+                "image": "/static/style_images/digital_art.jfif",
+                "ultra_quality_specs": {
+                    "line_precision": "Vector-perfect clarity",
+                    "color_accuracy": "Professional grade",
+                    "rendering_quality": "Studio standard",
+                    "composition_balance": "Golden ratio perfection",
+                    "detail_level": "Ultra-high definition",
+                    "artistic_fidelity": "Commercial quality"
+                },
+                "advanced_prompts": {
+                    "character_digital": "ultra-detailed digital character art, perfect anatomy, professional shading, commercial game art quality, 16K resolution",
+                    "concept_digital": "digital concept art masterpiece, environmental design perfection, atmospheric lighting, film production quality",
+                    "illustration_digital": "professional digital illustration, editorial quality, perfect composition, commercial advertising standard"
+                }
+            },
+            {
+                "name": "3D Rendering",
+                "prompt": "ultra-realistic 3D rendering masterpiece, high-poly modeling perfection, physically-based materials (PBR), ray-traced lighting accuracy, perfect shadow calculation, volumetric lighting effects, three-dimensional depth precision, Hollywood CGI quality, 16K texture resolution, global illumination perfection, subsurface scattering accuracy, reflection and refraction realism, render farm quality, Pixar-level detail",
+                "color": "from-orange-500 to-red-600",
+                "image": "/static/style_images/3d_rendering.jfif",
+                "ultra_quality_specs": {
+                    "polygon_count": "Ultra-high density",
+                    "texture_resolution": "16K+ per surface",
+                    "lighting_model": "Physically-based rendering",
+                    "ray_tracing": "Real-time quality",
+                    "material_accuracy": "Physically correct",
+                    "rendering_engine": "Professional grade"
+                },
+                "advanced_prompts": {
+                    "product_3d": "ultra-realistic 3D product rendering, perfect material representation, studio lighting setup, commercial advertising quality",
+                    "architectural_3d": "photorealistic 3D architectural rendering, accurate lighting simulation, interior design perfection, real estate quality",
+                    "character_3d": "ultra-detailed 3D character rendering, perfect anatomy, realistic skin shading, film production quality"
+                }
+            },
+            {
+                "name": "Hyperrealism",
+                "prompt": "ultra hyperrealism masterpiece, beyond photographic reality, microscopic detail enhancement, texture emphasis perfection, 16K resolution clarity, museum-quality artwork, enhanced photographic realism, every surface detail magnified, perfect material representation, studio lighting perfection, color accuracy beyond reality, fine art photography elevated, commercial advertising quality, Phase One medium format detail level",
+                "color": "from-blue-600 to-purple-700",
+                "image": "/static/style_images/hyperrealism.jfif",
+                "ultra_quality_specs": {
+                    "realism_enhancement": "150% photographic accuracy",
+                    "texture_detail": "Microscopic level",
+                    "surface_accuracy": "Material physics perfect",
+                    "lighting_precision": "Studio-grade setup",
+                    "color_enhancement": "Beyond natural spectrum",
+                    "detail_magnification": "Ultra-enhanced clarity"
+                },
+                "advanced_prompts": {
+                    "portrait_hyper": "hyperrealistic portrait, every skin detail enhanced, pore-level accuracy, hair strand perfection, eye detail magnification, museum quality",
+                    "still_life_hyper": "hyperrealistic still life, material texture perfection, surface detail enhancement, lighting accuracy beyond photography",
+                    "nature_hyper": "hyperrealistic nature, leaf vein detail, water droplet perfection, organic texture enhancement, scientific accuracy"
+                }
+            },
+            {
+                "name": "Sketched",
+                "prompt": "professional sketch artistry, precise pencil line work, masterful rough shading technique, intentional unfinished aesthetic, artistic draft perfection, authentic hand-drawn quality, graphite mastery, paper texture authenticity, artist's studio quality, fine art sketch standard, expressive line variation, professional drawing technique, museum sketch quality, master artist level execution",
+                "color": "from-gray-400 to-gray-600",
+                "image": "/static/style_images/sketched.jfif",
+                "ultra_quality_specs": {
+                    "line_quality": "Professional artist level",
+                    "shading_technique": "Master-level execution",
+                    "paper_texture": "Authentic art paper feel",
+                    "pencil_variation": "Multiple grade accuracy",
+                    "artistic_expression": "Fine art standard",
+                    "sketch_authenticity": "Hand-drawn perfection"
+                },
+                "advanced_prompts": {
+                    "portrait_sketch": "professional portrait sketch, masterful shading, accurate proportions, fine art quality, artist studio standard",
+                    "study_sketch": "artistic study sketch, observational drawing excellence, academic art quality, master artist technique",
+                    "concept_sketch": "concept design sketch, creative ideation, professional development art, film production quality"
+                }
+            },
+            {
+                "name": "Line Art",
+                "prompt": "ultra-precise line art masterpiece, razor-sharp clean lines, minimalistic perfection, high-contrast black and white, contour drawing excellence, elegant simplicity mastery, vector-quality precision, perfect line weight variation, geometric accuracy, professional illustration standard, commercial line art quality, perfect anti-aliasing, crisp edge definition, artistic minimalism perfection",
+                "color": "from-black to-gray-800",
+                "image": "/static/style_images/line_art.jfif",
+                "ultra_quality_specs": {
+                    "line_precision": "Vector-perfect accuracy",
+                    "contrast_ratio": "Maximum black/white",
+                    "edge_definition": "Razor-sharp clarity",
+                    "geometric_accuracy": "Mathematical precision",
+                    "minimalist_balance": "Perfect composition",
+                    "artistic_elegance": "Professional standard"
+                },
+                "advanced_prompts": {
+                    "logo_lineart": "professional logo line art, perfect geometric precision, commercial branding quality, vector perfection",
+                    "illustration_lineart": "editorial line art illustration, clean minimalist design, professional publishing standard",
+                    "technical_lineart": "technical line drawing, engineering precision, blueprint quality, professional documentation standard"
+                }
+            },
+            {
+                "name": "HDR",
+                "prompt": "ultra HDR photography masterpiece, extreme dynamic range, 14-stop exposure latitude, perfectly balanced highlights and shadows, vibrant yet natural colors, tone-mapped perfection, professional HDR processing, luminosity masking, color-graded cinematic look, shot with bracketed exposures, medium format sensor quality, Dolby Vision HDR10+, commercial photography standard",
+                "color": "from-yellow-500 to-orange-600",
+                "image": "/static/style_images/hdr.jfif",
+                "ultra_quality_specs": {
+                    "dynamic_range": "14+ stops",
+                    "tone_mapping": "Professional grade",
+                    "color_space": "Rec. 2020 wide gamut",
+                    "bit_depth": "16-bit linear",
+                    "hdr_standard": "HDR10+ / Dolby Vision",
+                    "processing_quality": "Broadcast standard"
+                },
+                "advanced_prompts": {
+                    "landscape_hdr": "HDR landscape photography, dramatic sky, perfect shadow detail, natural color grading, professional tone mapping, medium format quality",
+                    "architectural_hdr": "HDR architectural photography, balanced interior/exterior lighting, perfect exposure, commercial real estate quality",
+                    "portrait_hdr": "HDR portrait with natural skin tones, perfect highlight rolloff, shadow detail preservation, studio quality lighting"
+                }
+            },
+            {
+                "name": "8K Ultra",
+                "prompt": "16K ultra HD masterpiece, extreme microscopic detail, laser-sharp focus throughout, crystal clear definition, maximum resolution perfection, impeccable technical quality, shot with Phase One IQ4 150MP, Zeiss Otus prime lens, perfect optical clarity, zero chromatic aberration, professional color grading, broadcast quality, cinema-grade imagery, ultra-high bitrate, lossless compression",
+                "color": "from-cyan-500 to-blue-600",
+                "image": "/static/style_images/8k_ultra.jfif",
+                "ultra_quality_specs": {
+                    "resolution": "16K+ (15360x8640)",
+                    "pixel_density": "Ultra-high PPI",
+                    "sharpness_index": 99,
+                    "detail_preservation": "Lossless",
+                    "compression": "Visually lossless",
+                    "color_accuracy": "Delta E < 1"
+                },
+                "advanced_prompts": {
+                    "macro_ultra": "16K macro photography, individual fiber detail, microscopic texture, perfect edge definition, scientific photography quality",
+                    "portrait_ultra": "16K portrait, every skin pore visible, individual eyelash detail, hair strand definition, medium format camera quality",
+                    "landscape_ultra": "16K landscape, infinite detail from foreground to background, perfect optical clarity, large format camera quality"
+                }
+            },
+            {
+                "name": "Macro Photography",
+                "prompt": "ultra macro photography masterpiece, extreme magnification detail, microscopic texture revelation, razor-thin depth of field perfection, 5:1 magnification ratio, shot with Canon MP-E 65mm f/2.8, focus stacking perfection, diffused lighting setup, scientific photography quality, every surface detail magnified, crystal-clear subject isolation, professional macro lighting, museum specimen quality, National Geographic standard",
+                "color": "from-green-500 to-teal-600",
+                "image": "/static/style_images/macro_photography.jfif",
+                "ultra_quality_specs": {
+                    "magnification_ratio": "5:1 to 10:1",
+                    "depth_of_field": "Ultra-shallow precision",
+                    "focus_accuracy": "Microscopic level",
+                    "detail_resolution": "Scientific grade",
+                    "lighting_control": "Professional macro setup",
+                    "background_isolation": "Perfect subject separation"
+                },
+                "advanced_prompts": {
+                    "insect_macro": "ultra macro insect photography, compound eye detail, wing structure magnification, scientific specimen quality, perfect lighting",
+                    "flower_macro": "ultra macro flower photography, petal texture detail, stamen magnification, dewdrop perfection, botanical accuracy",
+                    "texture_macro": "ultra macro texture photography, surface detail magnification, material structure revelation, scientific documentation quality"
+                }
+            }
+        ]
+    }
+]

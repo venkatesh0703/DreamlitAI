@@ -41,8 +41,9 @@ env/
 generated_images/
 upload_image/
 
-# Data
-data/
+# Data - allow JSON files, ignore other generated data
+data/*.log
+data/*.tmp
 
 # Logs
 *.log

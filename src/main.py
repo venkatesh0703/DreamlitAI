@@ -240,11 +240,13 @@ class DataManager:
     
     def _save_styles(self):
         """Save styles to JSON file"""
+        os.makedirs(DATA_DIR, exist_ok=True)
         with open(os.path.join(DATA_DIR, 'styles.json'), 'w', encoding='utf-8') as f:
             json.dump(self._styles_cache, f, indent=2, ensure_ascii=False)
-    
+
     def _save_models(self):
         """Save models to JSON file"""
+        os.makedirs(DATA_DIR, exist_ok=True)
         with open(os.path.join(DATA_DIR, 'models.json'), 'w', encoding='utf-8') as f:
             json.dump(self._models_cache, f, indent=2, ensure_ascii=False)
 
